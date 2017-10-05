@@ -1,3 +1,5 @@
+package calculator;
+
 /**
  * Created by Sebi on 03-Oct-17.
  */

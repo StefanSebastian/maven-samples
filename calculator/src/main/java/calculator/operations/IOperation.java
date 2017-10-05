@@ -1,3 +1,7 @@
+package calculator.operations;
+
+import calculator.CalculatorException;
+
 import java.util.List;
 
 /**
