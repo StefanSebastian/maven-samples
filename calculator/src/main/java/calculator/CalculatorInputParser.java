@@ -61,10 +61,10 @@ public class CalculatorInputParser {
             // check operator position
             position++;
             if (checkOperator(arg)){
-                if (1 != position && (arg.equals("min") || arg.equals("max") || arg.equals("sqrt"))){
+                if (1 != position && ("min".equals(arg) || "max".equals(arg) || "sqrt".equals(arg))){
                     valid = false;
                 }
-                if (2 != position && (arg.equals("+") || arg.equals("-") || arg.equals("/") || arg.equals("*"))){
+                if (2 != position && ("+".equals(arg) || "-".equals(arg) || "/".equals(arg) || "*".equals(arg))){
                     valid = false;
                 }
             }
