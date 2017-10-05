@@ -128,4 +128,52 @@ public class CalculatorControllerTest {
         }
     }
 
+    @Test
+    public void parserOperator() throws Exception {
+        String op = "1 + 2";
+        CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
+        OPERATOR operator = calculatorInputParser.getOperator(op);
+        assertTrue(operator == OPERATOR.ADD);
+    }
+
+    @Test
+    public void parserOperator2() throws Exception {
+        String op = "min 1 2";
+        CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
+        OPERATOR operator = calculatorInputParser.getOperator(op);
+        assertTrue(operator == OPERATOR.MIN);
+    }
+
+    @Test
+    public void parserOperands() throws Exception {
+        String op = "1 + 2";
+        CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
+        List<Double> operands = calculatorInputParser.getOperands(op);
+        assertTrue(operands.get(0) == 1);
+        assertTrue(operands.get(1) == 2);
+    }
+
+    @Test
+    public void parserOperands2() throws Exception {
+        String op = "min 1 2 3 4";
+        CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
+        List<Double> operands = calculatorInputParser.getOperands(op);
+        assertTrue(operands.size() == 4);
+    }
+
+    @Test
+    public void parserValidCheck() throws Exception {
+        String op = "1 + 2";
+        CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
+        Boolean valid = calculatorInputParser.checkValidOperation(op);
+        assertTrue(valid);
+    }
+
+    @Test
+    public void parserValidCheck2() throws Exception {
+        String op = "1 + 2 -";
+        CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
+        Boolean valid = calculatorInputParser.checkValidOperation(op);
+        assertTrue(!valid);
+    }
 }
