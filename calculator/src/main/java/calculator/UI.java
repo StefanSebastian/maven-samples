@@ -13,13 +13,13 @@ public class UI {
     }
 
 
-    String readInput(){
+    private String readInput(){
         Scanner scan = new Scanner(System.in);
         System.out.println("-- ");
         return scan.nextLine();
     }
 
-    void run(){
+    public void run(){
         while (true) {
             String operation = readInput();
             try {

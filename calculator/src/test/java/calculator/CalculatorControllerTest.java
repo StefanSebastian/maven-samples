@@ -84,4 +84,48 @@ public class CalculatorControllerTest {
         assertTrue(res == 1.0);
     }
 
+    @Test
+    public void invalidString() throws Exception {
+        try {
+            String op = "1 min 2";
+            calculatorController.doOperation(op);
+            assertTrue(false);
+        } catch (CalculatorException ex){
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void invalidString2() throws Exception {
+        try {
+            String op = "+ 1 2";
+            calculatorController.doOperation(op);
+            assertTrue(false);
+        } catch (CalculatorException ex){
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void invalidString3() throws Exception {
+        try {
+            String op = "1 + 2 3";
+            calculatorController.doOperation(op);
+            assertTrue(false);
+        } catch (CalculatorException ex){
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void invalidString4() throws Exception {
+        try {
+            String op = "1 + 2 min";
+            calculatorController.doOperation(op);
+            assertTrue(false);
+        } catch (CalculatorException ex){
+            assertTrue(true);
+        }
+    }
+
 }

@@ -10,15 +10,18 @@ import java.util.*;
 public class CalculatorInputParser {
 
     // accepted operators
-    private Map<String, OPERATOR> operatorMap = new HashMap<String,OPERATOR>(){{
-        put("+", OPERATOR.ADD);
-        put("-", OPERATOR.SUBSTRACT);
-        put("/", OPERATOR.DIVIDE);
-        put("*", OPERATOR.MULTIPLY);
-        put("min", OPERATOR.MIN);
-        put("max", OPERATOR.MAX);
-        put("sqrt", OPERATOR.SQRT);
-    }};
+    private Map<String, OPERATOR> operatorMap;
+
+    public CalculatorInputParser(){
+        operatorMap = new HashMap<String, OPERATOR>();
+        operatorMap.put("+", OPERATOR.ADD);
+        operatorMap.put("-", OPERATOR.SUBSTRACT);
+        operatorMap.put("/", OPERATOR.DIVIDE);
+        operatorMap.put("*", OPERATOR.MULTIPLY);
+        operatorMap.put("min", OPERATOR.MIN);
+        operatorMap.put("max", OPERATOR.MAX);
+        operatorMap.put("sqrt", OPERATOR.SQRT);
+    }
 
     // checks if a string can be converted to double
     private Boolean checkDouble(String token){
@@ -58,10 +61,10 @@ public class CalculatorInputParser {
             // check operator position
             position++;
             if (checkOperator(arg)){
-                if (position != 1 && (arg.equals("min") || arg.equals("max") || arg.equals("sqrt"))){
+                if (1 != position && (arg.equals("min") || arg.equals("max") || arg.equals("sqrt"))){
                     valid = false;
                 }
-                if (position != 2 && (arg.equals("+") || arg.equals("-") || arg.equals("/") || arg.equals("*"))){
+                if (2 != position && (arg.equals("+") || arg.equals("-") || arg.equals("/") || arg.equals("*"))){
                     valid = false;
                 }
             }
