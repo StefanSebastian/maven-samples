@@ -17,6 +17,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jacoco-version>0.7.9</jacoco-version>
+		<jmh.version>1.19</jmh.version>
+		<uberjar.name>benchmarks</uberjar.name>
 	</properties>
 
 	<!-- common dependencies for all modules -->
@@ -87,6 +89,7 @@
 		<module>day2</module>
 		<module>report</module>
         <module>calculator</module>
+        <module>lab2</module>
         <!-- add here any other modules -->
 	</modules>
 
