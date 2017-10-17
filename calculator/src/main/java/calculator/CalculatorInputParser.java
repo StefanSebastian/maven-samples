@@ -1,6 +1,6 @@
 package calculator;
 
-import calculator.operations.OPERATOR;
+import calculator.operations.Operator;
 
 import java.util.*;
 
@@ -10,17 +10,17 @@ import java.util.*;
 public class CalculatorInputParser {
 
     // accepted operators
-    private Map<String, OPERATOR> operatorMap;
+    private Map<String, Operator> operatorMap;
 
     public CalculatorInputParser(){
-        operatorMap = new HashMap<String, OPERATOR>();
-        operatorMap.put("+", OPERATOR.ADD);
-        operatorMap.put("-", OPERATOR.SUBSTRACT);
-        operatorMap.put("/", OPERATOR.DIVIDE);
-        operatorMap.put("*", OPERATOR.MULTIPLY);
-        operatorMap.put("min", OPERATOR.MIN);
-        operatorMap.put("max", OPERATOR.MAX);
-        operatorMap.put("sqrt", OPERATOR.SQRT);
+        operatorMap = new HashMap<String, Operator>();
+        operatorMap.put("+", Operator.ADD);
+        operatorMap.put("-", Operator.SUBSTRACT);
+        operatorMap.put("/", Operator.DIVIDE);
+        operatorMap.put("*", Operator.MULTIPLY);
+        operatorMap.put("min", Operator.MIN);
+        operatorMap.put("max", Operator.MAX);
+        operatorMap.put("sqrt", Operator.SQRT);
     }
 
     // checks if a string can be converted to double
@@ -96,7 +96,7 @@ public class CalculatorInputParser {
 
     // returns the operator
     // validation should be done first
-    public OPERATOR getOperator(String operation) {
+    public Operator getOperator(String operation) {
         String[] args = operation.split(" ");
         for (String arg : args) {
             if (checkOperator(arg)){

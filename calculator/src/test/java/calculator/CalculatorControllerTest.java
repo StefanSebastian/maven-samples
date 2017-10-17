@@ -1,6 +1,6 @@
 package calculator;
 
-import calculator.operations.OPERATOR;
+import calculator.operations.Operator;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -17,49 +17,49 @@ public class CalculatorControllerTest {
     @Test
     public void addTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(1.0,2.0));
-        Double res = calculatorController.doOperation(operands, OPERATOR.ADD);
+        Double res = calculatorController.doOperation(operands, Operator.ADD);
         assertTrue(res == 3.0);
     }
 
     @Test
     public void subTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(8.0,2.0));
-        Double res = calculatorController.doOperation(operands, OPERATOR.SUBSTRACT);
+        Double res = calculatorController.doOperation(operands, Operator.SUBSTRACT);
         assertTrue(res == 6.0);
     }
 
     @Test
     public void multiplyTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(8.0,10.0));
-        Double res = calculatorController.doOperation(operands, OPERATOR.MULTIPLY);
+        Double res = calculatorController.doOperation(operands, Operator.MULTIPLY);
         assertTrue(res == 80.0);
     }
 
     @Test
     public void divideTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(12.0,10.0));
-        Double res = calculatorController.doOperation(operands, OPERATOR.DIVIDE);
+        Double res = calculatorController.doOperation(operands, Operator.DIVIDE);
         assertTrue(res == 1.2);
     }
 
     @Test
     public void minTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(12.0,10.0,5.6,4.3));
-        Double res = calculatorController.doOperation(operands, OPERATOR.MIN);
+        Double res = calculatorController.doOperation(operands, Operator.MIN);
         assertTrue(res == 4.3);
     }
 
     @Test
     public void maxTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(12.0,10.0,5.6,4.3));
-        Double res = calculatorController.doOperation(operands, OPERATOR.MAX);
+        Double res = calculatorController.doOperation(operands, Operator.MAX);
         assertTrue(res == 12.0);
     }
 
     @Test
     public void sqrtTest() throws Exception {
         List<Double> operands = new ArrayList<Double>(asList(16.0));
-        Double res = calculatorController.doOperation(operands, OPERATOR.SQRT);
+        Double res = calculatorController.doOperation(operands, Operator.SQRT);
         assertTrue(res == 4.0);
     }
 
@@ -132,16 +132,16 @@ public class CalculatorControllerTest {
     public void parserOperator() throws Exception {
         String op = "1 + 2";
         CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
-        OPERATOR operator = calculatorInputParser.getOperator(op);
-        assertTrue(operator == OPERATOR.ADD);
+        Operator operator = calculatorInputParser.getOperator(op);
+        assertTrue(operator == Operator.ADD);
     }
 
     @Test
     public void parserOperator2() throws Exception {
         String op = "min 1 2";
         CalculatorInputParser calculatorInputParser = new CalculatorInputParser();
-        OPERATOR operator = calculatorInputParser.getOperator(op);
-        assertTrue(operator == OPERATOR.MIN);
+        Operator operator = calculatorInputParser.getOperator(op);
+        assertTrue(operator == Operator.MIN);
     }
 
     @Test
