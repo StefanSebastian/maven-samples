@@ -24,7 +24,7 @@ public class RepositoryTest {
 
     @Benchmark
     public void test(){
-        System.out.println("Running test");
+        int a = 0; a++;
     }
 
     public static void main(String[] args) throws RunnerException {
