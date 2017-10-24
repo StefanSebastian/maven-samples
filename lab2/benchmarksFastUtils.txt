@@ -1,0 +1,4323 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 1000)
+
+# Run progress: 0.00% complete, ETA 00:48:00
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+25644.686 ops/ms
+# Warmup Iteration   2: 29443.362 ops/ms
+# Warmup Iteration   3: 30412.346 ops/ms
+# Warmup Iteration   4: 30269.489 ops/ms
+# Warmup Iteration   5: 22387.813 ops/ms
+# Warmup Iteration   6: 27373.208 ops/ms
+# Warmup Iteration   7: 31999.802 ops/ms
+# Warmup Iteration   8: 29820.021 ops/ms
+# Warmup Iteration   9: 28595.635 ops/ms
+# Warmup Iteration  10: 31023.762 ops/ms
+Iteration   1: 27531.068 ops/ms
+Iteration   2: 32552.343 ops/ms
+Iteration   3: 30389.160 ops/ms
+Iteration   4: 29508.447 ops/ms
+Iteration   5: 26592.971 ops/ms
+Iteration   6: 23804.030 ops/ms
+Iteration   7: 30635.770 ops/ms
+Iteration   8: 26012.106 ops/ms
+Iteration   9: 26102.878 ops/ms
+Iteration  10: 26871.286 ops/ms
+Iteration  11: 27333.507 ops/ms
+Iteration  12: 32263.798 ops/ms
+Iteration  13: 31263.773 ops/ms
+Iteration  14: 32225.934 ops/ms
+Iteration  15: 31335.002 ops/ms
+Iteration  16: 27476.999 ops/ms
+Iteration  17: 32062.368 ops/ms
+Iteration  18: 32829.601 ops/ms
+Iteration  19: 29387.238 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+31759.687 ops/ms
+
+# Run progress: 1.04% complete, ETA 00:48:46
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+21021.940 ops/ms
+# Warmup Iteration   2: 28673.905 ops/ms
+# Warmup Iteration   3: 29765.626 ops/ms
+# Warmup Iteration   4: 30066.934 ops/ms
+# Warmup Iteration   5: 29375.274 ops/ms
+# Warmup Iteration   6: 25737.746 ops/ms
+# Warmup Iteration   7: 29707.955 ops/ms
+# Warmup Iteration   8: 29422.824 ops/ms
+# Warmup Iteration   9: 26581.406 ops/ms
+# Warmup Iteration  10: 26417.939 ops/ms
+Iteration   1: 23270.758 ops/ms
+Iteration   2: 22657.078 ops/ms
+Iteration   3: 26269.498 ops/ms
+Iteration   4: 28740.425 ops/ms
+Iteration   5: 26608.418 ops/ms
+Iteration   6: 26276.663 ops/ms
+Iteration   7: 15579.809 ops/ms
+Iteration   8: 24617.582 ops/ms
+Iteration   9: 27313.090 ops/ms
+Iteration  10: 11133.099 ops/ms
+Iteration  11: 29829.091 ops/ms
+Iteration  12: 23234.285 ops/ms
+Iteration  13: 8215.524 ops/ms
+Iteration  14: 26118.232 ops/ms
+Iteration  15: 24866.000 ops/ms
+Iteration  16: 23161.584 ops/ms
+Iteration  17: 10184.112 ops/ms
+Iteration  18: 22489.275 ops/ms
+Iteration  19: 21506.388 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+28962.734 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  25974.290 ±(99.9%) 3334.061 ops/ms [Average]
+  (min, avg, max) = (8215.524, 25974.290, 32829.601), stdev = 5926.290
+  CI (99.9%): [22640.230, 29308.351] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 10000)
+
+# Run progress: 2.08% complete, ETA 00:48:11
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+7001.307 ops/ms
+# Warmup Iteration   2: 4676.389 ops/ms
+# Warmup Iteration   3: 10443.058 ops/ms
+# Warmup Iteration   4: 14646.663 ops/ms
+# Warmup Iteration   5: 14039.636 ops/ms
+# Warmup Iteration   6: 12577.474 ops/ms
+# Warmup Iteration   7: 9873.893 ops/ms
+# Warmup Iteration   8: 13890.755 ops/ms
+# Warmup Iteration   9: 9785.497 ops/ms
+# Warmup Iteration  10: 10149.362 ops/ms
+Iteration   1: 13444.638 ops/ms
+Iteration   2: 12915.001 ops/ms
+Iteration   3: 14779.543 ops/ms
+Iteration   4: 16151.276 ops/ms
+Iteration   5: 14428.579 ops/ms
+Iteration   6: 12758.848 ops/ms
+Iteration   7: 11456.505 ops/ms
+Iteration   8: 11103.880 ops/ms
+Iteration   9: 13052.173 ops/ms
+Iteration  10: 8891.729 ops/ms
+Iteration  11: 11919.589 ops/ms
+Iteration  12: 5801.868 ops/ms
+Iteration  13: 8304.904 ops/ms
+Iteration  14: 11227.670 ops/ms
+Iteration  15: 5608.303 ops/ms
+Iteration  16: 6093.283 ops/ms
+Iteration  17: 7260.494 ops/ms
+Iteration  18: 10484.788 ops/ms
+Iteration  19: 13690.567 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14340.423 ops/ms
+
+# Run progress: 3.13% complete, ETA 00:47:45
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+7912.414 ops/ms
+# Warmup Iteration   2: 9033.557 ops/ms
+# Warmup Iteration   3: 9258.194 ops/ms
+# Warmup Iteration   4: 16770.190 ops/ms
+# Warmup Iteration   5: 14897.884 ops/ms
+# Warmup Iteration   6: 10753.456 ops/ms
+# Warmup Iteration   7: 12365.610 ops/ms
+# Warmup Iteration   8: 11884.004 ops/ms
+# Warmup Iteration   9: 15045.693 ops/ms
+# Warmup Iteration  10: 15834.643 ops/ms
+Iteration   1: 15726.090 ops/ms
+Iteration   2: 14341.558 ops/ms
+Iteration   3: 8677.536 ops/ms
+Iteration   4: 15491.677 ops/ms
+Iteration   5: 16090.733 ops/ms
+Iteration   6: 15342.927 ops/ms
+Iteration   7: 14332.830 ops/ms
+Iteration   8: 15632.839 ops/ms
+Iteration   9: 11839.421 ops/ms
+Iteration  10: 11883.578 ops/ms
+Iteration  11: 12888.139 ops/ms
+Iteration  12: 13989.564 ops/ms
+Iteration  13: 12526.977 ops/ms
+Iteration  14: 6561.417 ops/ms
+Iteration  15: 5010.829 ops/ms
+Iteration  16: 7938.685 ops/ms
+Iteration  17: 8061.172 ops/ms
+Iteration  18: 7705.503 ops/ms
+Iteration  19: 7784.277 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3723.952 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  11231.594 ±(99.9%) 2001.193 ops/ms [Average]
+  (min, avg, max) = (3723.952, 11231.594, 16151.276), stdev = 3557.118
+  CI (99.9%): [9230.401, 13232.787] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 1000)
+
+# Run progress: 4.17% complete, ETA 00:47:21
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+133.959 ops/ms
+# Warmup Iteration   2: 91.822 ops/ms
+# Warmup Iteration   3: 148.616 ops/ms
+# Warmup Iteration   4: 168.987 ops/ms
+# Warmup Iteration   5: 197.878 ops/ms
+# Warmup Iteration   6: 187.078 ops/ms
+# Warmup Iteration   7: 194.964 ops/ms
+# Warmup Iteration   8: 208.054 ops/ms
+# Warmup Iteration   9: 173.086 ops/ms
+# Warmup Iteration  10: 161.939 ops/ms
+Iteration   1: 150.259 ops/ms
+Iteration   2: 130.770 ops/ms
+Iteration   3: 132.701 ops/ms
+Iteration   4: 169.547 ops/ms
+Iteration   5: 156.898 ops/ms
+Iteration   6: 230.235 ops/ms
+Iteration   7: 219.499 ops/ms
+Iteration   8: 239.056 ops/ms
+Iteration   9: 241.757 ops/ms
+Iteration  10: 220.838 ops/ms
+Iteration  11: 216.614 ops/ms
+Iteration  12: 207.767 ops/ms
+Iteration  13: 201.186 ops/ms
+Iteration  14: 195.290 ops/ms
+Iteration  15: 193.981 ops/ms
+Iteration  16: 184.842 ops/ms
+Iteration  17: 221.377 ops/ms
+Iteration  18: 238.905 ops/ms
+Iteration  19: 240.777 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+241.590 ops/ms
+
+# Run progress: 5.21% complete, ETA 00:47:00
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+225.828 ops/ms
+# Warmup Iteration   2: 210.994 ops/ms
+# Warmup Iteration   3: 229.250 ops/ms
+# Warmup Iteration   4: 203.607 ops/ms
+# Warmup Iteration   5: 180.047 ops/ms
+# Warmup Iteration   6: 184.759 ops/ms
+# Warmup Iteration   7: 231.771 ops/ms
+# Warmup Iteration   8: 241.909 ops/ms
+# Warmup Iteration   9: 241.000 ops/ms
+# Warmup Iteration  10: 216.934 ops/ms
+Iteration   1: 187.069 ops/ms
+Iteration   2: 233.081 ops/ms
+Iteration   3: 239.341 ops/ms
+Iteration   4: 227.635 ops/ms
+Iteration   5: 243.064 ops/ms
+Iteration   6: 220.050 ops/ms
+Iteration   7: 231.421 ops/ms
+Iteration   8: 238.698 ops/ms
+Iteration   9: 231.000 ops/ms
+Iteration  10: 244.268 ops/ms
+Iteration  11: 218.537 ops/ms
+Iteration  12: 234.802 ops/ms
+Iteration  13: 240.907 ops/ms
+Iteration  14: 238.277 ops/ms
+Iteration  15: 242.898 ops/ms
+Iteration  16: 224.179 ops/ms
+Iteration  17: 222.316 ops/ms
+Iteration  18: 246.447 ops/ms
+Iteration  19: 246.533 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+244.498 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  217.223 ±(99.9%) 17.758 ops/ms [Average]
+  (min, avg, max) = (130.770, 217.223, 246.533), stdev = 31.565
+  CI (99.9%): [199.465, 234.981] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 10000)
+
+# Run progress: 6.25% complete, ETA 00:46:32
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+19.543 ops/ms
+# Warmup Iteration   2: 24.743 ops/ms
+# Warmup Iteration   3: 24.564 ops/ms
+# Warmup Iteration   4: 24.827 ops/ms
+# Warmup Iteration   5: 24.763 ops/ms
+# Warmup Iteration   6: 21.661 ops/ms
+# Warmup Iteration   7: 22.955 ops/ms
+# Warmup Iteration   8: 22.897 ops/ms
+# Warmup Iteration   9: 24.383 ops/ms
+# Warmup Iteration  10: 18.792 ops/ms
+Iteration   1: 14.265 ops/ms
+Iteration   2: 21.623 ops/ms
+Iteration   3: 23.366 ops/ms
+Iteration   4: 22.079 ops/ms
+Iteration   5: 24.374 ops/ms
+Iteration   6: 25.130 ops/ms
+Iteration   7: 21.056 ops/ms
+Iteration   8: 24.569 ops/ms
+Iteration   9: 24.496 ops/ms
+Iteration  10: 23.557 ops/ms
+Iteration  11: 22.164 ops/ms
+Iteration  12: 16.657 ops/ms
+Iteration  13: 18.698 ops/ms
+Iteration  14: 17.016 ops/ms
+Iteration  15: 18.288 ops/ms
+Iteration  16: 16.241 ops/ms
+Iteration  17: 18.127 ops/ms
+Iteration  18: 18.504 ops/ms
+Iteration  19: 22.010 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+22.267 ops/ms
+
+# Run progress: 7.29% complete, ETA 00:46:02
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+20.816 ops/ms
+# Warmup Iteration   2: 17.704 ops/ms
+# Warmup Iteration   3: 21.628 ops/ms
+# Warmup Iteration   4: 17.934 ops/ms
+# Warmup Iteration   5: 15.317 ops/ms
+# Warmup Iteration   6: 12.208 ops/ms
+# Warmup Iteration   7: 11.013 ops/ms
+# Warmup Iteration   8: 13.436 ops/ms
+# Warmup Iteration   9: 19.471 ops/ms
+# Warmup Iteration  10: 15.548 ops/ms
+Iteration   1: 10.113 ops/ms
+Iteration   2: 11.300 ops/ms
+Iteration   3: 15.098 ops/ms
+Iteration   4: 12.536 ops/ms
+Iteration   5: 11.816 ops/ms
+Iteration   6: 19.923 ops/ms
+Iteration   7: 21.498 ops/ms
+Iteration   8: 23.496 ops/ms
+Iteration   9: 15.491 ops/ms
+Iteration  10: 15.786 ops/ms
+Iteration  11: 18.648 ops/ms
+Iteration  12: 15.067 ops/ms
+Iteration  13: 18.921 ops/ms
+Iteration  14: 15.670 ops/ms
+Iteration  15: 13.617 ops/ms
+Iteration  16: 14.478 ops/ms
+Iteration  17: 13.409 ops/ms
+Iteration  18: 18.602 ops/ms
+Iteration  19: 20.700 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+18.053 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  18.468 ±(99.9%) 2.307 ops/ms [Average]
+  (min, avg, max) = (10.113, 18.468, 25.130), stdev = 4.100
+  CI (99.9%): [16.161, 20.775] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 1000)
+
+# Run progress: 8.33% complete, ETA 00:45:33
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3592.829 ops/ms
+# Warmup Iteration   2: 3656.832 ops/ms
+# Warmup Iteration   3: 3259.945 ops/ms
+# Warmup Iteration   4: 3323.136 ops/ms
+# Warmup Iteration   5: 2811.099 ops/ms
+# Warmup Iteration   6: 3077.665 ops/ms
+# Warmup Iteration   7: 1790.596 ops/ms
+# Warmup Iteration   8: 2440.017 ops/ms
+# Warmup Iteration   9: 3175.016 ops/ms
+# Warmup Iteration  10: 1400.853 ops/ms
+Iteration   1: 2223.357 ops/ms
+Iteration   2: 4161.310 ops/ms
+Iteration   3: 3048.015 ops/ms
+Iteration   4: 3684.548 ops/ms
+Iteration   5: 4037.727 ops/ms
+Iteration   6: 2719.535 ops/ms
+Iteration   7: 4333.087 ops/ms
+Iteration   8: 3432.970 ops/ms
+Iteration   9: 4695.367 ops/ms
+Iteration  10: 4638.949 ops/ms
+Iteration  11: 4289.554 ops/ms
+Iteration  12: 4843.549 ops/ms
+Iteration  13: 4859.799 ops/ms
+Iteration  14: 4782.622 ops/ms
+Iteration  15: 4800.302 ops/ms
+Iteration  16: 3850.281 ops/ms
+Iteration  17: 4130.560 ops/ms
+Iteration  18: 3832.065 ops/ms
+Iteration  19: 4248.216 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4637.501 ops/ms
+
+# Run progress: 9.38% complete, ETA 00:44:58
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3795.383 ops/ms
+# Warmup Iteration   2: 4382.881 ops/ms
+# Warmup Iteration   3: 4618.977 ops/ms
+# Warmup Iteration   4: 4623.938 ops/ms
+# Warmup Iteration   5: 4863.801 ops/ms
+# Warmup Iteration   6: 4136.531 ops/ms
+# Warmup Iteration   7: 4810.107 ops/ms
+# Warmup Iteration   8: 4696.078 ops/ms
+# Warmup Iteration   9: 4680.007 ops/ms
+# Warmup Iteration  10: 4749.552 ops/ms
+Iteration   1: 4430.118 ops/ms
+Iteration   2: 4302.847 ops/ms
+Iteration   3: 4382.690 ops/ms
+Iteration   4: 4808.799 ops/ms
+Iteration   5: 4638.186 ops/ms
+Iteration   6: 4616.180 ops/ms
+Iteration   7: 4270.158 ops/ms
+Iteration   8: 4753.117 ops/ms
+Iteration   9: 4681.236 ops/ms
+Iteration  10: 4663.753 ops/ms
+Iteration  11: 4283.894 ops/ms
+Iteration  12: 2771.506 ops/ms
+Iteration  13: 4394.435 ops/ms
+Iteration  14: 4406.587 ops/ms
+Iteration  15: 4093.640 ops/ms
+Iteration  16: 4148.681 ops/ms
+Iteration  17: 2917.070 ops/ms
+Iteration  18: 3391.838 ops/ms
+Iteration  19: 4847.725 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4853.837 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  4172.640 ±(99.9%) 378.208 ops/ms [Average]
+  (min, avg, max) = (2223.357, 4172.640, 4859.799), stdev = 672.264
+  CI (99.9%): [3794.432, 4550.848] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 10000)
+
+# Run progress: 10.42% complete, ETA 00:44:22
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2911.902 ops/ms
+# Warmup Iteration   2: 2122.377 ops/ms
+# Warmup Iteration   3: 3006.129 ops/ms
+# Warmup Iteration   4: 3192.840 ops/ms
+# Warmup Iteration   5: 3278.971 ops/ms
+# Warmup Iteration   6: 3327.376 ops/ms
+# Warmup Iteration   7: 3059.614 ops/ms
+# Warmup Iteration   8: 2883.352 ops/ms
+# Warmup Iteration   9: 3386.791 ops/ms
+# Warmup Iteration  10: 3299.536 ops/ms
+Iteration   1: 3156.763 ops/ms
+Iteration   2: 2721.062 ops/ms
+Iteration   3: 2206.325 ops/ms
+Iteration   4: 2690.779 ops/ms
+Iteration   5: 2668.832 ops/ms
+Iteration   6: 2976.757 ops/ms
+Iteration   7: 3224.542 ops/ms
+Iteration   8: 2608.228 ops/ms
+Iteration   9: 2334.922 ops/ms
+Iteration  10: 2627.441 ops/ms
+Iteration  11: 1504.252 ops/ms
+Iteration  12: 2493.739 ops/ms
+Iteration  13: 1865.897 ops/ms
+Iteration  14: 3023.199 ops/ms
+Iteration  15: 2504.728 ops/ms
+Iteration  16: 2353.345 ops/ms
+Iteration  17: 3241.106 ops/ms
+Iteration  18: 3049.425 ops/ms
+Iteration  19: 2284.041 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3242.653 ops/ms
+
+# Run progress: 11.46% complete, ETA 00:43:47
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3259.114 ops/ms
+# Warmup Iteration   2: 3183.342 ops/ms
+# Warmup Iteration   3: 2698.480 ops/ms
+# Warmup Iteration   4: 2963.546 ops/ms
+# Warmup Iteration   5: 3058.182 ops/ms
+# Warmup Iteration   6: 2525.873 ops/ms
+# Warmup Iteration   7: 3186.634 ops/ms
+# Warmup Iteration   8: 2702.026 ops/ms
+# Warmup Iteration   9: 2381.012 ops/ms
+# Warmup Iteration  10: 2937.931 ops/ms
+Iteration   1: 3124.051 ops/ms
+Iteration   2: 3101.199 ops/ms
+Iteration   3: 3002.297 ops/ms
+Iteration   4: 2702.538 ops/ms
+Iteration   5: 3202.217 ops/ms
+Iteration   6: 3123.391 ops/ms
+Iteration   7: 3162.657 ops/ms
+Iteration   8: 3213.437 ops/ms
+Iteration   9: 2656.224 ops/ms
+Iteration  10: 3010.294 ops/ms
+Iteration  11: 3125.364 ops/ms
+Iteration  12: 3296.410 ops/ms
+Iteration  13: 3175.551 ops/ms
+Iteration  14: 2645.494 ops/ms
+Iteration  15: 2415.288 ops/ms
+Iteration  16: 2917.084 ops/ms
+Iteration  17: 3150.410 ops/ms
+Iteration  18: 3246.380 ops/ms
+Iteration  19: 3211.109 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2832.397 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  2827.296 ±(99.9%) 233.725 ops/ms [Average]
+  (min, avg, max) = (1504.252, 2827.296, 3296.410), stdev = 415.447
+  CI (99.9%): [2593.570, 3061.021] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 1000)
+
+# Run progress: 12.50% complete, ETA 00:43:13
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4414.503 ops/ms
+# Warmup Iteration   2: 4077.544 ops/ms
+# Warmup Iteration   3: 4594.210 ops/ms
+# Warmup Iteration   4: 4246.538 ops/ms
+# Warmup Iteration   5: 4073.546 ops/ms
+# Warmup Iteration   6: 4605.636 ops/ms
+# Warmup Iteration   7: 4587.493 ops/ms
+# Warmup Iteration   8: 4405.608 ops/ms
+# Warmup Iteration   9: 4264.977 ops/ms
+# Warmup Iteration  10: 3236.881 ops/ms
+Iteration   1: 3935.070 ops/ms
+Iteration   2: 4029.235 ops/ms
+Iteration   3: 4412.863 ops/ms
+Iteration   4: 4268.710 ops/ms
+Iteration   5: 3872.964 ops/ms
+Iteration   6: 4441.270 ops/ms
+Iteration   7: 4078.172 ops/ms
+Iteration   8: 3975.149 ops/ms
+Iteration   9: 4170.954 ops/ms
+Iteration  10: 2143.357 ops/ms
+Iteration  11: 3329.827 ops/ms
+Iteration  12: 4208.226 ops/ms
+Iteration  13: 3509.346 ops/ms
+Iteration  14: 3317.832 ops/ms
+Iteration  15: 3460.108 ops/ms
+Iteration  16: 3378.597 ops/ms
+Iteration  17: 2999.873 ops/ms
+Iteration  18: 4429.753 ops/ms
+Iteration  19: 4425.589 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3929.471 ops/ms
+
+# Run progress: 13.54% complete, ETA 00:42:39
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4110.820 ops/ms
+# Warmup Iteration   2: 4355.516 ops/ms
+# Warmup Iteration   3: 4520.104 ops/ms
+# Warmup Iteration   4: 4094.533 ops/ms
+# Warmup Iteration   5: 4340.539 ops/ms
+# Warmup Iteration   6: 4048.109 ops/ms
+# Warmup Iteration   7: 4545.768 ops/ms
+# Warmup Iteration   8: 4538.953 ops/ms
+# Warmup Iteration   9: 4498.331 ops/ms
+# Warmup Iteration  10: 3723.321 ops/ms
+Iteration   1: 3889.047 ops/ms
+Iteration   2: 3652.354 ops/ms
+Iteration   3: 3022.484 ops/ms
+Iteration   4: 3129.240 ops/ms
+Iteration   5: 3882.309 ops/ms
+Iteration   6: 4314.126 ops/ms
+Iteration   7: 3915.020 ops/ms
+Iteration   8: 4005.100 ops/ms
+Iteration   9: 4464.009 ops/ms
+Iteration  10: 4511.182 ops/ms
+Iteration  11: 4515.585 ops/ms
+Iteration  12: 3558.182 ops/ms
+Iteration  13: 3625.429 ops/ms
+Iteration  14: 4160.130 ops/ms
+Iteration  15: 4166.257 ops/ms
+Iteration  16: 2827.720 ops/ms
+Iteration  17: 2962.334 ops/ms
+Iteration  18: 4434.343 ops/ms
+Iteration  19: 4359.498 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4465.313 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  3854.401 ±(99.9%) 317.537 ops/ms [Average]
+  (min, avg, max) = (2143.357, 3854.401, 4515.585), stdev = 564.421
+  CI (99.9%): [3536.864, 4171.937] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 10000)
+
+# Run progress: 14.58% complete, ETA 00:42:06
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2892.614 ops/ms
+# Warmup Iteration   2: 1649.985 ops/ms
+# Warmup Iteration   3: 1719.259 ops/ms
+# Warmup Iteration   4: 2456.331 ops/ms
+# Warmup Iteration   5: 1480.032 ops/ms
+# Warmup Iteration   6: 2400.700 ops/ms
+# Warmup Iteration   7: 2836.067 ops/ms
+# Warmup Iteration   8: 2678.988 ops/ms
+# Warmup Iteration   9: 2931.492 ops/ms
+# Warmup Iteration  10: 3050.782 ops/ms
+Iteration   1: 2991.251 ops/ms
+Iteration   2: 3097.596 ops/ms
+Iteration   3: 2420.481 ops/ms
+Iteration   4: 2166.916 ops/ms
+Iteration   5: 2384.212 ops/ms
+Iteration   6: 2477.859 ops/ms
+Iteration   7: 2661.388 ops/ms
+Iteration   8: 2072.426 ops/ms
+Iteration   9: 2636.359 ops/ms
+Iteration  10: 2848.169 ops/ms
+Iteration  11: 2192.817 ops/ms
+Iteration  12: 2551.194 ops/ms
+Iteration  13: 2831.558 ops/ms
+Iteration  14: 3220.533 ops/ms
+Iteration  15: 3151.042 ops/ms
+Iteration  16: 2833.167 ops/ms
+Iteration  17: 3052.741 ops/ms
+Iteration  18: 2784.582 ops/ms
+Iteration  19: 2007.577 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+607.384 ops/ms
+
+# Run progress: 15.63% complete, ETA 00:41:37
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1969.493 ops/ms
+# Warmup Iteration   2: 2553.022 ops/ms
+# Warmup Iteration   3: 2880.659 ops/ms
+# Warmup Iteration   4: 3052.527 ops/ms
+# Warmup Iteration   5: 3069.724 ops/ms
+# Warmup Iteration   6: 3052.839 ops/ms
+# Warmup Iteration   7: 2823.497 ops/ms
+# Warmup Iteration   8: 2531.537 ops/ms
+# Warmup Iteration   9: 2846.177 ops/ms
+# Warmup Iteration  10: 2729.983 ops/ms
+Iteration   1: 3055.278 ops/ms
+Iteration   2: 2369.044 ops/ms
+Iteration   3: 3029.285 ops/ms
+Iteration   4: 2762.741 ops/ms
+Iteration   5: 2594.410 ops/ms
+Iteration   6: 1948.090 ops/ms
+Iteration   7: 2061.687 ops/ms
+Iteration   8: 2663.363 ops/ms
+Iteration   9: 3207.388 ops/ms
+Iteration  10: 3237.951 ops/ms
+Iteration  11: 3092.598 ops/ms
+Iteration  12: 3184.214 ops/ms
+Iteration  13: 2762.057 ops/ms
+Iteration  14: 3170.215 ops/ms
+Iteration  15: 3227.136 ops/ms
+Iteration  16: 3084.847 ops/ms
+Iteration  17: 3200.616 ops/ms
+Iteration  18: 2653.000 ops/ms
+Iteration  19: 2595.713 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2851.301 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  2693.505 ±(99.9%) 287.136 ops/ms [Average]
+  (min, avg, max) = (607.384, 2693.505, 3237.951), stdev = 510.385
+  CI (99.9%): [2406.368, 2980.641] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 1000)
+
+# Run progress: 16.67% complete, ETA 00:41:10
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14052.469 ops/ms
+# Warmup Iteration   2: 24890.757 ops/ms
+# Warmup Iteration   3: 25863.384 ops/ms
+# Warmup Iteration   4: 21034.694 ops/ms
+# Warmup Iteration   5: 11493.186 ops/ms
+# Warmup Iteration   6: 12701.331 ops/ms
+# Warmup Iteration   7: 15432.683 ops/ms
+# Warmup Iteration   8: 13989.065 ops/ms
+# Warmup Iteration   9: 25109.849 ops/ms
+# Warmup Iteration  10: 20258.205 ops/ms
+Iteration   1: 28873.013 ops/ms
+Iteration   2: 28483.340 ops/ms
+Iteration   3: 22265.683 ops/ms
+Iteration   4: 23660.828 ops/ms
+Iteration   5: 25760.207 ops/ms
+Iteration   6: 23917.468 ops/ms
+Iteration   7: 18153.317 ops/ms
+Iteration   8: 16448.682 ops/ms
+Iteration   9: 21063.700 ops/ms
+Iteration  10: 25537.579 ops/ms
+Iteration  11: 20775.436 ops/ms
+Iteration  12: 28492.542 ops/ms
+Iteration  13: 22463.193 ops/ms
+Iteration  14: 29653.601 ops/ms
+Iteration  15: 26393.886 ops/ms
+Iteration  16: 27654.614 ops/ms
+Iteration  17: 29248.114 ops/ms
+Iteration  18: 27565.744 ops/ms
+Iteration  19: 18727.476 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+21301.379 ops/ms
+
+# Run progress: 17.71% complete, ETA 00:40:38
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+19837.081 ops/ms
+# Warmup Iteration   2: 25122.523 ops/ms
+# Warmup Iteration   3: 23964.750 ops/ms
+# Warmup Iteration   4: 27294.236 ops/ms
+# Warmup Iteration   5: 30397.088 ops/ms
+# Warmup Iteration   6: 27960.538 ops/ms
+# Warmup Iteration   7: 2569.443 ops/ms
+# Warmup Iteration   8: 14425.369 ops/ms
+# Warmup Iteration   9: 12630.333 ops/ms
+# Warmup Iteration  10: 8509.307 ops/ms
+Iteration   1: 6958.947 ops/ms
+Iteration   2: 7599.747 ops/ms
+Iteration   3: 9925.686 ops/ms
+Iteration   4: 7920.826 ops/ms
+Iteration   5: 17039.408 ops/ms
+Iteration   6: 2657.760 ops/ms
+Iteration   7: 10837.735 ops/ms
+Iteration   8: 8888.114 ops/ms
+Iteration   9: 6533.995 ops/ms
+Iteration  10: 8630.805 ops/ms
+Iteration  11: 9650.201 ops/ms
+Iteration  12: 4187.788 ops/ms
+Iteration  13: 13679.716 ops/ms
+Iteration  14: 11739.644 ops/ms
+Iteration  15: 7543.110 ops/ms
+Iteration  16: 7949.313 ops/ms
+Iteration  17: 9288.796 ops/ms
+Iteration  18: 7085.949 ops/ms
+Iteration  19: 5532.205 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+7668.960 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  16443.963 ±(99.9%) 4921.591 ops/ms [Average]
+  (min, avg, max) = (2657.760, 16443.963, 29653.601), stdev = 8748.124
+  CI (99.9%): [11522.372, 21365.554] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 10000)
+
+# Run progress: 18.75% complete, ETA 00:40:14
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1843.348 ops/ms
+# Warmup Iteration   2: 940.195 ops/ms
+# Warmup Iteration   3: 985.459 ops/ms
+# Warmup Iteration   4: 1778.036 ops/ms
+# Warmup Iteration   5: 1411.924 ops/ms
+# Warmup Iteration   6: 3371.473 ops/ms
+# Warmup Iteration   7: 3029.981 ops/ms
+# Warmup Iteration   8: 3508.032 ops/ms
+# Warmup Iteration   9: 5379.231 ops/ms
+# Warmup Iteration  10: 1123.770 ops/ms
+Iteration   1: 3269.992 ops/ms
+Iteration   2: 3895.648 ops/ms
+Iteration   3: 737.495 ops/ms
+Iteration   4: 2955.684 ops/ms
+Iteration   5: 3190.771 ops/ms
+Iteration   6: 71.621 ops/ms
+Iteration   7: 4294.710 ops/ms
+Iteration   8: 4031.450 ops/ms
+Iteration   9: 2615.195 ops/ms
+Iteration  10: 297.548 ops/ms
+Iteration  11: 2700.118 ops/ms
+Iteration  12: 5948.556 ops/ms
+Iteration  13: 10561.652 ops/ms
+Iteration  14: 12889.539 ops/ms
+Iteration  15: 10904.146 ops/ms
+Iteration  16: 9967.891 ops/ms
+Iteration  17: 6253.395 ops/ms
+Iteration  18: 9307.947 ops/ms
+Iteration  19: 9722.169 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12776.790 ops/ms
+
+# Run progress: 19.79% complete, ETA 00:40:02
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3535.012 ops/ms
+# Warmup Iteration   2: 3592.443 ops/ms
+# Warmup Iteration   3: 10970.310 ops/ms
+# Warmup Iteration   4: 12807.779 ops/ms
+# Warmup Iteration   5: 12636.891 ops/ms
+# Warmup Iteration   6: 17972.173 ops/ms
+# Warmup Iteration   7: 7269.503 ops/ms
+# Warmup Iteration   8: 13643.699 ops/ms
+# Warmup Iteration   9: 12485.633 ops/ms
+# Warmup Iteration  10: 11309.874 ops/ms
+Iteration   1: 10826.170 ops/ms
+Iteration   2: 6571.364 ops/ms
+Iteration   3: 13107.083 ops/ms
+Iteration   4: 12013.799 ops/ms
+Iteration   5: 8952.648 ops/ms
+Iteration   6: 3549.509 ops/ms
+Iteration   7: 4496.646 ops/ms
+Iteration   8: 5605.530 ops/ms
+Iteration   9: 6975.271 ops/ms
+Iteration  10: 3187.739 ops/ms
+Iteration  11: 9664.288 ops/ms
+Iteration  12: 5195.908 ops/ms
+Iteration  13: 4406.907 ops/ms
+Iteration  14: 7274.479 ops/ms
+Iteration  15: 15007.706 ops/ms
+Iteration  16: 14028.061 ops/ms
+Iteration  17: 8564.432 ops/ms
+Iteration  18: 5758.495 ops/ms
+Iteration  19: 15214.330 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14158.746 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  7273.786 ±(99.9%) 2426.826 ops/ms [Average]
+  (min, avg, max) = (71.621, 7273.786, 15214.330), stdev = 4313.682
+  CI (99.9%): [4846.960, 9700.612] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 1000)
+
+# Run progress: 20.83% complete, ETA 00:39:29
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+137.374 ops/ms
+# Warmup Iteration   2: 120.413 ops/ms
+# Warmup Iteration   3: 119.365 ops/ms
+# Warmup Iteration   4: 138.244 ops/ms
+# Warmup Iteration   5: 138.587 ops/ms
+# Warmup Iteration   6: 138.714 ops/ms
+# Warmup Iteration   7: 138.095 ops/ms
+# Warmup Iteration   8: 118.216 ops/ms
+# Warmup Iteration   9: 138.517 ops/ms
+# Warmup Iteration  10: 137.994 ops/ms
+Iteration   1: 138.826 ops/ms
+Iteration   2: 137.662 ops/ms
+Iteration   3: 117.114 ops/ms
+Iteration   4: 136.814 ops/ms
+Iteration   5: 138.137 ops/ms
+Iteration   6: 138.349 ops/ms
+Iteration   7: 137.491 ops/ms
+Iteration   8: 128.338 ops/ms
+Iteration   9: 125.435 ops/ms
+Iteration  10: 136.576 ops/ms
+Iteration  11: 138.625 ops/ms
+Iteration  12: 137.914 ops/ms
+Iteration  13: 137.779 ops/ms
+Iteration  14: 117.827 ops/ms
+Iteration  15: 137.133 ops/ms
+Iteration  16: 138.346 ops/ms
+Iteration  17: 139.027 ops/ms
+Iteration  18: 137.303 ops/ms
+Iteration  19: 117.174 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+136.477 ops/ms
+
+# Run progress: 21.88% complete, ETA 00:38:57
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+136.110 ops/ms
+# Warmup Iteration   2: 135.530 ops/ms
+# Warmup Iteration   3: 134.327 ops/ms
+# Warmup Iteration   4: 113.960 ops/ms
+# Warmup Iteration   5: 137.090 ops/ms
+# Warmup Iteration   6: 135.754 ops/ms
+# Warmup Iteration   7: 65.761 ops/ms
+# Warmup Iteration   8: 26.583 ops/ms
+# Warmup Iteration   9: 25.198 ops/ms
+# Warmup Iteration  10: 22.958 ops/ms
+Iteration   1: 60.400 ops/ms
+Iteration   2: 87.322 ops/ms
+Iteration   3: 133.141 ops/ms
+Iteration   4: 136.928 ops/ms
+Iteration   5: 137.681 ops/ms
+Iteration   6: 116.661 ops/ms
+Iteration   7: 134.432 ops/ms
+Iteration   8: 136.021 ops/ms
+Iteration   9: 136.627 ops/ms
+Iteration  10: 131.454 ops/ms
+Iteration  11: 96.245 ops/ms
+Iteration  12: 129.801 ops/ms
+Iteration  13: 129.652 ops/ms
+Iteration  14: 123.141 ops/ms
+Iteration  15: 126.683 ops/ms
+Iteration  16: 118.665 ops/ms
+Iteration  17: 119.320 ops/ms
+Iteration  18: 132.725 ops/ms
+Iteration  19: 138.120 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+136.285 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  128.341 ±(99.9%) 8.973 ops/ms [Average]
+  (min, avg, max) = (60.400, 128.341, 139.027), stdev = 15.949
+  CI (99.9%): [119.368, 137.314] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 10000)
+
+# Run progress: 22.92% complete, ETA 00:38:24
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11.544 ops/ms
+# Warmup Iteration   2: 13.544 ops/ms
+# Warmup Iteration   3: 13.833 ops/ms
+# Warmup Iteration   4: 13.871 ops/ms
+# Warmup Iteration   5: 13.889 ops/ms
+# Warmup Iteration   6: 11.571 ops/ms
+# Warmup Iteration   7: 13.847 ops/ms
+# Warmup Iteration   8: 13.810 ops/ms
+# Warmup Iteration   9: 13.898 ops/ms
+# Warmup Iteration  10: 13.883 ops/ms
+Iteration   1: 12.285 ops/ms
+Iteration   2: 13.270 ops/ms
+Iteration   3: 13.894 ops/ms
+Iteration   4: 13.844 ops/ms
+Iteration   5: 13.790 ops/ms
+Iteration   6: 13.726 ops/ms
+Iteration   7: 11.795 ops/ms
+Iteration   8: 13.825 ops/ms
+Iteration   9: 13.909 ops/ms
+Iteration  10: 13.763 ops/ms
+Iteration  11: 13.848 ops/ms
+Iteration  12: 11.335 ops/ms
+Iteration  13: 13.516 ops/ms
+Iteration  14: 10.898 ops/ms
+Iteration  15: 11.301 ops/ms
+Iteration  16: 12.922 ops/ms
+Iteration  17: 11.185 ops/ms
+Iteration  18: 13.636 ops/ms
+Iteration  19: 13.413 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12.674 ops/ms
+
+# Run progress: 23.96% complete, ETA 00:37:53
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+10.443 ops/ms
+# Warmup Iteration   2: 12.516 ops/ms
+# Warmup Iteration   3: 13.282 ops/ms
+# Warmup Iteration   4: 13.567 ops/ms
+# Warmup Iteration   5: 13.504 ops/ms
+# Warmup Iteration   6: 13.106 ops/ms
+# Warmup Iteration   7: 12.323 ops/ms
+# Warmup Iteration   8: 13.642 ops/ms
+# Warmup Iteration   9: 13.506 ops/ms
+# Warmup Iteration  10: 13.831 ops/ms
+Iteration   1: 13.855 ops/ms
+Iteration   2: 11.729 ops/ms
+Iteration   3: 13.852 ops/ms
+Iteration   4: 13.831 ops/ms
+Iteration   5: 13.801 ops/ms
+Iteration   6: 12.238 ops/ms
+Iteration   7: 8.023 ops/ms
+Iteration   8: 11.092 ops/ms
+Iteration   9: 13.080 ops/ms
+Iteration  10: 11.224 ops/ms
+Iteration  11: 13.254 ops/ms
+Iteration  12: 11.046 ops/ms
+Iteration  13: 8.430 ops/ms
+Iteration  14: 13.658 ops/ms
+Iteration  15: 13.483 ops/ms
+Iteration  16: 13.127 ops/ms
+Iteration  17: 12.110 ops/ms
+Iteration  18: 10.336 ops/ms
+Iteration  19: 12.832 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12.594 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  12.561 ±(99.9%) 0.827 ops/ms [Average]
+  (min, avg, max) = (8.023, 12.561, 13.909), stdev = 1.469
+  CI (99.9%): [11.734, 13.387] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 1000)
+
+# Run progress: 25.00% complete, ETA 00:37:22
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+5472.802 ops/ms
+# Warmup Iteration   2: 6077.081 ops/ms
+# Warmup Iteration   3: 5095.364 ops/ms
+# Warmup Iteration   4: 6427.380 ops/ms
+# Warmup Iteration   5: 6420.407 ops/ms
+# Warmup Iteration   6: 6257.268 ops/ms
+# Warmup Iteration   7: 5872.681 ops/ms
+# Warmup Iteration   8: 4764.229 ops/ms
+# Warmup Iteration   9: 5248.151 ops/ms
+# Warmup Iteration  10: 6184.554 ops/ms
+Iteration   1: 6050.788 ops/ms
+Iteration   2: 6138.840 ops/ms
+Iteration   3: 5248.360 ops/ms
+Iteration   4: 6228.741 ops/ms
+Iteration   5: 6235.825 ops/ms
+Iteration   6: 6440.195 ops/ms
+Iteration   7: 6355.264 ops/ms
+Iteration   8: 5373.022 ops/ms
+Iteration   9: 6434.680 ops/ms
+Iteration  10: 6423.366 ops/ms
+Iteration  11: 6248.177 ops/ms
+Iteration  12: 6432.982 ops/ms
+Iteration  13: 5509.367 ops/ms
+Iteration  14: 5954.767 ops/ms
+Iteration  15: 6052.403 ops/ms
+Iteration  16: 6340.564 ops/ms
+Iteration  17: 4673.787 ops/ms
+Iteration  18: 5246.452 ops/ms
+Iteration  19: 5396.436 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+6005.020 ops/ms
+
+# Run progress: 26.04% complete, ETA 00:36:50
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+6003.462 ops/ms
+# Warmup Iteration   2: 5919.253 ops/ms
+# Warmup Iteration   3: 5550.870 ops/ms
+# Warmup Iteration   4: 4745.784 ops/ms
+# Warmup Iteration   5: 5836.974 ops/ms
+# Warmup Iteration   6: 5902.885 ops/ms
+# Warmup Iteration   7: 5797.885 ops/ms
+# Warmup Iteration   8: 5081.795 ops/ms
+# Warmup Iteration   9: 3713.030 ops/ms
+# Warmup Iteration  10: 3544.266 ops/ms
+Iteration   1: 3330.108 ops/ms
+Iteration   2: 2942.291 ops/ms
+Iteration   3: 4125.071 ops/ms
+Iteration   4: 3252.536 ops/ms
+Iteration   5: 5726.344 ops/ms
+Iteration   6: 5700.753 ops/ms
+Iteration   7: 5715.825 ops/ms
+Iteration   8: 4280.996 ops/ms
+Iteration   9: 3919.011 ops/ms
+Iteration  10: 3757.210 ops/ms
+Iteration  11: 1956.396 ops/ms
+Iteration  12: 4061.178 ops/ms
+Iteration  13: 4527.977 ops/ms
+Iteration  14: 4243.655 ops/ms
+Iteration  15: 3814.826 ops/ms
+Iteration  16: 4853.468 ops/ms
+Iteration  17: 4324.658 ops/ms
+Iteration  18: 5821.459 ops/ms
+Iteration  19: 5928.545 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4902.158 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  5149.337 ±(99.9%) 647.964 ops/ms [Average]
+  (min, avg, max) = (1956.396, 5149.337, 6440.195), stdev = 1151.755
+  CI (99.9%): [4501.374, 5797.301] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 10000)
+
+# Run progress: 27.08% complete, ETA 00:36:18
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3926.102 ops/ms
+# Warmup Iteration   2: 3763.673 ops/ms
+# Warmup Iteration   3: 2668.890 ops/ms
+# Warmup Iteration   4: 824.440 ops/ms
+# Warmup Iteration   5: 954.099 ops/ms
+# Warmup Iteration   6: 848.296 ops/ms
+# Warmup Iteration   7: 658.503 ops/ms
+# Warmup Iteration   8: 1950.328 ops/ms
+# Warmup Iteration   9: 2125.535 ops/ms
+# Warmup Iteration  10: 2347.865 ops/ms
+Iteration   1: 3318.496 ops/ms
+Iteration   2: 3006.657 ops/ms
+Iteration   3: 4130.292 ops/ms
+Iteration   4: 4439.381 ops/ms
+Iteration   5: 3802.606 ops/ms
+Iteration   6: 2639.870 ops/ms
+Iteration   7: 3242.491 ops/ms
+Iteration   8: 3426.242 ops/ms
+Iteration   9: 3970.783 ops/ms
+Iteration  10: 3358.502 ops/ms
+Iteration  11: 2788.838 ops/ms
+Iteration  12: 3071.911 ops/ms
+Iteration  13: 3747.100 ops/ms
+Iteration  14: 4045.490 ops/ms
+Iteration  15: 4699.434 ops/ms
+Iteration  16: 4201.056 ops/ms
+Iteration  17: 3934.582 ops/ms
+Iteration  18: 4010.839 ops/ms
+Iteration  19: 4611.109 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4497.126 ops/ms
+
+# Run progress: 28.13% complete, ETA 00:35:46
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2810.898 ops/ms
+# Warmup Iteration   2: 3052.113 ops/ms
+# Warmup Iteration   3: 4340.369 ops/ms
+# Warmup Iteration   4: 4307.394 ops/ms
+# Warmup Iteration   5: 3789.137 ops/ms
+# Warmup Iteration   6: 1933.657 ops/ms
+# Warmup Iteration   7: 1823.024 ops/ms
+# Warmup Iteration   8: 1987.172 ops/ms
+# Warmup Iteration   9: 1967.594 ops/ms
+# Warmup Iteration  10: 2698.386 ops/ms
+Iteration   1: 3443.015 ops/ms
+Iteration   2: 3770.117 ops/ms
+Iteration   3: 4719.460 ops/ms
+Iteration   4: 4533.991 ops/ms
+Iteration   5: 4178.982 ops/ms
+Iteration   6: 4207.673 ops/ms
+Iteration   7: 2642.192 ops/ms
+Iteration   8: 3828.718 ops/ms
+Iteration   9: 3965.300 ops/ms
+Iteration  10: 3887.195 ops/ms
+Iteration  11: 4042.430 ops/ms
+Iteration  12: 4525.700 ops/ms
+Iteration  13: 2803.375 ops/ms
+Iteration  14: 4603.586 ops/ms
+Iteration  15: 4492.158 ops/ms
+Iteration  16: 4621.384 ops/ms
+Iteration  17: 4780.838 ops/ms
+Iteration  18: 4013.560 ops/ms
+Iteration  19: 4800.543 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4683.773 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  3937.170 ±(99.9%) 358.148 ops/ms [Average]
+  (min, avg, max) = (2639.870, 3937.170, 4800.543), stdev = 636.607
+  CI (99.9%): [3579.022, 4295.318] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 1000)
+
+# Run progress: 29.17% complete, ETA 00:35:14
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3313.047 ops/ms
+# Warmup Iteration   2: 3329.187 ops/ms
+# Warmup Iteration   3: 3146.504 ops/ms
+# Warmup Iteration   4: 3667.504 ops/ms
+# Warmup Iteration   5: 3253.469 ops/ms
+# Warmup Iteration   6: 3123.584 ops/ms
+# Warmup Iteration   7: 3437.297 ops/ms
+# Warmup Iteration   8: 2845.722 ops/ms
+# Warmup Iteration   9: 3191.536 ops/ms
+# Warmup Iteration  10: 2392.824 ops/ms
+Iteration   1: 3258.311 ops/ms
+Iteration   2: 3166.488 ops/ms
+Iteration   3: 2919.713 ops/ms
+Iteration   4: 3215.804 ops/ms
+Iteration   5: 3451.021 ops/ms
+Iteration   6: 3390.546 ops/ms
+Iteration   7: 3462.911 ops/ms
+Iteration   8: 3496.467 ops/ms
+Iteration   9: 2379.781 ops/ms
+Iteration  10: 2476.284 ops/ms
+Iteration  11: 3285.922 ops/ms
+Iteration  12: 3285.614 ops/ms
+Iteration  13: 2106.590 ops/ms
+Iteration  14: 2566.051 ops/ms
+Iteration  15: 3515.407 ops/ms
+Iteration  16: 3466.203 ops/ms
+Iteration  17: 3396.430 ops/ms
+Iteration  18: 3429.337 ops/ms
+Iteration  19: 2987.764 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3554.176 ops/ms
+
+# Run progress: 30.21% complete, ETA 00:34:42
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3422.558 ops/ms
+# Warmup Iteration   2: 3432.564 ops/ms
+# Warmup Iteration   3: 3654.959 ops/ms
+# Warmup Iteration   4: 3117.957 ops/ms
+# Warmup Iteration   5: 3301.676 ops/ms
+# Warmup Iteration   6: 3294.700 ops/ms
+# Warmup Iteration   7: 3249.428 ops/ms
+# Warmup Iteration   8: 3277.912 ops/ms
+# Warmup Iteration   9: 2670.932 ops/ms
+# Warmup Iteration  10: 2855.329 ops/ms
+Iteration   1: 3512.058 ops/ms
+Iteration   2: 3520.195 ops/ms
+Iteration   3: 2387.665 ops/ms
+Iteration   4: 2966.256 ops/ms
+Iteration   5: 2697.339 ops/ms
+Iteration   6: 3481.783 ops/ms
+Iteration   7: 3345.738 ops/ms
+Iteration   8: 3573.109 ops/ms
+Iteration   9: 3527.889 ops/ms
+Iteration  10: 3041.439 ops/ms
+Iteration  11: 3437.074 ops/ms
+Iteration  12: 3603.005 ops/ms
+Iteration  13: 3368.182 ops/ms
+Iteration  14: 3453.981 ops/ms
+Iteration  15: 3085.572 ops/ms
+Iteration  16: 3333.537 ops/ms
+Iteration  17: 3632.859 ops/ms
+Iteration  18: 2957.750 ops/ms
+Iteration  19: 3551.575 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3502.684 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  3219.763 ±(99.9%) 218.966 ops/ms [Average]
+  (min, avg, max) = (2106.590, 3219.763, 3632.859), stdev = 389.212
+  CI (99.9%): [3000.797, 3438.729] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 10000)
+
+# Run progress: 31.25% complete, ETA 00:34:09
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2169.119 ops/ms
+# Warmup Iteration   2: 2202.496 ops/ms
+# Warmup Iteration   3: 2307.693 ops/ms
+# Warmup Iteration   4: 2479.030 ops/ms
+# Warmup Iteration   5: 2300.389 ops/ms
+# Warmup Iteration   6: 2493.096 ops/ms
+# Warmup Iteration   7: 2673.375 ops/ms
+# Warmup Iteration   8: 2593.351 ops/ms
+# Warmup Iteration   9: 2534.277 ops/ms
+# Warmup Iteration  10: 2369.155 ops/ms
+Iteration   1: 2067.830 ops/ms
+Iteration   2: 2458.203 ops/ms
+Iteration   3: 2295.567 ops/ms
+Iteration   4: 2411.326 ops/ms
+Iteration   5: 2565.578 ops/ms
+Iteration   6: 2137.715 ops/ms
+Iteration   7: 2406.759 ops/ms
+Iteration   8: 2609.513 ops/ms
+Iteration   9: 2594.719 ops/ms
+Iteration  10: 2599.755 ops/ms
+Iteration  11: 2183.786 ops/ms
+Iteration  12: 2588.526 ops/ms
+Iteration  13: 2727.309 ops/ms
+Iteration  14: 2725.370 ops/ms
+Iteration  15: 2652.725 ops/ms
+Iteration  16: 2532.775 ops/ms
+Iteration  17: 2342.276 ops/ms
+Iteration  18: 2519.897 ops/ms
+Iteration  19: 2685.102 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2653.126 ops/ms
+
+# Run progress: 32.29% complete, ETA 00:33:37
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1741.588 ops/ms
+# Warmup Iteration   2: 1705.881 ops/ms
+# Warmup Iteration   3: 2573.206 ops/ms
+# Warmup Iteration   4: 2659.173 ops/ms
+# Warmup Iteration   5: 2608.385 ops/ms
+# Warmup Iteration   6: 2681.912 ops/ms
+# Warmup Iteration   7: 1852.897 ops/ms
+# Warmup Iteration   8: 2558.903 ops/ms
+# Warmup Iteration   9: 2580.347 ops/ms
+# Warmup Iteration  10: 2571.710 ops/ms
+Iteration   1: 2622.895 ops/ms
+Iteration   2: 2133.151 ops/ms
+Iteration   3: 2678.641 ops/ms
+Iteration   4: 2630.638 ops/ms
+Iteration   5: 2585.277 ops/ms
+Iteration   6: 2571.616 ops/ms
+Iteration   7: 2389.322 ops/ms
+Iteration   8: 2281.217 ops/ms
+Iteration   9: 2522.741 ops/ms
+Iteration  10: 2523.488 ops/ms
+Iteration  11: 2616.287 ops/ms
+Iteration  12: 2438.811 ops/ms
+Iteration  13: 2128.833 ops/ms
+Iteration  14: 2498.730 ops/ms
+Iteration  15: 2575.386 ops/ms
+Iteration  16: 2589.362 ops/ms
+Iteration  17: 2400.546 ops/ms
+Iteration  18: 2086.136 ops/ms
+Iteration  19: 2124.967 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+1938.405 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  2452.358 ±(99.9%) 118.091 ops/ms [Average]
+  (min, avg, max) = (1938.405, 2452.358, 2727.309), stdev = 209.907
+  CI (99.9%): [2334.266, 2570.449] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 1000)
+
+# Run progress: 33.33% complete, ETA 00:33:05
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+248.188 ops/ms
+# Warmup Iteration   2: 242.592 ops/ms
+# Warmup Iteration   3: 219.778 ops/ms
+# Warmup Iteration   4: 245.304 ops/ms
+# Warmup Iteration   5: 243.369 ops/ms
+# Warmup Iteration   6: 255.536 ops/ms
+# Warmup Iteration   7: 258.054 ops/ms
+# Warmup Iteration   8: 210.506 ops/ms
+# Warmup Iteration   9: 255.838 ops/ms
+# Warmup Iteration  10: 260.740 ops/ms
+Iteration   1: 259.996 ops/ms
+Iteration   2: 252.209 ops/ms
+Iteration   3: 239.046 ops/ms
+Iteration   4: 198.533 ops/ms
+Iteration   5: 205.770 ops/ms
+Iteration   6: 230.914 ops/ms
+Iteration   7: 226.762 ops/ms
+Iteration   8: 204.858 ops/ms
+Iteration   9: 88.552 ops/ms
+Iteration  10: 190.312 ops/ms
+Iteration  11: 252.378 ops/ms
+Iteration  12: 251.873 ops/ms
+Iteration  13: 202.148 ops/ms
+Iteration  14: 199.897 ops/ms
+Iteration  15: 187.519 ops/ms
+Iteration  16: 207.341 ops/ms
+Iteration  17: 246.465 ops/ms
+Iteration  18: 259.367 ops/ms
+Iteration  19: 256.723 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+222.490 ops/ms
+
+# Run progress: 34.38% complete, ETA 00:32:34
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+255.162 ops/ms
+# Warmup Iteration   2: 258.914 ops/ms
+# Warmup Iteration   3: 260.445 ops/ms
+# Warmup Iteration   4: 260.101 ops/ms
+# Warmup Iteration   5: 222.345 ops/ms
+# Warmup Iteration   6: 215.818 ops/ms
+# Warmup Iteration   7: 218.595 ops/ms
+# Warmup Iteration   8: 260.644 ops/ms
+# Warmup Iteration   9: 258.938 ops/ms
+# Warmup Iteration  10: 220.974 ops/ms
+Iteration   1: 258.693 ops/ms
+Iteration   2: 261.288 ops/ms
+Iteration   3: 259.922 ops/ms
+Iteration   4: 257.843 ops/ms
+Iteration   5: 221.699 ops/ms
+Iteration   6: 259.891 ops/ms
+Iteration   7: 260.749 ops/ms
+Iteration   8: 260.491 ops/ms
+Iteration   9: 262.080 ops/ms
+Iteration  10: 224.902 ops/ms
+Iteration  11: 254.304 ops/ms
+Iteration  12: 259.229 ops/ms
+Iteration  13: 260.851 ops/ms
+Iteration  14: 258.947 ops/ms
+Iteration  15: 253.960 ops/ms
+Iteration  16: 230.740 ops/ms
+Iteration  17: 260.612 ops/ms
+Iteration  18: 258.874 ops/ms
+Iteration  19: 260.495 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+259.353 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  236.702 ±(99.9%) 19.132 ops/ms [Average]
+  (min, avg, max) = (88.552, 236.702, 262.080), stdev = 34.007
+  CI (99.9%): [217.570, 255.834] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 10000)
+
+# Run progress: 35.42% complete, ETA 00:32:02
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+27.155 ops/ms
+# Warmup Iteration   2: 26.872 ops/ms
+# Warmup Iteration   3: 26.517 ops/ms
+# Warmup Iteration   4: 26.323 ops/ms
+# Warmup Iteration   5: 25.238 ops/ms
+# Warmup Iteration   6: 23.898 ops/ms
+# Warmup Iteration   7: 26.369 ops/ms
+# Warmup Iteration   8: 26.516 ops/ms
+# Warmup Iteration   9: 26.543 ops/ms
+# Warmup Iteration  10: 26.402 ops/ms
+Iteration   1: 22.581 ops/ms
+Iteration   2: 26.428 ops/ms
+Iteration   3: 26.518 ops/ms
+Iteration   4: 26.396 ops/ms
+Iteration   5: 26.659 ops/ms
+Iteration   6: 22.351 ops/ms
+Iteration   7: 25.892 ops/ms
+Iteration   8: 26.187 ops/ms
+Iteration   9: 23.227 ops/ms
+Iteration  10: 24.237 ops/ms
+Iteration  11: 20.847 ops/ms
+Iteration  12: 20.510 ops/ms
+Iteration  13: 24.899 ops/ms
+Iteration  14: 26.489 ops/ms
+Iteration  15: 25.195 ops/ms
+Iteration  16: 22.459 ops/ms
+Iteration  17: 26.095 ops/ms
+Iteration  18: 26.395 ops/ms
+Iteration  19: 26.333 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+25.825 ops/ms
+
+# Run progress: 36.46% complete, ETA 00:31:31
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+22.148 ops/ms
+# Warmup Iteration   2: 26.284 ops/ms
+# Warmup Iteration   3: 26.512 ops/ms
+# Warmup Iteration   4: 26.009 ops/ms
+# Warmup Iteration   5: 26.589 ops/ms
+# Warmup Iteration   6: 24.122 ops/ms
+# Warmup Iteration   7: 24.760 ops/ms
+# Warmup Iteration   8: 26.574 ops/ms
+# Warmup Iteration   9: 26.619 ops/ms
+# Warmup Iteration  10: 26.526 ops/ms
+Iteration   1: 26.456 ops/ms
+Iteration   2: 22.506 ops/ms
+Iteration   3: 26.314 ops/ms
+Iteration   4: 26.380 ops/ms
+Iteration   5: 26.361 ops/ms
+Iteration   6: 26.461 ops/ms
+Iteration   7: 22.565 ops/ms
+Iteration   8: 26.576 ops/ms
+Iteration   9: 26.307 ops/ms
+Iteration  10: 26.234 ops/ms
+Iteration  11: 26.485 ops/ms
+Iteration  12: 22.384 ops/ms
+Iteration  13: 26.370 ops/ms
+Iteration  14: 26.543 ops/ms
+Iteration  15: 26.137 ops/ms
+Iteration  16: 25.363 ops/ms
+Iteration  17: 18.280 ops/ms
+Iteration  18: 22.096 ops/ms
+Iteration  19: 26.392 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+26.284 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  24.950 ±(99.9%) 1.205 ops/ms [Average]
+  (min, avg, max) = (18.280, 24.950, 26.659), stdev = 2.142
+  CI (99.9%): [23.745, 26.156] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 1000)
+
+# Run progress: 37.50% complete, ETA 00:30:59
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+252.681 ops/ms
+# Warmup Iteration   2: 201.826 ops/ms
+# Warmup Iteration   3: 168.184 ops/ms
+# Warmup Iteration   4: 257.249 ops/ms
+# Warmup Iteration   5: 258.480 ops/ms
+# Warmup Iteration   6: 259.742 ops/ms
+# Warmup Iteration   7: 222.749 ops/ms
+# Warmup Iteration   8: 256.235 ops/ms
+# Warmup Iteration   9: 258.595 ops/ms
+# Warmup Iteration  10: 260.296 ops/ms
+Iteration   1: 258.950 ops/ms
+Iteration   2: 242.953 ops/ms
+Iteration   3: 237.882 ops/ms
+Iteration   4: 258.237 ops/ms
+Iteration   5: 257.744 ops/ms
+Iteration   6: 258.213 ops/ms
+Iteration   7: 260.056 ops/ms
+Iteration   8: 220.858 ops/ms
+Iteration   9: 253.481 ops/ms
+Iteration  10: 256.533 ops/ms
+Iteration  11: 257.833 ops/ms
+Iteration  12: 252.915 ops/ms
+Iteration  13: 202.731 ops/ms
+Iteration  14: 241.897 ops/ms
+Iteration  15: 236.314 ops/ms
+Iteration  16: 229.517 ops/ms
+Iteration  17: 242.264 ops/ms
+Iteration  18: 212.487 ops/ms
+Iteration  19: 250.342 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+138.316 ops/ms
+
+# Run progress: 38.54% complete, ETA 00:30:28
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+161.705 ops/ms
+# Warmup Iteration   2: 154.283 ops/ms
+# Warmup Iteration   3: 166.984 ops/ms
+# Warmup Iteration   4: 223.538 ops/ms
+# Warmup Iteration   5: 203.673 ops/ms
+# Warmup Iteration   6: 254.255 ops/ms
+# Warmup Iteration   7: 259.017 ops/ms
+# Warmup Iteration   8: 220.042 ops/ms
+# Warmup Iteration   9: 191.405 ops/ms
+# Warmup Iteration  10: 229.393 ops/ms
+Iteration   1: 222.294 ops/ms
+Iteration   2: 240.073 ops/ms
+Iteration   3: 184.554 ops/ms
+Iteration   4: 223.657 ops/ms
+Iteration   5: 185.942 ops/ms
+Iteration   6: 162.810 ops/ms
+Iteration   7: 182.310 ops/ms
+Iteration   8: 168.965 ops/ms
+Iteration   9: 183.284 ops/ms
+Iteration  10: 204.266 ops/ms
+Iteration  11: 169.480 ops/ms
+Iteration  12: 195.669 ops/ms
+Iteration  13: 167.927 ops/ms
+Iteration  14: 136.802 ops/ms
+Iteration  15: 188.790 ops/ms
+Iteration  16: 214.216 ops/ms
+Iteration  17: 213.716 ops/ms
+Iteration  18: 258.647 ops/ms
+Iteration  19: 222.456 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+259.834 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  218.880 ±(99.9%) 20.375 ops/ms [Average]
+  (min, avg, max) = (136.802, 218.880, 260.056), stdev = 36.217
+  CI (99.9%): [198.505, 239.256] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 10000)
+
+# Run progress: 39.58% complete, ETA 00:29:58
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+26.819 ops/ms
+# Warmup Iteration   2: 26.841 ops/ms
+# Warmup Iteration   3: 25.126 ops/ms
+# Warmup Iteration   4: 20.992 ops/ms
+# Warmup Iteration   5: 24.463 ops/ms
+# Warmup Iteration   6: 5.381 ops/ms
+# Warmup Iteration   7: 11.752 ops/ms
+# Warmup Iteration   8: 12.586 ops/ms
+# Warmup Iteration   9: 11.388 ops/ms
+# Warmup Iteration  10: 15.994 ops/ms
+Iteration   1: 19.841 ops/ms
+Iteration   2: 22.881 ops/ms
+Iteration   3: 25.061 ops/ms
+Iteration   4: 19.115 ops/ms
+Iteration   5: 24.853 ops/ms
+Iteration   6: 21.017 ops/ms
+Iteration   7: 24.388 ops/ms
+Iteration   8: 25.109 ops/ms
+Iteration   9: 22.483 ops/ms
+Iteration  10: 15.890 ops/ms
+Iteration  11: 23.960 ops/ms
+Iteration  12: 25.195 ops/ms
+Iteration  13: 22.715 ops/ms
+Iteration  14: 17.950 ops/ms
+Iteration  15: 19.209 ops/ms
+Iteration  16: 23.522 ops/ms
+Iteration  17: 22.212 ops/ms
+Iteration  18: 18.041 ops/ms
+Iteration  19: 22.600 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+21.438 ops/ms
+
+# Run progress: 40.63% complete, ETA 00:29:26
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+26.138 ops/ms
+# Warmup Iteration   2: 25.388 ops/ms
+# Warmup Iteration   3: 24.213 ops/ms
+# Warmup Iteration   4: 24.778 ops/ms
+# Warmup Iteration   5: 20.818 ops/ms
+# Warmup Iteration   6: 25.812 ops/ms
+# Warmup Iteration   7: 24.335 ops/ms
+# Warmup Iteration   8: 25.423 ops/ms
+# Warmup Iteration   9: 26.237 ops/ms
+# Warmup Iteration  10: 20.646 ops/ms
+Iteration   1: 25.752 ops/ms
+Iteration   2: 23.740 ops/ms
+Iteration   3: 22.822 ops/ms
+Iteration   4: 20.045 ops/ms
+Iteration   5: 20.265 ops/ms
+Iteration   6: 25.569 ops/ms
+Iteration   7: 25.882 ops/ms
+Iteration   8: 25.371 ops/ms
+Iteration   9: 25.718 ops/ms
+Iteration  10: 21.279 ops/ms
+Iteration  11: 25.296 ops/ms
+Iteration  12: 24.707 ops/ms
+Iteration  13: 25.525 ops/ms
+Iteration  14: 25.097 ops/ms
+Iteration  15: 21.978 ops/ms
+Iteration  16: 21.620 ops/ms
+Iteration  17: 25.565 ops/ms
+Iteration  18: 24.852 ops/ms
+Iteration  19: 20.814 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+23.087 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  22.812 ±(99.9%) 1.448 ops/ms [Average]
+  (min, avg, max) = (15.890, 22.812, 25.882), stdev = 2.573
+  CI (99.9%): [21.364, 24.259] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 1000)
+
+# Run progress: 41.67% complete, ETA 00:28:56
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4504.214 ops/ms
+# Warmup Iteration   2: 5109.141 ops/ms
+# Warmup Iteration   3: 5616.375 ops/ms
+# Warmup Iteration   4: 5915.028 ops/ms
+# Warmup Iteration   5: 5684.141 ops/ms
+# Warmup Iteration   6: 4837.324 ops/ms
+# Warmup Iteration   7: 5399.911 ops/ms
+# Warmup Iteration   8: 4968.559 ops/ms
+# Warmup Iteration   9: 5727.176 ops/ms
+# Warmup Iteration  10: 5922.685 ops/ms
+Iteration   1: 3805.957 ops/ms
+Iteration   2: 4698.790 ops/ms
+Iteration   3: 5839.681 ops/ms
+Iteration   4: 5824.236 ops/ms
+Iteration   5: 5967.210 ops/ms
+Iteration   6: 4760.662 ops/ms
+Iteration   7: 5768.388 ops/ms
+Iteration   8: 5099.877 ops/ms
+Iteration   9: 5803.654 ops/ms
+Iteration  10: 5906.915 ops/ms
+Iteration  11: 5445.809 ops/ms
+Iteration  12: 5461.744 ops/ms
+Iteration  13: 5651.309 ops/ms
+Iteration  14: 5498.441 ops/ms
+Iteration  15: 5022.929 ops/ms
+Iteration  16: 5839.778 ops/ms
+Iteration  17: 4671.835 ops/ms
+Iteration  18: 5872.750 ops/ms
+Iteration  19: 5857.876 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5752.113 ops/ms
+
+# Run progress: 42.71% complete, ETA 00:28:24
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4847.470 ops/ms
+# Warmup Iteration   2: 4601.866 ops/ms
+# Warmup Iteration   3: 5081.465 ops/ms
+# Warmup Iteration   4: 5295.847 ops/ms
+# Warmup Iteration   5: 5462.194 ops/ms
+# Warmup Iteration   6: 5087.470 ops/ms
+# Warmup Iteration   7: 4521.439 ops/ms
+# Warmup Iteration   8: 4641.725 ops/ms
+# Warmup Iteration   9: 3963.819 ops/ms
+# Warmup Iteration  10: 4219.709 ops/ms
+Iteration   1: 4612.226 ops/ms
+Iteration   2: 3707.967 ops/ms
+Iteration   3: 5134.213 ops/ms
+Iteration   4: 4667.149 ops/ms
+Iteration   5: 5853.333 ops/ms
+Iteration   6: 5885.036 ops/ms
+Iteration   7: 5220.081 ops/ms
+Iteration   8: 5587.914 ops/ms
+Iteration   9: 5952.118 ops/ms
+Iteration  10: 5937.735 ops/ms
+Iteration  11: 5859.455 ops/ms
+Iteration  12: 5771.816 ops/ms
+Iteration  13: 4655.228 ops/ms
+Iteration  14: 5950.047 ops/ms
+Iteration  15: 5822.040 ops/ms
+Iteration  16: 5862.761 ops/ms
+Iteration  17: 5837.041 ops/ms
+Iteration  18: 4977.894 ops/ms
+Iteration  19: 5916.355 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5924.176 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  5442.113 ±(99.9%) 336.059 ops/ms [Average]
+  (min, avg, max) = (3707.967, 5442.113, 5967.210), stdev = 597.345
+  CI (99.9%): [5106.054, 5778.173] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 10000)
+
+# Run progress: 43.75% complete, ETA 00:27:53
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3443.214 ops/ms
+# Warmup Iteration   2: 3861.954 ops/ms
+# Warmup Iteration   3: 3322.720 ops/ms
+# Warmup Iteration   4: 4066.368 ops/ms
+# Warmup Iteration   5: 4059.145 ops/ms
+# Warmup Iteration   6: 3999.279 ops/ms
+# Warmup Iteration   7: 4050.268 ops/ms
+# Warmup Iteration   8: 3339.246 ops/ms
+# Warmup Iteration   9: 3995.777 ops/ms
+# Warmup Iteration  10: 3864.712 ops/ms
+Iteration   1: 3976.993 ops/ms
+Iteration   2: 3981.257 ops/ms
+Iteration   3: 3049.725 ops/ms
+Iteration   4: 3872.737 ops/ms
+Iteration   5: 3729.495 ops/ms
+Iteration   6: 3898.329 ops/ms
+Iteration   7: 3653.339 ops/ms
+Iteration   8: 2308.585 ops/ms
+Iteration   9: 1902.616 ops/ms
+Iteration  10: 3096.514 ops/ms
+Iteration  11: 3909.405 ops/ms
+Iteration  12: 3997.157 ops/ms
+Iteration  13: 3905.508 ops/ms
+Iteration  14: 3190.624 ops/ms
+Iteration  15: 3947.253 ops/ms
+Iteration  16: 3889.179 ops/ms
+Iteration  17: 3769.907 ops/ms
+Iteration  18: 3677.409 ops/ms
+Iteration  19: 3098.360 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3931.793 ops/ms
+
+# Run progress: 44.79% complete, ETA 00:27:22
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2570.267 ops/ms
+# Warmup Iteration   2: 3198.967 ops/ms
+# Warmup Iteration   3: 2893.028 ops/ms
+# Warmup Iteration   4: 3244.100 ops/ms
+# Warmup Iteration   5: 3206.806 ops/ms
+# Warmup Iteration   6: 3059.013 ops/ms
+# Warmup Iteration   7: 3056.647 ops/ms
+# Warmup Iteration   8: 2981.959 ops/ms
+# Warmup Iteration   9: 3033.028 ops/ms
+# Warmup Iteration  10: 2945.296 ops/ms
+Iteration   1: 3870.648 ops/ms
+Iteration   2: 3420.129 ops/ms
+Iteration   3: 3877.791 ops/ms
+Iteration   4: 4045.965 ops/ms
+Iteration   5: 3290.636 ops/ms
+Iteration   6: 4014.932 ops/ms
+Iteration   7: 4016.992 ops/ms
+Iteration   8: 4065.903 ops/ms
+Iteration   9: 4055.894 ops/ms
+Iteration  10: 3359.727 ops/ms
+Iteration  11: 4090.789 ops/ms
+Iteration  12: 3696.196 ops/ms
+Iteration  13: 3758.808 ops/ms
+Iteration  14: 3865.236 ops/ms
+Iteration  15: 3144.580 ops/ms
+Iteration  16: 3661.825 ops/ms
+Iteration  17: 2471.461 ops/ms
+Iteration  18: 3201.409 ops/ms
+Iteration  19: 2470.928 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2122.190 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  3532.206 ±(99.9%) 328.057 ops/ms [Average]
+  (min, avg, max) = (1902.616, 3532.206, 4090.789), stdev = 583.121
+  CI (99.9%): [3204.149, 3860.263] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 1000)
+
+# Run progress: 45.83% complete, ETA 00:26:50
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+5402.112 ops/ms
+# Warmup Iteration   2: 5600.613 ops/ms
+# Warmup Iteration   3: 5851.574 ops/ms
+# Warmup Iteration   4: 5730.143 ops/ms
+# Warmup Iteration   5: 5025.077 ops/ms
+# Warmup Iteration   6: 5705.544 ops/ms
+# Warmup Iteration   7: 5436.858 ops/ms
+# Warmup Iteration   8: 5536.905 ops/ms
+# Warmup Iteration   9: 5485.468 ops/ms
+# Warmup Iteration  10: 4920.452 ops/ms
+Iteration   1: 4170.002 ops/ms
+Iteration   2: 5567.472 ops/ms
+Iteration   3: 5232.137 ops/ms
+Iteration   4: 5124.854 ops/ms
+Iteration   5: 5172.004 ops/ms
+Iteration   6: 4404.488 ops/ms
+Iteration   7: 5480.070 ops/ms
+Iteration   8: 5771.373 ops/ms
+Iteration   9: 5604.570 ops/ms
+Iteration  10: 5526.962 ops/ms
+Iteration  11: 4646.124 ops/ms
+Iteration  12: 5497.378 ops/ms
+Iteration  13: 5734.317 ops/ms
+Iteration  14: 5756.650 ops/ms
+Iteration  15: 5597.743 ops/ms
+Iteration  16: 4859.231 ops/ms
+Iteration  17: 5822.254 ops/ms
+Iteration  18: 5809.444 ops/ms
+Iteration  19: 5653.783 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5748.032 ops/ms
+
+# Run progress: 46.88% complete, ETA 00:26:19
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3359.204 ops/ms
+# Warmup Iteration   2: 5354.561 ops/ms
+# Warmup Iteration   3: 5602.264 ops/ms
+# Warmup Iteration   4: 5360.971 ops/ms
+# Warmup Iteration   5: 5445.371 ops/ms
+# Warmup Iteration   6: 4694.408 ops/ms
+# Warmup Iteration   7: 4968.364 ops/ms
+# Warmup Iteration   8: 4265.038 ops/ms
+# Warmup Iteration   9: 5446.634 ops/ms
+# Warmup Iteration  10: 3470.950 ops/ms
+Iteration   1: 3717.468 ops/ms
+Iteration   2: 3620.221 ops/ms
+Iteration   3: 5368.523 ops/ms
+Iteration   4: 4892.370 ops/ms
+Iteration   5: 5631.125 ops/ms
+Iteration   6: 5619.967 ops/ms
+Iteration   7: 4716.428 ops/ms
+Iteration   8: 5654.474 ops/ms
+Iteration   9: 5665.840 ops/ms
+Iteration  10: 5781.244 ops/ms
+Iteration  11: 5777.482 ops/ms
+Iteration  12: 4969.956 ops/ms
+Iteration  13: 5710.918 ops/ms
+Iteration  14: 5282.217 ops/ms
+Iteration  15: 5566.678 ops/ms
+Iteration  16: 5470.778 ops/ms
+Iteration  17: 5177.427 ops/ms
+Iteration  18: 5466.308 ops/ms
+Iteration  19: 5781.653 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5794.804 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  5321.119 ±(99.9%) 315.357 ops/ms [Average]
+  (min, avg, max) = (3620.221, 5321.119, 5822.254), stdev = 560.548
+  CI (99.9%): [5005.762, 5636.477] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 10000)
+
+# Run progress: 47.92% complete, ETA 00:25:48
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3895.761 ops/ms
+# Warmup Iteration   2: 3236.032 ops/ms
+# Warmup Iteration   3: 3895.497 ops/ms
+# Warmup Iteration   4: 3833.551 ops/ms
+# Warmup Iteration   5: 3696.558 ops/ms
+# Warmup Iteration   6: 3779.782 ops/ms
+# Warmup Iteration   7: 3704.911 ops/ms
+# Warmup Iteration   8: 3431.820 ops/ms
+# Warmup Iteration   9: 3921.711 ops/ms
+# Warmup Iteration  10: 3955.920 ops/ms
+Iteration   1: 3941.375 ops/ms
+Iteration   2: 3937.005 ops/ms
+Iteration   3: 3275.195 ops/ms
+Iteration   4: 3915.457 ops/ms
+Iteration   5: 3957.138 ops/ms
+Iteration   6: 3950.957 ops/ms
+Iteration   7: 3725.843 ops/ms
+Iteration   8: 3236.256 ops/ms
+Iteration   9: 3914.261 ops/ms
+Iteration  10: 3926.617 ops/ms
+Iteration  11: 3908.395 ops/ms
+Iteration  12: 3892.103 ops/ms
+Iteration  13: 3255.461 ops/ms
+Iteration  14: 3913.564 ops/ms
+Iteration  15: 3943.998 ops/ms
+Iteration  16: 3896.480 ops/ms
+Iteration  17: 3914.363 ops/ms
+Iteration  18: 3364.505 ops/ms
+Iteration  19: 3770.390 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3892.161 ops/ms
+
+# Run progress: 48.96% complete, ETA 00:25:16
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3872.675 ops/ms
+# Warmup Iteration   2: 3854.033 ops/ms
+# Warmup Iteration   3: 3162.248 ops/ms
+# Warmup Iteration   4: 3960.454 ops/ms
+# Warmup Iteration   5: 3892.826 ops/ms
+# Warmup Iteration   6: 3718.664 ops/ms
+# Warmup Iteration   7: 3939.595 ops/ms
+# Warmup Iteration   8: 3533.674 ops/ms
+# Warmup Iteration   9: 3549.221 ops/ms
+# Warmup Iteration  10: 3997.239 ops/ms
+Iteration   1: 3922.413 ops/ms
+Iteration   2: 3910.048 ops/ms
+Iteration   3: 3907.970 ops/ms
+Iteration   4: 3102.826 ops/ms
+Iteration   5: 3624.686 ops/ms
+Iteration   6: 3672.472 ops/ms
+Iteration   7: 3502.528 ops/ms
+Iteration   8: 3055.939 ops/ms
+Iteration   9: 2579.616 ops/ms
+Iteration  10: 3885.878 ops/ms
+Iteration  11: 3918.699 ops/ms
+Iteration  12: 3923.907 ops/ms
+Iteration  13: 3914.078 ops/ms
+Iteration  14: 3235.830 ops/ms
+Iteration  15: 3914.161 ops/ms
+Iteration  16: 3952.046 ops/ms
+Iteration  17: 3958.058 ops/ms
+Iteration  18: 3943.978 ops/ms
+Iteration  19: 3416.131 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3779.232 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  3716.300 ±(99.9%) 187.240 ops/ms [Average]
+  (min, avg, max) = (2579.616, 3716.300, 3958.058), stdev = 332.819
+  CI (99.9%): [3529.060, 3903.541] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 1000)
+
+# Run progress: 50.00% complete, ETA 00:24:45
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+115.270 ops/ms
+# Warmup Iteration   2: 126.069 ops/ms
+# Warmup Iteration   3: 130.701 ops/ms
+# Warmup Iteration   4: 111.135 ops/ms
+# Warmup Iteration   5: 131.720 ops/ms
+# Warmup Iteration   6: 124.381 ops/ms
+# Warmup Iteration   7: 116.293 ops/ms
+# Warmup Iteration   8: 130.527 ops/ms
+# Warmup Iteration   9: 118.562 ops/ms
+# Warmup Iteration  10: 105.985 ops/ms
+Iteration   1: 134.285 ops/ms
+Iteration   2: 138.138 ops/ms
+Iteration   3: 134.677 ops/ms
+Iteration   4: 127.363 ops/ms
+Iteration   5: 103.584 ops/ms
+Iteration   6: 137.374 ops/ms
+Iteration   7: 127.441 ops/ms
+Iteration   8: 135.612 ops/ms
+Iteration   9: 126.864 ops/ms
+Iteration  10: 68.140 ops/ms
+Iteration  11: 70.163 ops/ms
+Iteration  12: 128.377 ops/ms
+Iteration  13: 84.489 ops/ms
+Iteration  14: 102.310 ops/ms
+Iteration  15: 136.523 ops/ms
+Iteration  16: 116.565 ops/ms
+Iteration  17: 133.698 ops/ms
+Iteration  18: 127.353 ops/ms
+Iteration  19: 133.484 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+125.942 ops/ms
+
+# Run progress: 51.04% complete, ETA 00:24:14
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+126.987 ops/ms
+# Warmup Iteration   2: 137.917 ops/ms
+# Warmup Iteration   3: 130.029 ops/ms
+# Warmup Iteration   4: 128.474 ops/ms
+# Warmup Iteration   5: 131.847 ops/ms
+# Warmup Iteration   6: 103.127 ops/ms
+# Warmup Iteration   7: 130.766 ops/ms
+# Warmup Iteration   8: 132.317 ops/ms
+# Warmup Iteration   9: 134.612 ops/ms
+# Warmup Iteration  10: 124.245 ops/ms
+Iteration   1: 117.594 ops/ms
+Iteration   2: 137.037 ops/ms
+Iteration   3: 136.418 ops/ms
+Iteration   4: 136.570 ops/ms
+Iteration   5: 137.191 ops/ms
+Iteration   6: 118.395 ops/ms
+Iteration   7: 139.136 ops/ms
+Iteration   8: 135.257 ops/ms
+Iteration   9: 123.339 ops/ms
+Iteration  10: 123.563 ops/ms
+Iteration  11: 108.060 ops/ms
+Iteration  12: 115.626 ops/ms
+Iteration  13: 120.903 ops/ms
+Iteration  14: 131.305 ops/ms
+Iteration  15: 133.715 ops/ms
+Iteration  16: 138.231 ops/ms
+Iteration  17: 116.349 ops/ms
+Iteration  18: 137.375 ops/ms
+Iteration  19: 137.435 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+127.638 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  124.088 ±(99.9%) 9.812 ops/ms [Average]
+  (min, avg, max) = (68.140, 124.088, 139.136), stdev = 17.440
+  CI (99.9%): [114.276, 133.900] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 10000)
+
+# Run progress: 52.08% complete, ETA 00:23:43
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12.822 ops/ms
+# Warmup Iteration   2: 12.361 ops/ms
+# Warmup Iteration   3: 13.770 ops/ms
+# Warmup Iteration   4: 13.793 ops/ms
+# Warmup Iteration   5: 13.812 ops/ms
+# Warmup Iteration   6: 13.830 ops/ms
+# Warmup Iteration   7: 11.689 ops/ms
+# Warmup Iteration   8: 13.425 ops/ms
+# Warmup Iteration   9: 13.764 ops/ms
+# Warmup Iteration  10: 13.922 ops/ms
+Iteration   1: 13.847 ops/ms
+Iteration   2: 11.816 ops/ms
+Iteration   3: 11.902 ops/ms
+Iteration   4: 13.194 ops/ms
+Iteration   5: 13.987 ops/ms
+Iteration   6: 13.988 ops/ms
+Iteration   7: 11.671 ops/ms
+Iteration   8: 12.046 ops/ms
+Iteration   9: 12.449 ops/ms
+Iteration  10: 13.266 ops/ms
+Iteration  11: 13.143 ops/ms
+Iteration  12: 11.484 ops/ms
+Iteration  13: 12.663 ops/ms
+Iteration  14: 13.118 ops/ms
+Iteration  15: 9.606 ops/ms
+Iteration  16: 12.108 ops/ms
+Iteration  17: 8.091 ops/ms
+Iteration  18: 8.694 ops/ms
+Iteration  19: 12.677 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13.732 ops/ms
+
+# Run progress: 53.13% complete, ETA 00:23:12
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13.386 ops/ms
+# Warmup Iteration   2: 12.581 ops/ms
+# Warmup Iteration   3: 9.696 ops/ms
+# Warmup Iteration   4: 9.900 ops/ms
+# Warmup Iteration   5: 12.975 ops/ms
+# Warmup Iteration   6: 12.373 ops/ms
+# Warmup Iteration   7: 11.724 ops/ms
+# Warmup Iteration   8: 9.763 ops/ms
+# Warmup Iteration   9: 8.547 ops/ms
+# Warmup Iteration  10: 12.169 ops/ms
+Iteration   1: 13.853 ops/ms
+Iteration   2: 13.898 ops/ms
+Iteration   3: 12.989 ops/ms
+Iteration   4: 10.502 ops/ms
+Iteration   5: 13.775 ops/ms
+Iteration   6: 13.855 ops/ms
+Iteration   7: 13.750 ops/ms
+Iteration   8: 13.882 ops/ms
+Iteration   9: 11.322 ops/ms
+Iteration  10: 13.724 ops/ms
+Iteration  11: 13.792 ops/ms
+Iteration  12: 13.852 ops/ms
+Iteration  13: 13.888 ops/ms
+Iteration  14: 9.960 ops/ms
+Iteration  15: 12.723 ops/ms
+Iteration  16: 13.303 ops/ms
+Iteration  17: 13.174 ops/ms
+Iteration  18: 13.098 ops/ms
+Iteration  19: 11.964 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13.597 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  12.610 ±(99.9%) 0.841 ops/ms [Average]
+  (min, avg, max) = (8.091, 12.610, 13.988), stdev = 1.495
+  CI (99.9%): [11.769, 13.450] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 1000)
+
+# Run progress: 54.17% complete, ETA 00:22:41
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+138.012 ops/ms
+# Warmup Iteration   2: 136.929 ops/ms
+# Warmup Iteration   3: 138.076 ops/ms
+# Warmup Iteration   4: 118.046 ops/ms
+# Warmup Iteration   5: 137.844 ops/ms
+# Warmup Iteration   6: 138.684 ops/ms
+# Warmup Iteration   7: 139.103 ops/ms
+# Warmup Iteration   8: 137.169 ops/ms
+# Warmup Iteration   9: 125.763 ops/ms
+# Warmup Iteration  10: 129.548 ops/ms
+Iteration   1: 138.351 ops/ms
+Iteration   2: 138.540 ops/ms
+Iteration   3: 138.136 ops/ms
+Iteration   4: 139.336 ops/ms
+Iteration   5: 118.308 ops/ms
+Iteration   6: 137.822 ops/ms
+Iteration   7: 138.667 ops/ms
+Iteration   8: 137.339 ops/ms
+Iteration   9: 137.029 ops/ms
+Iteration  10: 116.909 ops/ms
+Iteration  11: 138.159 ops/ms
+Iteration  12: 138.650 ops/ms
+Iteration  13: 137.806 ops/ms
+Iteration  14: 137.793 ops/ms
+Iteration  15: 118.117 ops/ms
+Iteration  16: 137.423 ops/ms
+Iteration  17: 135.579 ops/ms
+Iteration  18: 136.471 ops/ms
+Iteration  19: 134.513 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+112.085 ops/ms
+
+# Run progress: 55.21% complete, ETA 00:22:09
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+131.722 ops/ms
+# Warmup Iteration   2: 111.355 ops/ms
+# Warmup Iteration   3: 113.257 ops/ms
+# Warmup Iteration   4: 134.330 ops/ms
+# Warmup Iteration   5: 108.508 ops/ms
+# Warmup Iteration   6: 126.611 ops/ms
+# Warmup Iteration   7: 134.696 ops/ms
+# Warmup Iteration   8: 133.208 ops/ms
+# Warmup Iteration   9: 135.507 ops/ms
+# Warmup Iteration  10: 121.307 ops/ms
+Iteration   1: 119.202 ops/ms
+Iteration   2: 117.734 ops/ms
+Iteration   3: 114.526 ops/ms
+Iteration   4: 122.127 ops/ms
+Iteration   5: 127.109 ops/ms
+Iteration   6: 100.898 ops/ms
+Iteration   7: 110.016 ops/ms
+Iteration   8: 106.872 ops/ms
+Iteration   9: 106.282 ops/ms
+Iteration  10: 124.497 ops/ms
+Iteration  11: 55.611 ops/ms
+Iteration  12: 89.943 ops/ms
+Iteration  13: 125.292 ops/ms
+Iteration  14: 134.050 ops/ms
+Iteration  15: 137.269 ops/ms
+Iteration  16: 119.341 ops/ms
+Iteration  17: 125.177 ops/ms
+Iteration  18: 135.566 ops/ms
+Iteration  19: 123.309 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+130.818 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  124.817 ±(99.9%) 9.464 ops/ms [Average]
+  (min, avg, max) = (55.611, 124.817, 139.336), stdev = 16.822
+  CI (99.9%): [115.353, 134.281] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 10000)
+
+# Run progress: 56.25% complete, ETA 00:21:38
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+9.946 ops/ms
+# Warmup Iteration   2: 11.711 ops/ms
+# Warmup Iteration   3: 11.839 ops/ms
+# Warmup Iteration   4: 12.885 ops/ms
+# Warmup Iteration   5: 13.646 ops/ms
+# Warmup Iteration   6: 12.485 ops/ms
+# Warmup Iteration   7: 12.012 ops/ms
+# Warmup Iteration   8: 10.334 ops/ms
+# Warmup Iteration   9: 11.482 ops/ms
+# Warmup Iteration  10: 13.558 ops/ms
+Iteration   1: 12.574 ops/ms
+Iteration   2: 6.385 ops/ms
+Iteration   3: 11.531 ops/ms
+Iteration   4: 12.902 ops/ms
+Iteration   5: 13.364 ops/ms
+Iteration   6: 13.422 ops/ms
+Iteration   7: 10.948 ops/ms
+Iteration   8: 13.356 ops/ms
+Iteration   9: 13.754 ops/ms
+Iteration  10: 13.896 ops/ms
+Iteration  11: 13.792 ops/ms
+Iteration  12: 12.738 ops/ms
+Iteration  13: 12.725 ops/ms
+Iteration  14: 13.403 ops/ms
+Iteration  15: 13.638 ops/ms
+Iteration  16: 13.867 ops/ms
+Iteration  17: 13.532 ops/ms
+Iteration  18: 11.070 ops/ms
+Iteration  19: 13.661 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13.812 ops/ms
+
+# Run progress: 57.29% complete, ETA 00:21:07
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13.791 ops/ms
+# Warmup Iteration   2: 11.766 ops/ms
+# Warmup Iteration   3: 13.670 ops/ms
+# Warmup Iteration   4: 13.144 ops/ms
+# Warmup Iteration   5: 13.485 ops/ms
+# Warmup Iteration   6: 13.584 ops/ms
+# Warmup Iteration   7: 12.031 ops/ms
+# Warmup Iteration   8: 11.327 ops/ms
+# Warmup Iteration   9: 13.581 ops/ms
+# Warmup Iteration  10: 13.080 ops/ms
+Iteration   1: 12.293 ops/ms
+Iteration   2: 10.172 ops/ms
+Iteration   3: 9.052 ops/ms
+Iteration   4: 10.553 ops/ms
+Iteration   5: 12.779 ops/ms
+Iteration   6: 13.023 ops/ms
+Iteration   7: 11.294 ops/ms
+Iteration   8: 8.389 ops/ms
+Iteration   9: 13.432 ops/ms
+Iteration  10: 12.457 ops/ms
+Iteration  11: 12.580 ops/ms
+Iteration  12: 11.528 ops/ms
+Iteration  13: 9.752 ops/ms
+Iteration  14: 9.486 ops/ms
+Iteration  15: 12.250 ops/ms
+Iteration  16: 11.414 ops/ms
+Iteration  17: 12.898 ops/ms
+Iteration  18: 13.533 ops/ms
+Iteration  19: 9.895 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13.505 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  12.116 ±(99.9%) 0.992 ops/ms [Average]
+  (min, avg, max) = (6.385, 12.116, 13.896), stdev = 1.764
+  CI (99.9%): [11.124, 13.109] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 1000)
+
+# Run progress: 58.33% complete, ETA 00:20:36
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+7657.373 ops/ms
+# Warmup Iteration   2: 7297.296 ops/ms
+# Warmup Iteration   3: 6970.655 ops/ms
+# Warmup Iteration   4: 6670.781 ops/ms
+# Warmup Iteration   5: 7433.863 ops/ms
+# Warmup Iteration   6: 7564.827 ops/ms
+# Warmup Iteration   7: 7618.199 ops/ms
+# Warmup Iteration   8: 8139.977 ops/ms
+# Warmup Iteration   9: 5182.664 ops/ms
+# Warmup Iteration  10: 7990.002 ops/ms
+Iteration   1: 7632.032 ops/ms
+Iteration   2: 7873.730 ops/ms
+Iteration   3: 7592.313 ops/ms
+Iteration   4: 5876.410 ops/ms
+Iteration   5: 7823.556 ops/ms
+Iteration   6: 6586.959 ops/ms
+Iteration   7: 7549.440 ops/ms
+Iteration   8: 7798.323 ops/ms
+Iteration   9: 5548.578 ops/ms
+Iteration  10: 7267.687 ops/ms
+Iteration  11: 6531.851 ops/ms
+Iteration  12: 7917.115 ops/ms
+Iteration  13: 7588.075 ops/ms
+Iteration  14: 7354.889 ops/ms
+Iteration  15: 5485.484 ops/ms
+Iteration  16: 6962.428 ops/ms
+Iteration  17: 8109.505 ops/ms
+Iteration  18: 7425.069 ops/ms
+Iteration  19: 7912.805 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4994.838 ops/ms
+
+# Run progress: 59.38% complete, ETA 00:20:05
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3699.695 ops/ms
+# Warmup Iteration   2: 7458.155 ops/ms
+# Warmup Iteration   3: 6516.213 ops/ms
+# Warmup Iteration   4: 6173.594 ops/ms
+# Warmup Iteration   5: 4580.009 ops/ms
+# Warmup Iteration   6: 7190.329 ops/ms
+# Warmup Iteration   7: 8078.565 ops/ms
+# Warmup Iteration   8: 6578.581 ops/ms
+# Warmup Iteration   9: 7498.795 ops/ms
+# Warmup Iteration  10: 6485.319 ops/ms
+Iteration   1: 8081.655 ops/ms
+Iteration   2: 8078.368 ops/ms
+Iteration   3: 8116.805 ops/ms
+Iteration   4: 8082.703 ops/ms
+Iteration   5: 6622.846 ops/ms
+Iteration   6: 7930.066 ops/ms
+Iteration   7: 8064.217 ops/ms
+Iteration   8: 7818.528 ops/ms
+Iteration   9: 7736.446 ops/ms
+Iteration  10: 6386.355 ops/ms
+Iteration  11: 4482.563 ops/ms
+Iteration  12: 6121.383 ops/ms
+Iteration  13: 7527.638 ops/ms
+Iteration  14: 7819.610 ops/ms
+Iteration  15: 8021.552 ops/ms
+Iteration  16: 6652.249 ops/ms
+Iteration  17: 8025.690 ops/ms
+Iteration  18: 7350.649 ops/ms
+Iteration  19: 7973.979 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+7664.949 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  7259.733 ±(99.9%) 528.429 ops/ms [Average]
+  (min, avg, max) = (4482.563, 7259.733, 8116.805), stdev = 939.282
+  CI (99.9%): [6731.304, 7788.163] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 10000)
+
+# Run progress: 60.42% complete, ETA 00:19:34
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4353.409 ops/ms
+# Warmup Iteration   2: 5379.088 ops/ms
+# Warmup Iteration   3: 5736.623 ops/ms
+# Warmup Iteration   4: 5291.578 ops/ms
+# Warmup Iteration   5: 5233.308 ops/ms
+# Warmup Iteration   6: 3159.575 ops/ms
+# Warmup Iteration   7: 4391.732 ops/ms
+# Warmup Iteration   8: 4873.755 ops/ms
+# Warmup Iteration   9: 5237.056 ops/ms
+# Warmup Iteration  10: 4539.015 ops/ms
+Iteration   1: 3381.065 ops/ms
+Iteration   2: 4976.424 ops/ms
+Iteration   3: 5480.919 ops/ms
+Iteration   4: 5413.959 ops/ms
+Iteration   5: 5397.366 ops/ms
+Iteration   6: 5018.892 ops/ms
+Iteration   7: 4791.235 ops/ms
+Iteration   8: 5734.077 ops/ms
+Iteration   9: 5566.949 ops/ms
+Iteration  10: 4748.571 ops/ms
+Iteration  11: 5289.503 ops/ms
+Iteration  12: 3798.217 ops/ms
+Iteration  13: 3719.589 ops/ms
+Iteration  14: 3022.270 ops/ms
+Iteration  15: 2527.254 ops/ms
+Iteration  16: 2924.800 ops/ms
+Iteration  17: 3236.846 ops/ms
+Iteration  18: 5484.752 ops/ms
+Iteration  19: 5158.601 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5524.684 ops/ms
+
+# Run progress: 61.46% complete, ETA 00:19:03
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4889.542 ops/ms
+# Warmup Iteration   2: 4858.071 ops/ms
+# Warmup Iteration   3: 4985.066 ops/ms
+# Warmup Iteration   4: 5494.050 ops/ms
+# Warmup Iteration   5: 5451.609 ops/ms
+# Warmup Iteration   6: 5543.036 ops/ms
+# Warmup Iteration   7: 3943.543 ops/ms
+# Warmup Iteration   8: 3300.977 ops/ms
+# Warmup Iteration   9: 4576.510 ops/ms
+# Warmup Iteration  10: 5363.814 ops/ms
+Iteration   1: 5558.612 ops/ms
+Iteration   2: 5483.461 ops/ms
+Iteration   3: 4833.954 ops/ms
+Iteration   4: 5500.863 ops/ms
+Iteration   5: 5483.051 ops/ms
+Iteration   6: 5748.889 ops/ms
+Iteration   7: 5153.469 ops/ms
+Iteration   8: 4848.584 ops/ms
+Iteration   9: 5729.247 ops/ms
+Iteration  10: 5640.572 ops/ms
+Iteration  11: 5725.918 ops/ms
+Iteration  12: 5753.149 ops/ms
+Iteration  13: 4852.185 ops/ms
+Iteration  14: 5720.649 ops/ms
+Iteration  15: 5672.275 ops/ms
+Iteration  16: 5800.465 ops/ms
+Iteration  17: 5736.304 ops/ms
+Iteration  18: 4874.835 ops/ms
+Iteration  19: 5745.323 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5740.068 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  5019.946 ±(99.9%) 511.779 ops/ms [Average]
+  (min, avg, max) = (2527.254, 5019.946, 5800.465), stdev = 909.688
+  CI (99.9%): [4508.167, 5531.726] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 1000)
+
+# Run progress: 62.50% complete, ETA 00:18:32
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4976.816 ops/ms
+# Warmup Iteration   2: 4993.997 ops/ms
+# Warmup Iteration   3: 4203.273 ops/ms
+# Warmup Iteration   4: 4989.835 ops/ms
+# Warmup Iteration   5: 4970.728 ops/ms
+# Warmup Iteration   6: 4972.183 ops/ms
+# Warmup Iteration   7: 4929.406 ops/ms
+# Warmup Iteration   8: 4215.345 ops/ms
+# Warmup Iteration   9: 4963.856 ops/ms
+# Warmup Iteration  10: 4915.050 ops/ms
+Iteration   1: 4737.648 ops/ms
+Iteration   2: 4498.197 ops/ms
+Iteration   3: 4030.953 ops/ms
+Iteration   4: 2510.638 ops/ms
+Iteration   5: 4249.955 ops/ms
+Iteration   6: 3818.150 ops/ms
+Iteration   7: 4849.246 ops/ms
+Iteration   8: 4770.718 ops/ms
+Iteration   9: 3878.411 ops/ms
+Iteration  10: 4650.955 ops/ms
+Iteration  11: 3701.719 ops/ms
+Iteration  12: 4171.411 ops/ms
+Iteration  13: 4901.466 ops/ms
+Iteration  14: 4194.550 ops/ms
+Iteration  15: 4316.848 ops/ms
+Iteration  16: 4377.588 ops/ms
+Iteration  17: 4108.251 ops/ms
+Iteration  18: 4850.552 ops/ms
+Iteration  19: 4974.742 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2283.785 ops/ms
+
+# Run progress: 63.54% complete, ETA 00:18:01
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4259.213 ops/ms
+# Warmup Iteration   2: 4666.776 ops/ms
+# Warmup Iteration   3: 4726.733 ops/ms
+# Warmup Iteration   4: 4815.129 ops/ms
+# Warmup Iteration   5: 4268.069 ops/ms
+# Warmup Iteration   6: 4967.989 ops/ms
+# Warmup Iteration   7: 4850.152 ops/ms
+# Warmup Iteration   8: 4869.185 ops/ms
+# Warmup Iteration   9: 4784.739 ops/ms
+# Warmup Iteration  10: 3996.593 ops/ms
+Iteration   1: 4899.550 ops/ms
+Iteration   2: 4572.166 ops/ms
+Iteration   3: 4399.587 ops/ms
+Iteration   4: 4586.878 ops/ms
+Iteration   5: 2720.393 ops/ms
+Iteration   6: 3641.271 ops/ms
+Iteration   7: 4417.224 ops/ms
+Iteration   8: 4407.925 ops/ms
+Iteration   9: 4705.390 ops/ms
+Iteration  10: 4622.390 ops/ms
+Iteration  11: 3840.213 ops/ms
+Iteration  12: 4752.319 ops/ms
+Iteration  13: 3810.660 ops/ms
+Iteration  14: 4261.381 ops/ms
+Iteration  15: 4759.206 ops/ms
+Iteration  16: 3509.134 ops/ms
+Iteration  17: 3522.387 ops/ms
+Iteration  18: 4062.132 ops/ms
+Iteration  19: 4177.874 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4274.124 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  4195.450 ±(99.9%) 356.486 ops/ms [Average]
+  (min, avg, max) = (2283.785, 4195.450, 4974.742), stdev = 633.654
+  CI (99.9%): [3838.963, 4551.936] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 10000)
+
+# Run progress: 64.58% complete, ETA 00:17:30
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2429.510 ops/ms
+# Warmup Iteration   2: 3487.974 ops/ms
+# Warmup Iteration   3: 3690.326 ops/ms
+# Warmup Iteration   4: 3765.329 ops/ms
+# Warmup Iteration   5: 3657.754 ops/ms
+# Warmup Iteration   6: 2904.054 ops/ms
+# Warmup Iteration   7: 2930.988 ops/ms
+# Warmup Iteration   8: 3619.513 ops/ms
+# Warmup Iteration   9: 3133.535 ops/ms
+# Warmup Iteration  10: 2879.009 ops/ms
+Iteration   1: 2499.408 ops/ms
+Iteration   2: 2874.147 ops/ms
+Iteration   3: 3578.758 ops/ms
+Iteration   4: 3572.534 ops/ms
+Iteration   5: 3136.871 ops/ms
+Iteration   6: 3111.292 ops/ms
+Iteration   7: 2568.812 ops/ms
+Iteration   8: 2984.474 ops/ms
+Iteration   9: 2241.788 ops/ms
+Iteration  10: 2971.291 ops/ms
+Iteration  11: 3626.856 ops/ms
+Iteration  12: 3076.022 ops/ms
+Iteration  13: 3765.550 ops/ms
+Iteration  14: 3766.205 ops/ms
+Iteration  15: 3714.713 ops/ms
+Iteration  16: 3769.584 ops/ms
+Iteration  17: 3200.550 ops/ms
+Iteration  18: 3678.785 ops/ms
+Iteration  19: 3430.134 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3691.079 ops/ms
+
+# Run progress: 65.63% complete, ETA 00:16:59
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3681.228 ops/ms
+# Warmup Iteration   2: 3122.186 ops/ms
+# Warmup Iteration   3: 3753.925 ops/ms
+# Warmup Iteration   4: 3541.234 ops/ms
+# Warmup Iteration   5: 3477.338 ops/ms
+# Warmup Iteration   6: 3741.618 ops/ms
+# Warmup Iteration   7: 3301.764 ops/ms
+# Warmup Iteration   8: 3640.374 ops/ms
+# Warmup Iteration   9: 3732.036 ops/ms
+# Warmup Iteration  10: 3627.978 ops/ms
+Iteration   1: 3679.127 ops/ms
+Iteration   2: 3592.905 ops/ms
+Iteration   3: 2863.355 ops/ms
+Iteration   4: 2951.868 ops/ms
+Iteration   5: 3605.982 ops/ms
+Iteration   6: 2824.809 ops/ms
+Iteration   7: 3047.684 ops/ms
+Iteration   8: 3191.235 ops/ms
+Iteration   9: 3223.559 ops/ms
+Iteration  10: 3624.845 ops/ms
+Iteration  11: 3715.817 ops/ms
+Iteration  12: 3639.793 ops/ms
+Iteration  13: 2066.131 ops/ms
+Iteration  14: 2392.003 ops/ms
+Iteration  15: 3305.244 ops/ms
+Iteration  16: 3218.101 ops/ms
+Iteration  17: 3683.895 ops/ms
+Iteration  18: 3700.876 ops/ms
+Iteration  19: 3043.898 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3515.542 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  3253.638 ±(99.9%) 258.426 ops/ms [Average]
+  (min, avg, max) = (2066.131, 3253.638, 3769.584), stdev = 459.353
+  CI (99.9%): [2995.212, 3512.064] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 1000)
+
+# Run progress: 66.67% complete, ETA 00:16:28
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+248.742 ops/ms
+# Warmup Iteration   2: 225.728 ops/ms
+# Warmup Iteration   3: 228.224 ops/ms
+# Warmup Iteration   4: 211.293 ops/ms
+# Warmup Iteration   5: 243.222 ops/ms
+# Warmup Iteration   6: 206.024 ops/ms
+# Warmup Iteration   7: 238.679 ops/ms
+# Warmup Iteration   8: 231.223 ops/ms
+# Warmup Iteration   9: 193.863 ops/ms
+# Warmup Iteration  10: 214.839 ops/ms
+Iteration   1: 205.097 ops/ms
+Iteration   2: 252.071 ops/ms
+Iteration   3: 230.011 ops/ms
+Iteration   4: 129.177 ops/ms
+Iteration   5: 233.930 ops/ms
+Iteration   6: 203.980 ops/ms
+Iteration   7: 198.082 ops/ms
+Iteration   8: 234.530 ops/ms
+Iteration   9: 190.890 ops/ms
+Iteration  10: 169.294 ops/ms
+Iteration  11: 199.447 ops/ms
+Iteration  12: 226.976 ops/ms
+Iteration  13: 226.357 ops/ms
+Iteration  14: 226.644 ops/ms
+Iteration  15: 156.194 ops/ms
+Iteration  16: 212.403 ops/ms
+Iteration  17: 212.515 ops/ms
+Iteration  18: 203.467 ops/ms
+Iteration  19: 207.591 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+168.727 ops/ms
+
+# Run progress: 67.71% complete, ETA 00:15:57
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+245.770 ops/ms
+# Warmup Iteration   2: 252.318 ops/ms
+# Warmup Iteration   3: 255.968 ops/ms
+# Warmup Iteration   4: 252.612 ops/ms
+# Warmup Iteration   5: 215.649 ops/ms
+# Warmup Iteration   6: 251.753 ops/ms
+# Warmup Iteration   7: 253.614 ops/ms
+# Warmup Iteration   8: 256.840 ops/ms
+# Warmup Iteration   9: 251.363 ops/ms
+# Warmup Iteration  10: 200.189 ops/ms
+Iteration   1: 221.048 ops/ms
+Iteration   2: 251.703 ops/ms
+Iteration   3: 248.017 ops/ms
+Iteration   4: 230.354 ops/ms
+Iteration   5: 227.733 ops/ms
+Iteration   6: 226.593 ops/ms
+Iteration   7: 233.135 ops/ms
+Iteration   8: 234.119 ops/ms
+Iteration   9: 237.815 ops/ms
+Iteration  10: 202.790 ops/ms
+Iteration  11: 111.956 ops/ms
+Iteration  12: 196.495 ops/ms
+Iteration  13: 234.386 ops/ms
+Iteration  14: 238.258 ops/ms
+Iteration  15: 244.855 ops/ms
+Iteration  16: 200.651 ops/ms
+Iteration  17: 240.082 ops/ms
+Iteration  18: 251.824 ops/ms
+Iteration  19: 240.439 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+232.551 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  214.805 ±(99.9%) 17.930 ops/ms [Average]
+  (min, avg, max) = (111.956, 214.805, 252.071), stdev = 31.871
+  CI (99.9%): [196.875, 232.735] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 10000)
+
+# Run progress: 68.75% complete, ETA 00:15:26
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+20.680 ops/ms
+# Warmup Iteration   2: 25.178 ops/ms
+# Warmup Iteration   3: 25.586 ops/ms
+# Warmup Iteration   4: 25.163 ops/ms
+# Warmup Iteration   5: 24.779 ops/ms
+# Warmup Iteration   6: 21.164 ops/ms
+# Warmup Iteration   7: 18.971 ops/ms
+# Warmup Iteration   8: 22.236 ops/ms
+# Warmup Iteration   9: 24.473 ops/ms
+# Warmup Iteration  10: 23.404 ops/ms
+Iteration   1: 23.791 ops/ms
+Iteration   2: 17.755 ops/ms
+Iteration   3: 22.303 ops/ms
+Iteration   4: 24.775 ops/ms
+Iteration   5: 25.089 ops/ms
+Iteration   6: 23.544 ops/ms
+Iteration   7: 18.910 ops/ms
+Iteration   8: 23.421 ops/ms
+Iteration   9: 25.058 ops/ms
+Iteration  10: 23.898 ops/ms
+Iteration  11: 21.559 ops/ms
+Iteration  12: 19.455 ops/ms
+Iteration  13: 20.949 ops/ms
+Iteration  14: 23.219 ops/ms
+Iteration  15: 21.860 ops/ms
+Iteration  16: 20.581 ops/ms
+Iteration  17: 21.869 ops/ms
+Iteration  18: 17.877 ops/ms
+Iteration  19: 20.020 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15.656 ops/ms
+
+# Run progress: 69.79% complete, ETA 00:14:55
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+21.213 ops/ms
+# Warmup Iteration   2: 22.763 ops/ms
+# Warmup Iteration   3: 20.749 ops/ms
+# Warmup Iteration   4: 24.833 ops/ms
+# Warmup Iteration   5: 24.645 ops/ms
+# Warmup Iteration   6: 24.973 ops/ms
+# Warmup Iteration   7: 22.424 ops/ms
+# Warmup Iteration   8: 19.887 ops/ms
+# Warmup Iteration   9: 24.421 ops/ms
+# Warmup Iteration  10: 24.038 ops/ms
+Iteration   1: 25.576 ops/ms
+Iteration   2: 24.083 ops/ms
+Iteration   3: 18.524 ops/ms
+Iteration   4: 24.433 ops/ms
+Iteration   5: 24.565 ops/ms
+Iteration   6: 24.422 ops/ms
+Iteration   7: 24.497 ops/ms
+Iteration   8: 20.732 ops/ms
+Iteration   9: 24.822 ops/ms
+Iteration  10: 24.817 ops/ms
+Iteration  11: 24.689 ops/ms
+Iteration  12: 24.465 ops/ms
+Iteration  13: 23.362 ops/ms
+Iteration  14: 19.591 ops/ms
+Iteration  15: 19.058 ops/ms
+Iteration  16: 15.159 ops/ms
+Iteration  17: 21.493 ops/ms
+Iteration  18: 24.928 ops/ms
+Iteration  19: 19.699 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+19.218 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  21.993 ±(99.9%) 1.580 ops/ms [Average]
+  (min, avg, max) = (15.159, 21.993, 25.576), stdev = 2.808
+  CI (99.9%): [20.413, 23.573] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 1000)
+
+# Run progress: 70.83% complete, ETA 00:14:24
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+174.650 ops/ms
+# Warmup Iteration   2: 176.175 ops/ms
+# Warmup Iteration   3: 174.496 ops/ms
+# Warmup Iteration   4: 131.279 ops/ms
+# Warmup Iteration   5: 174.244 ops/ms
+# Warmup Iteration   6: 177.005 ops/ms
+# Warmup Iteration   7: 175.110 ops/ms
+# Warmup Iteration   8: 154.045 ops/ms
+# Warmup Iteration   9: 95.187 ops/ms
+# Warmup Iteration  10: 141.499 ops/ms
+Iteration   1: 125.820 ops/ms
+Iteration   2: 172.852 ops/ms
+Iteration   3: 169.481 ops/ms
+Iteration   4: 173.458 ops/ms
+Iteration   5: 155.736 ops/ms
+Iteration   6: 172.555 ops/ms
+Iteration   7: 162.709 ops/ms
+Iteration   8: 177.714 ops/ms
+Iteration   9: 179.801 ops/ms
+Iteration  10: 137.856 ops/ms
+Iteration  11: 175.998 ops/ms
+Iteration  12: 175.222 ops/ms
+Iteration  13: 177.456 ops/ms
+Iteration  14: 175.307 ops/ms
+Iteration  15: 125.342 ops/ms
+Iteration  16: 166.536 ops/ms
+Iteration  17: 172.324 ops/ms
+Iteration  18: 181.533 ops/ms
+Iteration  19: 170.668 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+145.624 ops/ms
+
+# Run progress: 71.88% complete, ETA 00:13:53
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+168.150 ops/ms
+# Warmup Iteration   2: 163.840 ops/ms
+# Warmup Iteration   3: 165.843 ops/ms
+# Warmup Iteration   4: 172.907 ops/ms
+# Warmup Iteration   5: 155.988 ops/ms
+# Warmup Iteration   6: 168.453 ops/ms
+# Warmup Iteration   7: 177.027 ops/ms
+# Warmup Iteration   8: 174.370 ops/ms
+# Warmup Iteration   9: 168.499 ops/ms
+# Warmup Iteration  10: 168.404 ops/ms
+Iteration   1: 154.300 ops/ms
+Iteration   2: 177.392 ops/ms
+Iteration   3: 179.878 ops/ms
+Iteration   4: 173.031 ops/ms
+Iteration   5: 173.141 ops/ms
+Iteration   6: 149.138 ops/ms
+Iteration   7: 177.662 ops/ms
+Iteration   8: 177.971 ops/ms
+Iteration   9: 176.427 ops/ms
+Iteration  10: 177.811 ops/ms
+Iteration  11: 150.296 ops/ms
+Iteration  12: 178.274 ops/ms
+Iteration  13: 178.819 ops/ms
+Iteration  14: 173.991 ops/ms
+Iteration  15: 137.617 ops/ms
+Iteration  16: 97.596 ops/ms
+Iteration  17: 90.094 ops/ms
+Iteration  18: 159.909 ops/ms
+Iteration  19: 131.985 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+107.373 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  160.417 ±(99.9%) 13.486 ops/ms [Average]
+  (min, avg, max) = (90.094, 160.417, 181.533), stdev = 23.971
+  CI (99.9%): [146.931, 173.903] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 10000)
+
+# Run progress: 72.92% complete, ETA 00:13:22
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+8.717 ops/ms
+# Warmup Iteration   2: 12.323 ops/ms
+# Warmup Iteration   3: 15.657 ops/ms
+# Warmup Iteration   4: 17.780 ops/ms
+# Warmup Iteration   5: 17.491 ops/ms
+# Warmup Iteration   6: 17.902 ops/ms
+# Warmup Iteration   7: 15.096 ops/ms
+# Warmup Iteration   8: 17.504 ops/ms
+# Warmup Iteration   9: 17.904 ops/ms
+# Warmup Iteration  10: 17.974 ops/ms
+Iteration   1: 15.735 ops/ms
+Iteration   2: 12.865 ops/ms
+Iteration   3: 17.355 ops/ms
+Iteration   4: 17.622 ops/ms
+Iteration   5: 17.643 ops/ms
+Iteration   6: 15.511 ops/ms
+Iteration   7: 9.863 ops/ms
+Iteration   8: 17.055 ops/ms
+Iteration   9: 12.400 ops/ms
+Iteration  10: 11.827 ops/ms
+Iteration  11: 16.219 ops/ms
+Iteration  12: 15.002 ops/ms
+Iteration  13: 10.804 ops/ms
+Iteration  14: 11.865 ops/ms
+Iteration  15: 12.614 ops/ms
+Iteration  16: 16.888 ops/ms
+Iteration  17: 16.669 ops/ms
+Iteration  18: 13.074 ops/ms
+Iteration  19: 14.670 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15.610 ops/ms
+
+# Run progress: 73.96% complete, ETA 00:12:52
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+15.270 ops/ms
+# Warmup Iteration   2: 12.055 ops/ms
+# Warmup Iteration   3: 15.375 ops/ms
+# Warmup Iteration   4: 14.807 ops/ms
+# Warmup Iteration   5: 13.325 ops/ms
+# Warmup Iteration   6: 15.630 ops/ms
+# Warmup Iteration   7: 14.002 ops/ms
+# Warmup Iteration   8: 15.797 ops/ms
+# Warmup Iteration   9: 14.906 ops/ms
+# Warmup Iteration  10: 16.888 ops/ms
+Iteration   1: 17.271 ops/ms
+Iteration   2: 17.668 ops/ms
+Iteration   3: 15.047 ops/ms
+Iteration   4: 17.804 ops/ms
+Iteration   5: 17.727 ops/ms
+Iteration   6: 17.676 ops/ms
+Iteration   7: 18.019 ops/ms
+Iteration   8: 15.157 ops/ms
+Iteration   9: 17.596 ops/ms
+Iteration  10: 17.528 ops/ms
+Iteration  11: 17.634 ops/ms
+Iteration  12: 14.949 ops/ms
+Iteration  13: 12.215 ops/ms
+Iteration  14: 17.338 ops/ms
+Iteration  15: 17.878 ops/ms
+Iteration  16: 17.729 ops/ms
+Iteration  17: 17.907 ops/ms
+Iteration  18: 15.427 ops/ms
+Iteration  19: 17.574 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+17.780 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  15.730 ±(99.9%) 1.311 ops/ms [Average]
+  (min, avg, max) = (9.863, 15.730, 18.019), stdev = 2.331
+  CI (99.9%): [14.419, 17.042] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 1000)
+
+# Run progress: 75.00% complete, ETA 00:12:21
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3604.851 ops/ms
+# Warmup Iteration   2: 3653.139 ops/ms
+# Warmup Iteration   3: 3092.594 ops/ms
+# Warmup Iteration   4: 3660.753 ops/ms
+# Warmup Iteration   5: 3566.471 ops/ms
+# Warmup Iteration   6: 3613.172 ops/ms
+# Warmup Iteration   7: 3229.005 ops/ms
+# Warmup Iteration   8: 3027.806 ops/ms
+# Warmup Iteration   9: 3267.606 ops/ms
+# Warmup Iteration  10: 3535.632 ops/ms
+Iteration   1: 3546.264 ops/ms
+Iteration   2: 3224.618 ops/ms
+Iteration   3: 3630.636 ops/ms
+Iteration   4: 2837.341 ops/ms
+Iteration   5: 3652.058 ops/ms
+Iteration   6: 3449.114 ops/ms
+Iteration   7: 2909.561 ops/ms
+Iteration   8: 2297.131 ops/ms
+Iteration   9: 2188.587 ops/ms
+Iteration  10: 3423.696 ops/ms
+Iteration  11: 3616.981 ops/ms
+Iteration  12: 3604.012 ops/ms
+Iteration  13: 3651.132 ops/ms
+Iteration  14: 2932.251 ops/ms
+Iteration  15: 2835.239 ops/ms
+Iteration  16: 2215.642 ops/ms
+Iteration  17: 3078.910 ops/ms
+Iteration  18: 3406.841 ops/ms
+Iteration  19: 3337.524 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2894.940 ops/ms
+
+# Run progress: 76.04% complete, ETA 00:11:50
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3515.580 ops/ms
+# Warmup Iteration   2: 3409.102 ops/ms
+# Warmup Iteration   3: 3489.627 ops/ms
+# Warmup Iteration   4: 3292.081 ops/ms
+# Warmup Iteration   5: 3465.330 ops/ms
+# Warmup Iteration   6: 3655.057 ops/ms
+# Warmup Iteration   7: 3228.912 ops/ms
+# Warmup Iteration   8: 3341.807 ops/ms
+# Warmup Iteration   9: 3323.578 ops/ms
+# Warmup Iteration  10: 2883.574 ops/ms
+Iteration   1: 3436.123 ops/ms
+Iteration   2: 3582.123 ops/ms
+Iteration   3: 3628.305 ops/ms
+Iteration   4: 3651.766 ops/ms
+Iteration   5: 2305.690 ops/ms
+Iteration   6: 2481.491 ops/ms
+Iteration   7: 2765.898 ops/ms
+Iteration   8: 3213.661 ops/ms
+Iteration   9: 2893.638 ops/ms
+Iteration  10: 2620.858 ops/ms
+Iteration  11: 3059.305 ops/ms
+Iteration  12: 1958.067 ops/ms
+Iteration  13: 2717.613 ops/ms
+Iteration  14: 3121.314 ops/ms
+Iteration  15: 2812.746 ops/ms
+Iteration  16: 3310.046 ops/ms
+Iteration  17: 3595.946 ops/ms
+Iteration  18: 3649.503 ops/ms
+Iteration  19: 3700.510 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3615.247 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  3121.308 ±(99.9%) 278.840 ops/ms [Average]
+  (min, avg, max) = (1958.067, 3121.308, 3700.510), stdev = 495.638
+  CI (99.9%): [2842.468, 3400.148] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 10000)
+
+# Run progress: 77.08% complete, ETA 00:11:19
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2298.602 ops/ms
+# Warmup Iteration   2: 2346.894 ops/ms
+# Warmup Iteration   3: 2351.731 ops/ms
+# Warmup Iteration   4: 2351.233 ops/ms
+# Warmup Iteration   5: 2034.998 ops/ms
+# Warmup Iteration   6: 1980.130 ops/ms
+# Warmup Iteration   7: 2349.752 ops/ms
+# Warmup Iteration   8: 2202.013 ops/ms
+# Warmup Iteration   9: 2194.706 ops/ms
+# Warmup Iteration  10: 2255.591 ops/ms
+Iteration   1: 1719.340 ops/ms
+Iteration   2: 1979.419 ops/ms
+Iteration   3: 2318.335 ops/ms
+Iteration   4: 1828.346 ops/ms
+Iteration   5: 1806.442 ops/ms
+Iteration   6: 1741.702 ops/ms
+Iteration   7: 1649.460 ops/ms
+Iteration   8: 2203.085 ops/ms
+Iteration   9: 1757.844 ops/ms
+Iteration  10: 1776.348 ops/ms
+Iteration  11: 1707.535 ops/ms
+Iteration  12: 2354.918 ops/ms
+Iteration  13: 2023.275 ops/ms
+Iteration  14: 1616.184 ops/ms
+Iteration  15: 1640.626 ops/ms
+Iteration  16: 1272.297 ops/ms
+Iteration  17: 1645.792 ops/ms
+Iteration  18: 1429.771 ops/ms
+Iteration  19: 1741.101 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+1663.820 ops/ms
+
+# Run progress: 78.13% complete, ETA 00:10:48
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1554.374 ops/ms
+# Warmup Iteration   2: 1451.252 ops/ms
+# Warmup Iteration   3: 2020.887 ops/ms
+# Warmup Iteration   4: 1322.969 ops/ms
+# Warmup Iteration   5: 1214.156 ops/ms
+# Warmup Iteration   6: 1419.059 ops/ms
+# Warmup Iteration   7: 1076.834 ops/ms
+# Warmup Iteration   8: 2171.183 ops/ms
+# Warmup Iteration   9: 2242.147 ops/ms
+# Warmup Iteration  10: 2183.973 ops/ms
+Iteration   1: 1617.817 ops/ms
+Iteration   2: 1450.640 ops/ms
+Iteration   3: 1997.242 ops/ms
+Iteration   4: 2244.779 ops/ms
+Iteration   5: 2266.390 ops/ms
+Iteration   6: 2259.293 ops/ms
+Iteration   7: 1936.802 ops/ms
+Iteration   8: 2193.241 ops/ms
+Iteration   9: 2090.880 ops/ms
+Iteration  10: 2172.551 ops/ms
+Iteration  11: 2307.416 ops/ms
+Iteration  12: 2138.290 ops/ms
+Iteration  13: 1772.372 ops/ms
+Iteration  14: 1840.073 ops/ms
+Iteration  15: 2085.610 ops/ms
+Iteration  16: 2268.626 ops/ms
+Iteration  17: 2364.011 ops/ms
+Iteration  18: 1598.361 ops/ms
+Iteration  19: 2315.898 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2294.118 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  1927.251 ±(99.9%) 168.535 ops/ms [Average]
+  (min, avg, max) = (1272.297, 1927.251, 2364.011), stdev = 299.571
+  CI (99.9%): [1758.716, 2095.786] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 1000)
+
+# Run progress: 79.17% complete, ETA 00:10:17
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3453.607 ops/ms
+# Warmup Iteration   2: 3531.449 ops/ms
+# Warmup Iteration   3: 2768.798 ops/ms
+# Warmup Iteration   4: 3347.437 ops/ms
+# Warmup Iteration   5: 3612.731 ops/ms
+# Warmup Iteration   6: 3547.437 ops/ms
+# Warmup Iteration   7: 3518.392 ops/ms
+# Warmup Iteration   8: 2836.632 ops/ms
+# Warmup Iteration   9: 3598.988 ops/ms
+# Warmup Iteration  10: 3534.852 ops/ms
+Iteration   1: 3249.317 ops/ms
+Iteration   2: 3355.062 ops/ms
+Iteration   3: 2389.162 ops/ms
+Iteration   4: 2432.775 ops/ms
+Iteration   5: 3052.379 ops/ms
+Iteration   6: 2972.651 ops/ms
+Iteration   7: 3401.070 ops/ms
+Iteration   8: 3388.318 ops/ms
+Iteration   9: 3138.971 ops/ms
+Iteration  10: 3467.130 ops/ms
+Iteration  11: 3595.292 ops/ms
+Iteration  12: 3564.805 ops/ms
+Iteration  13: 3427.948 ops/ms
+Iteration  14: 2927.612 ops/ms
+Iteration  15: 3566.938 ops/ms
+Iteration  16: 3537.630 ops/ms
+Iteration  17: 3538.122 ops/ms
+Iteration  18: 3589.176 ops/ms
+Iteration  19: 3045.947 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3532.647 ops/ms
+
+# Run progress: 80.21% complete, ETA 00:09:46
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3344.914 ops/ms
+# Warmup Iteration   2: 3549.133 ops/ms
+# Warmup Iteration   3: 3574.191 ops/ms
+# Warmup Iteration   4: 3011.440 ops/ms
+# Warmup Iteration   5: 3638.930 ops/ms
+# Warmup Iteration   6: 3665.859 ops/ms
+# Warmup Iteration   7: 3633.814 ops/ms
+# Warmup Iteration   8: 3602.380 ops/ms
+# Warmup Iteration   9: 2993.538 ops/ms
+# Warmup Iteration  10: 3653.602 ops/ms
+Iteration   1: 3557.092 ops/ms
+Iteration   2: 3562.189 ops/ms
+Iteration   3: 3567.593 ops/ms
+Iteration   4: 2850.256 ops/ms
+Iteration   5: 3130.914 ops/ms
+Iteration   6: 2700.958 ops/ms
+Iteration   7: 2749.069 ops/ms
+Iteration   8: 3373.272 ops/ms
+Iteration   9: 3113.828 ops/ms
+Iteration  10: 2286.004 ops/ms
+Iteration  11: 2480.834 ops/ms
+Iteration  12: 3416.918 ops/ms
+Iteration  13: 3625.246 ops/ms
+Iteration  14: 3587.600 ops/ms
+Iteration  15: 2561.298 ops/ms
+Iteration  16: 3283.170 ops/ms
+Iteration  17: 2591.061 ops/ms
+Iteration  18: 2888.925 ops/ms
+Iteration  19: 2681.613 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2969.758 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  3153.764 ±(99.9%) 228.283 ops/ms [Average]
+  (min, avg, max) = (2286.004, 3153.764, 3625.246), stdev = 405.774
+  CI (99.9%): [2925.480, 3382.047] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 10000)
+
+# Run progress: 81.25% complete, ETA 00:09:15
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1622.479 ops/ms
+# Warmup Iteration   2: 1887.425 ops/ms
+# Warmup Iteration   3: 2065.996 ops/ms
+# Warmup Iteration   4: 2152.615 ops/ms
+# Warmup Iteration   5: 1323.705 ops/ms
+# Warmup Iteration   6: 1600.148 ops/ms
+# Warmup Iteration   7: 1479.880 ops/ms
+# Warmup Iteration   8: 1708.906 ops/ms
+# Warmup Iteration   9: 2239.674 ops/ms
+# Warmup Iteration  10: 1166.734 ops/ms
+Iteration   1: 1949.116 ops/ms
+Iteration   2: 2295.230 ops/ms
+Iteration   3: 2283.738 ops/ms
+Iteration   4: 1938.450 ops/ms
+Iteration   5: 1880.396 ops/ms
+Iteration   6: 1630.502 ops/ms
+Iteration   7: 2269.400 ops/ms
+Iteration   8: 2385.555 ops/ms
+Iteration   9: 2305.792 ops/ms
+Iteration  10: 1631.841 ops/ms
+Iteration  11: 1746.186 ops/ms
+Iteration  12: 1760.868 ops/ms
+Iteration  13: 2259.862 ops/ms
+Iteration  14: 1559.692 ops/ms
+Iteration  15: 1309.898 ops/ms
+Iteration  16: 833.679 ops/ms
+Iteration  17: 1887.979 ops/ms
+Iteration  18: 1937.622 ops/ms
+Iteration  19: 1613.485 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+1710.737 ops/ms
+
+# Run progress: 82.29% complete, ETA 00:08:44
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1802.302 ops/ms
+# Warmup Iteration   2: 2372.246 ops/ms
+# Warmup Iteration   3: 2365.691 ops/ms
+# Warmup Iteration   4: 2365.003 ops/ms
+# Warmup Iteration   5: 2393.396 ops/ms
+# Warmup Iteration   6: 2015.792 ops/ms
+# Warmup Iteration   7: 2131.823 ops/ms
+# Warmup Iteration   8: 1775.076 ops/ms
+# Warmup Iteration   9: 2370.934 ops/ms
+# Warmup Iteration  10: 2072.329 ops/ms
+Iteration   1: 1555.089 ops/ms
+Iteration   2: 503.201 ops/ms
+Iteration   3: 1431.833 ops/ms
+Iteration   4: 1538.015 ops/ms
+Iteration   5: 1177.085 ops/ms
+Iteration   6: 2044.745 ops/ms
+Iteration   7: 1791.399 ops/ms
+Iteration   8: 1590.904 ops/ms
+Iteration   9: 2083.809 ops/ms
+Iteration  10: 1623.339 ops/ms
+Iteration  11: 1653.875 ops/ms
+Iteration  12: 2017.768 ops/ms
+Iteration  13: 1701.704 ops/ms
+Iteration  14: 2072.466 ops/ms
+Iteration  15: 2157.084 ops/ms
+Iteration  16: 2188.714 ops/ms
+Iteration  17: 1462.117 ops/ms
+Iteration  18: 1692.227 ops/ms
+Iteration  19: 2064.498 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2087.607 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  1790.688 ±(99.9%) 223.875 ops/ms [Average]
+  (min, avg, max) = (503.201, 1790.688, 2385.555), stdev = 397.938
+  CI (99.9%): [1566.813, 2014.563] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 1000)
+
+# Run progress: 83.33% complete, ETA 00:08:14
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+131.709 ops/ms
+# Warmup Iteration   2: 137.009 ops/ms
+# Warmup Iteration   3: 111.507 ops/ms
+# Warmup Iteration   4: 137.532 ops/ms
+# Warmup Iteration   5: 134.478 ops/ms
+# Warmup Iteration   6: 133.294 ops/ms
+# Warmup Iteration   7: 127.085 ops/ms
+# Warmup Iteration   8: 118.917 ops/ms
+# Warmup Iteration   9: 137.296 ops/ms
+# Warmup Iteration  10: 133.108 ops/ms
+Iteration   1: 137.160 ops/ms
+Iteration   2: 137.273 ops/ms
+Iteration   3: 127.301 ops/ms
+Iteration   4: 127.572 ops/ms
+Iteration   5: 136.495 ops/ms
+Iteration   6: 113.894 ops/ms
+Iteration   7: 138.126 ops/ms
+Iteration   8: 135.642 ops/ms
+Iteration   9: 103.066 ops/ms
+Iteration  10: 134.808 ops/ms
+Iteration  11: 132.668 ops/ms
+Iteration  12: 136.877 ops/ms
+Iteration  13: 136.733 ops/ms
+Iteration  14: 113.722 ops/ms
+Iteration  15: 133.870 ops/ms
+Iteration  16: 133.420 ops/ms
+Iteration  17: 136.905 ops/ms
+Iteration  18: 128.694 ops/ms
+Iteration  19: 112.348 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+134.741 ops/ms
+
+# Run progress: 84.38% complete, ETA 00:07:43
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+131.017 ops/ms
+# Warmup Iteration   2: 105.085 ops/ms
+# Warmup Iteration   3: 80.253 ops/ms
+# Warmup Iteration   4: 73.711 ops/ms
+# Warmup Iteration   5: 66.644 ops/ms
+# Warmup Iteration   6: 117.771 ops/ms
+# Warmup Iteration   7: 134.921 ops/ms
+# Warmup Iteration   8: 133.183 ops/ms
+# Warmup Iteration   9: 121.949 ops/ms
+# Warmup Iteration  10: 109.444 ops/ms
+Iteration   1: 136.721 ops/ms
+Iteration   2: 135.645 ops/ms
+Iteration   3: 137.728 ops/ms
+Iteration   4: 137.081 ops/ms
+Iteration   5: 116.511 ops/ms
+Iteration   6: 125.929 ops/ms
+Iteration   7: 129.486 ops/ms
+Iteration   8: 135.847 ops/ms
+Iteration   9: 130.269 ops/ms
+Iteration  10: 111.846 ops/ms
+Iteration  11: 136.871 ops/ms
+Iteration  12: 138.284 ops/ms
+Iteration  13: 138.298 ops/ms
+Iteration  14: 138.424 ops/ms
+Iteration  15: 88.965 ops/ms
+Iteration  16: 121.858 ops/ms
+Iteration  17: 99.609 ops/ms
+Iteration  18: 115.715 ops/ms
+Iteration  19: 131.942 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+111.137 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  127.737 ±(99.9%) 7.023 ops/ms [Average]
+  (min, avg, max) = (88.965, 127.737, 138.424), stdev = 12.484
+  CI (99.9%): [120.714, 134.760] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_LIST, size = 10000)
+
+# Run progress: 85.42% complete, ETA 00:07:12
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13.729 ops/ms
+# Warmup Iteration   2: 12.469 ops/ms
+# Warmup Iteration   3: 13.518 ops/ms
+# Warmup Iteration   4: 13.092 ops/ms
+# Warmup Iteration   5: 10.235 ops/ms
+# Warmup Iteration   6: 13.823 ops/ms
+# Warmup Iteration   7: 13.831 ops/ms
+# Warmup Iteration   8: 13.257 ops/ms
+# Warmup Iteration   9: 13.496 ops/ms
+# Warmup Iteration  10: 12.285 ops/ms
+Iteration   1: 11.578 ops/ms
+Iteration   2: 8.670 ops/ms
+Iteration   3: 13.588 ops/ms
+Iteration   4: 12.223 ops/ms
+Iteration   5: 13.164 ops/ms
+Iteration   6: 10.057 ops/ms
+Iteration   7: 13.764 ops/ms
+Iteration   8: 13.129 ops/ms
+Iteration   9: 13.303 ops/ms
+Iteration  10: 13.906 ops/ms
+Iteration  11: 11.656 ops/ms
+Iteration  12: 13.922 ops/ms
+Iteration  13: 13.824 ops/ms
+Iteration  14: 13.597 ops/ms
+Iteration  15: 13.919 ops/ms
+Iteration  16: 11.508 ops/ms
+Iteration  17: 13.765 ops/ms
+Iteration  18: 13.789 ops/ms
+Iteration  19: 13.858 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13.715 ops/ms
+
+# Run progress: 86.46% complete, ETA 00:06:41
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11.582 ops/ms
+# Warmup Iteration   2: 13.745 ops/ms
+# Warmup Iteration   3: 13.826 ops/ms
+# Warmup Iteration   4: 13.472 ops/ms
+# Warmup Iteration   5: 13.762 ops/ms
+# Warmup Iteration   6: 10.158 ops/ms
+# Warmup Iteration   7: 12.620 ops/ms
+# Warmup Iteration   8: 12.824 ops/ms
+# Warmup Iteration   9: 13.617 ops/ms
+# Warmup Iteration  10: 13.140 ops/ms
+Iteration   1: 13.601 ops/ms
+Iteration   2: 11.843 ops/ms
+Iteration   3: 13.866 ops/ms
+Iteration   4: 13.821 ops/ms
+Iteration   5: 10.419 ops/ms
+Iteration   6: 11.781 ops/ms
+Iteration   7: 11.575 ops/ms
+Iteration   8: 12.975 ops/ms
+Iteration   9: 13.316 ops/ms
+Iteration  10: 12.120 ops/ms
+Iteration  11: 13.805 ops/ms
+Iteration  12: 11.614 ops/ms
+Iteration  13: 13.563 ops/ms
+Iteration  14: 13.574 ops/ms
+Iteration  15: 13.682 ops/ms
+Iteration  16: 12.847 ops/ms
+Iteration  17: 8.190 ops/ms
+Iteration  18: 12.383 ops/ms
+Iteration  19: 10.376 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12.819 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  12.628 ±(99.9%) 0.825 ops/ms [Average]
+  (min, avg, max) = (8.190, 12.628, 13.922), stdev = 1.467
+  CI (99.9%): [11.802, 13.453] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 1000)
+
+# Run progress: 87.50% complete, ETA 00:06:10
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+118.937 ops/ms
+# Warmup Iteration   2: 106.376 ops/ms
+# Warmup Iteration   3: 129.102 ops/ms
+# Warmup Iteration   4: 134.051 ops/ms
+# Warmup Iteration   5: 133.178 ops/ms
+# Warmup Iteration   6: 136.709 ops/ms
+# Warmup Iteration   7: 105.378 ops/ms
+# Warmup Iteration   8: 92.782 ops/ms
+# Warmup Iteration   9: 122.163 ops/ms
+# Warmup Iteration  10: 136.601 ops/ms
+Iteration   1: 138.176 ops/ms
+Iteration   2: 120.739 ops/ms
+Iteration   3: 105.740 ops/ms
+Iteration   4: 129.515 ops/ms
+Iteration   5: 134.905 ops/ms
+Iteration   6: 137.305 ops/ms
+Iteration   7: 134.405 ops/ms
+Iteration   8: 111.757 ops/ms
+Iteration   9: 136.967 ops/ms
+Iteration  10: 131.382 ops/ms
+Iteration  11: 136.544 ops/ms
+Iteration  12: 137.312 ops/ms
+Iteration  13: 109.951 ops/ms
+Iteration  14: 125.401 ops/ms
+Iteration  15: 111.523 ops/ms
+Iteration  16: 116.190 ops/ms
+Iteration  17: 120.051 ops/ms
+Iteration  18: 119.119 ops/ms
+Iteration  19: 111.305 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+125.389 ops/ms
+
+# Run progress: 88.54% complete, ETA 00:05:39
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+134.942 ops/ms
+# Warmup Iteration   2: 134.251 ops/ms
+# Warmup Iteration   3: 122.622 ops/ms
+# Warmup Iteration   4: 131.037 ops/ms
+# Warmup Iteration   5: 136.939 ops/ms
+# Warmup Iteration   6: 128.282 ops/ms
+# Warmup Iteration   7: 137.195 ops/ms
+# Warmup Iteration   8: 137.004 ops/ms
+# Warmup Iteration   9: 97.923 ops/ms
+# Warmup Iteration  10: 135.221 ops/ms
+Iteration   1: 132.914 ops/ms
+Iteration   2: 130.403 ops/ms
+Iteration   3: 121.309 ops/ms
+Iteration   4: 113.743 ops/ms
+Iteration   5: 124.925 ops/ms
+Iteration   6: 137.631 ops/ms
+Iteration   7: 137.491 ops/ms
+Iteration   8: 133.835 ops/ms
+Iteration   9: 111.732 ops/ms
+Iteration  10: 134.465 ops/ms
+Iteration  11: 132.661 ops/ms
+Iteration  12: 133.182 ops/ms
+Iteration  13: 135.995 ops/ms
+Iteration  14: 123.472 ops/ms
+Iteration  15: 122.668 ops/ms
+Iteration  16: 132.663 ops/ms
+Iteration  17: 135.524 ops/ms
+Iteration  18: 132.089 ops/ms
+Iteration  19: 130.575 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+109.864 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  126.520 ±(99.9%) 5.576 ops/ms [Average]
+  (min, avg, max) = (105.740, 126.520, 138.176), stdev = 9.911
+  CI (99.9%): [120.944, 132.096] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_ARRAY_SET, size = 10000)
+
+# Run progress: 89.58% complete, ETA 00:05:08
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11.935 ops/ms
+# Warmup Iteration   2: 13.084 ops/ms
+# Warmup Iteration   3: 11.489 ops/ms
+# Warmup Iteration   4: 10.502 ops/ms
+# Warmup Iteration   5: 12.328 ops/ms
+# Warmup Iteration   6: 12.545 ops/ms
+# Warmup Iteration   7: 12.733 ops/ms
+# Warmup Iteration   8: 13.766 ops/ms
+# Warmup Iteration   9: 12.473 ops/ms
+# Warmup Iteration  10: 12.829 ops/ms
+Iteration   1: 13.740 ops/ms
+Iteration   2: 13.824 ops/ms
+Iteration   3: 13.667 ops/ms
+Iteration   4: 13.978 ops/ms
+Iteration   5: 11.717 ops/ms
+Iteration   6: 13.759 ops/ms
+Iteration   7: 13.634 ops/ms
+Iteration   8: 13.584 ops/ms
+Iteration   9: 13.814 ops/ms
+Iteration  10: 11.765 ops/ms
+Iteration  11: 13.880 ops/ms
+Iteration  12: 13.821 ops/ms
+Iteration  13: 14.030 ops/ms
+Iteration  14: 13.981 ops/ms
+Iteration  15: 11.757 ops/ms
+Iteration  16: 13.874 ops/ms
+Iteration  17: 13.913 ops/ms
+Iteration  18: 13.910 ops/ms
+Iteration  19: 14.000 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+11.894 ops/ms
+
+# Run progress: 90.63% complete, ETA 00:04:37
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12.647 ops/ms
+# Warmup Iteration   2: 10.175 ops/ms
+# Warmup Iteration   3: 10.053 ops/ms
+# Warmup Iteration   4: 11.913 ops/ms
+# Warmup Iteration   5: 11.216 ops/ms
+# Warmup Iteration   6: 13.644 ops/ms
+# Warmup Iteration   7: 13.833 ops/ms
+# Warmup Iteration   8: 10.705 ops/ms
+# Warmup Iteration   9: 12.011 ops/ms
+# Warmup Iteration  10: 10.059 ops/ms
+Iteration   1: 12.945 ops/ms
+Iteration   2: 13.702 ops/ms
+Iteration   3: 13.915 ops/ms
+Iteration   4: 13.899 ops/ms
+Iteration   5: 11.881 ops/ms
+Iteration   6: 13.619 ops/ms
+Iteration   7: 13.550 ops/ms
+Iteration   8: 12.079 ops/ms
+Iteration   9: 12.945 ops/ms
+Iteration  10: 11.691 ops/ms
+Iteration  11: 11.723 ops/ms
+Iteration  12: 13.781 ops/ms
+Iteration  13: 13.774 ops/ms
+Iteration  14: 13.803 ops/ms
+Iteration  15: 13.916 ops/ms
+Iteration  16: 11.828 ops/ms
+Iteration  17: 13.945 ops/ms
+Iteration  18: 13.893 ops/ms
+Iteration  19: 13.884 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13.858 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  13.329 ±(99.9%) 0.482 ops/ms [Average]
+  (min, avg, max) = (11.691, 13.329, 14.030), stdev = 0.857
+  CI (99.9%): [12.847, 13.812] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 1000)
+
+# Run progress: 91.67% complete, ETA 00:04:06
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+6195.694 ops/ms
+# Warmup Iteration   2: 7373.012 ops/ms
+# Warmup Iteration   3: 7753.952 ops/ms
+# Warmup Iteration   4: 7727.637 ops/ms
+# Warmup Iteration   5: 7703.485 ops/ms
+# Warmup Iteration   6: 6387.324 ops/ms
+# Warmup Iteration   7: 6387.558 ops/ms
+# Warmup Iteration   8: 7249.427 ops/ms
+# Warmup Iteration   9: 7345.630 ops/ms
+# Warmup Iteration  10: 7077.844 ops/ms
+Iteration   1: 6224.201 ops/ms
+Iteration   2: 7411.117 ops/ms
+Iteration   3: 7278.701 ops/ms
+Iteration   4: 7376.687 ops/ms
+Iteration   5: 7585.336 ops/ms
+Iteration   6: 6425.972 ops/ms
+Iteration   7: 7484.282 ops/ms
+Iteration   8: 7644.539 ops/ms
+Iteration   9: 6821.332 ops/ms
+Iteration  10: 7148.146 ops/ms
+Iteration  11: 7040.439 ops/ms
+Iteration  12: 6541.231 ops/ms
+Iteration  13: 7575.949 ops/ms
+Iteration  14: 7649.587 ops/ms
+Iteration  15: 7693.164 ops/ms
+Iteration  16: 7586.123 ops/ms
+Iteration  17: 6464.771 ops/ms
+Iteration  18: 7461.712 ops/ms
+Iteration  19: 7636.331 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+7569.706 ops/ms
+
+# Run progress: 92.71% complete, ETA 00:03:36
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+7402.544 ops/ms
+# Warmup Iteration   2: 6525.502 ops/ms
+# Warmup Iteration   3: 7740.611 ops/ms
+# Warmup Iteration   4: 7644.799 ops/ms
+# Warmup Iteration   5: 7715.168 ops/ms
+# Warmup Iteration   6: 7578.978 ops/ms
+# Warmup Iteration   7: 6301.726 ops/ms
+# Warmup Iteration   8: 7296.549 ops/ms
+# Warmup Iteration   9: 7554.868 ops/ms
+# Warmup Iteration  10: 6371.391 ops/ms
+Iteration   1: 7229.694 ops/ms
+Iteration   2: 6038.354 ops/ms
+Iteration   3: 7727.009 ops/ms
+Iteration   4: 7307.665 ops/ms
+Iteration   5: 7213.988 ops/ms
+Iteration   6: 7523.444 ops/ms
+Iteration   7: 6309.475 ops/ms
+Iteration   8: 7672.773 ops/ms
+Iteration   9: 7674.091 ops/ms
+Iteration  10: 7621.804 ops/ms
+Iteration  11: 7428.651 ops/ms
+Iteration  12: 6915.815 ops/ms
+Iteration  13: 7014.950 ops/ms
+Iteration  14: 7568.104 ops/ms
+Iteration  15: 7641.997 ops/ms
+Iteration  16: 7171.024 ops/ms
+Iteration  17: 7566.135 ops/ms
+Iteration  18: 6491.020 ops/ms
+Iteration  19: 7731.067 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+7659.404 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  7253.145 ±(99.9%) 270.515 ops/ms [Average]
+  (min, avg, max) = (6038.354, 7253.145, 7731.067), stdev = 480.840
+  CI (99.9%): [6982.630, 7523.660] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_AVL_SET, size = 10000)
+
+# Run progress: 93.75% complete, ETA 00:03:05
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4766.188 ops/ms
+# Warmup Iteration   2: 4567.890 ops/ms
+# Warmup Iteration   3: 4554.959 ops/ms
+# Warmup Iteration   4: 5203.458 ops/ms
+# Warmup Iteration   5: 3073.681 ops/ms
+# Warmup Iteration   6: 4258.227 ops/ms
+# Warmup Iteration   7: 5284.793 ops/ms
+# Warmup Iteration   8: 4448.039 ops/ms
+# Warmup Iteration   9: 4658.897 ops/ms
+# Warmup Iteration  10: 4948.941 ops/ms
+Iteration   1: 5012.977 ops/ms
+Iteration   2: 4484.001 ops/ms
+Iteration   3: 3501.436 ops/ms
+Iteration   4: 4128.233 ops/ms
+Iteration   5: 5054.121 ops/ms
+Iteration   6: 4351.534 ops/ms
+Iteration   7: 5093.152 ops/ms
+Iteration   8: 4618.365 ops/ms
+Iteration   9: 4589.358 ops/ms
+Iteration  10: 4965.258 ops/ms
+Iteration  11: 5396.901 ops/ms
+Iteration  12: 5264.248 ops/ms
+Iteration  13: 4664.124 ops/ms
+Iteration  14: 3945.781 ops/ms
+Iteration  15: 4919.522 ops/ms
+Iteration  16: 2841.546 ops/ms
+Iteration  17: 3500.797 ops/ms
+Iteration  18: 5214.029 ops/ms
+Iteration  19: 4234.564 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5310.913 ops/ms
+
+# Run progress: 94.79% complete, ETA 00:02:34
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4450.681 ops/ms
+# Warmup Iteration   2: 4461.665 ops/ms
+# Warmup Iteration   3: 3132.770 ops/ms
+# Warmup Iteration   4: 3026.335 ops/ms
+# Warmup Iteration   5: 4861.206 ops/ms
+# Warmup Iteration   6: 4830.820 ops/ms
+# Warmup Iteration   7: 3834.005 ops/ms
+# Warmup Iteration   8: 4783.741 ops/ms
+# Warmup Iteration   9: 4030.607 ops/ms
+# Warmup Iteration  10: 4984.849 ops/ms
+Iteration   1: 5258.289 ops/ms
+Iteration   2: 5069.897 ops/ms
+Iteration   3: 4920.491 ops/ms
+Iteration   4: 4527.130 ops/ms
+Iteration   5: 4855.940 ops/ms
+Iteration   6: 5099.530 ops/ms
+Iteration   7: 5327.260 ops/ms
+Iteration   8: 5346.506 ops/ms
+Iteration   9: 5375.906 ops/ms
+Iteration  10: 4398.058 ops/ms
+Iteration  11: 4743.019 ops/ms
+Iteration  12: 5140.790 ops/ms
+Iteration  13: 5140.039 ops/ms
+Iteration  14: 5301.506 ops/ms
+Iteration  15: 4124.541 ops/ms
+Iteration  16: 5279.375 ops/ms
+Iteration  17: 5132.186 ops/ms
+Iteration  18: 5016.506 ops/ms
+Iteration  19: 5216.065 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4461.133 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  4770.626 ±(99.9%) 330.590 ops/ms [Average]
+  (min, avg, max) = (2841.546, 4770.626, 5396.901), stdev = 587.624
+  CI (99.9%): [4440.036, 5101.216] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 1000)
+
+# Run progress: 95.83% complete, ETA 00:02:03
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3538.074 ops/ms
+# Warmup Iteration   2: 3579.115 ops/ms
+# Warmup Iteration   3: 3567.942 ops/ms
+# Warmup Iteration   4: 3609.728 ops/ms
+# Warmup Iteration   5: 3065.039 ops/ms
+# Warmup Iteration   6: 3580.092 ops/ms
+# Warmup Iteration   7: 3611.996 ops/ms
+# Warmup Iteration   8: 3616.017 ops/ms
+# Warmup Iteration   9: 3645.391 ops/ms
+# Warmup Iteration  10: 3097.571 ops/ms
+Iteration   1: 3516.914 ops/ms
+Iteration   2: 3602.831 ops/ms
+Iteration   3: 3659.206 ops/ms
+Iteration   4: 3288.728 ops/ms
+Iteration   5: 3338.871 ops/ms
+Iteration   6: 2744.578 ops/ms
+Iteration   7: 3138.229 ops/ms
+Iteration   8: 3356.117 ops/ms
+Iteration   9: 3412.142 ops/ms
+Iteration  10: 3336.806 ops/ms
+Iteration  11: 2820.488 ops/ms
+Iteration  12: 3589.480 ops/ms
+Iteration  13: 3606.878 ops/ms
+Iteration  14: 3548.407 ops/ms
+Iteration  15: 3541.744 ops/ms
+Iteration  16: 2995.388 ops/ms
+Iteration  17: 3622.397 ops/ms
+Iteration  18: 3459.155 ops/ms
+Iteration  19: 2376.247 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2079.114 ops/ms
+
+# Run progress: 96.88% complete, ETA 00:01:32
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2585.348 ops/ms
+# Warmup Iteration   2: 3403.801 ops/ms
+# Warmup Iteration   3: 3422.987 ops/ms
+# Warmup Iteration   4: 3387.954 ops/ms
+# Warmup Iteration   5: 2789.962 ops/ms
+# Warmup Iteration   6: 2588.524 ops/ms
+# Warmup Iteration   7: 2870.951 ops/ms
+# Warmup Iteration   8: 2317.575 ops/ms
+# Warmup Iteration   9: 3291.816 ops/ms
+# Warmup Iteration  10: 3479.745 ops/ms
+Iteration   1: 3218.081 ops/ms
+Iteration   2: 3029.753 ops/ms
+Iteration   3: 3032.696 ops/ms
+Iteration   4: 2412.546 ops/ms
+Iteration   5: 3343.122 ops/ms
+Iteration   6: 3409.391 ops/ms
+Iteration   7: 2872.600 ops/ms
+Iteration   8: 3336.847 ops/ms
+Iteration   9: 3308.467 ops/ms
+Iteration  10: 3453.087 ops/ms
+Iteration  11: 3572.461 ops/ms
+Iteration  12: 2918.714 ops/ms
+Iteration  13: 3319.791 ops/ms
+Iteration  14: 3535.919 ops/ms
+Iteration  15: 3394.654 ops/ms
+Iteration  16: 3039.937 ops/ms
+Iteration  17: 2746.335 ops/ms
+Iteration  18: 2947.993 ops/ms
+Iteration  19: 3338.657 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+3505.140 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  3219.248 ±(99.9%) 210.130 ops/ms [Average]
+  (min, avg, max) = (2079.114, 3219.248, 3659.206), stdev = 373.505
+  CI (99.9%): [3009.118, 3429.377] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = FASTUTILS_RTB_SET, size = 10000)
+
+# Run progress: 97.92% complete, ETA 00:01:01
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2615.395 ops/ms
+# Warmup Iteration   2: 2173.766 ops/ms
+# Warmup Iteration   3: 2574.328 ops/ms
+# Warmup Iteration   4: 2615.842 ops/ms
+# Warmup Iteration   5: 2682.283 ops/ms
+# Warmup Iteration   6: 2644.160 ops/ms
+# Warmup Iteration   7: 2475.991 ops/ms
+# Warmup Iteration   8: 1946.468 ops/ms
+# Warmup Iteration   9: 1902.930 ops/ms
+# Warmup Iteration  10: 2199.034 ops/ms
+Iteration   1: 1807.643 ops/ms
+Iteration   2: 1919.406 ops/ms
+Iteration   3: 1534.512 ops/ms
+Iteration   4: 2304.618 ops/ms
+Iteration   5: 1970.928 ops/ms
+Iteration   6: 2196.175 ops/ms
+Iteration   7: 1924.189 ops/ms
+Iteration   8: 1509.787 ops/ms
+Iteration   9: 1574.285 ops/ms
+Iteration  10: 1210.702 ops/ms
+Iteration  11: 1220.074 ops/ms
+Iteration  12: 2107.946 ops/ms
+Iteration  13: 2509.607 ops/ms
+Iteration  14: 2031.596 ops/ms
+Iteration  15: 1957.965 ops/ms
+Iteration  16: 2002.279 ops/ms
+Iteration  17: 2320.485 ops/ms
+Iteration  18: 2375.524 ops/ms
+Iteration  19: 1720.946 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2317.134 ops/ms
+
+# Run progress: 98.96% complete, ETA 00:00:30
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+2245.053 ops/ms
+# Warmup Iteration   2: 1487.859 ops/ms
+# Warmup Iteration   3: 1926.921 ops/ms
+# Warmup Iteration   4: 1325.124 ops/ms
+# Warmup Iteration   5: 1754.086 ops/ms
+# Warmup Iteration   6: 2068.889 ops/ms
+# Warmup Iteration   7: 2057.396 ops/ms
+# Warmup Iteration   8: 1790.779 ops/ms
+# Warmup Iteration   9: 1096.840 ops/ms
+# Warmup Iteration  10: 1610.886 ops/ms
+Iteration   1: 2569.528 ops/ms
+Iteration   2: 2668.828 ops/ms
+Iteration   3: 2561.964 ops/ms
+Iteration   4: 2462.099 ops/ms
+Iteration   5: 2192.502 ops/ms
+Iteration   6: 2219.960 ops/ms
+Iteration   7: 2513.706 ops/ms
+Iteration   8: 2232.416 ops/ms
+Iteration   9: 2305.340 ops/ms
+Iteration  10: 2114.280 ops/ms
+Iteration  11: 2320.673 ops/ms
+Iteration  12: 2517.020 ops/ms
+Iteration  13: 2073.193 ops/ms
+Iteration  14: 2332.047 ops/ms
+Iteration  15: 2594.456 ops/ms
+Iteration  16: 2295.685 ops/ms
+Iteration  17: 2685.172 ops/ms
+Iteration  18: 2679.367 ops/ms
+Iteration  19: 2682.478 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2705.203 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  2181.043 ±(99.9%) 221.902 ops/ms [Average]
+  (min, avg, max) = (1210.702, 2181.043, 2705.203), stdev = 394.430
+  CI (99.9%): [1959.141, 2402.944] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:49:22
+
+Benchmark                                     (repositorySupplier)  (size)   Mode  Cnt      Score      Error   Units
+benchmarkTests.TestAdd.addExisting            FASTUTILS_ARRAY_LIST    1000  thrpt   40  25974.290 ± 3334.061  ops/ms
+benchmarkTests.TestAdd.addExisting            FASTUTILS_ARRAY_LIST   10000  thrpt   40  11231.594 ± 2001.193  ops/ms
+benchmarkTests.TestAdd.addExisting             FASTUTILS_ARRAY_SET    1000  thrpt   40    217.223 ±   17.758  ops/ms
+benchmarkTests.TestAdd.addExisting             FASTUTILS_ARRAY_SET   10000  thrpt   40     18.468 ±    2.307  ops/ms
+benchmarkTests.TestAdd.addExisting               FASTUTILS_AVL_SET    1000  thrpt   40   4172.640 ±  378.208  ops/ms
+benchmarkTests.TestAdd.addExisting               FASTUTILS_AVL_SET   10000  thrpt   40   2827.296 ±  233.725  ops/ms
+benchmarkTests.TestAdd.addExisting               FASTUTILS_RTB_SET    1000  thrpt   40   3854.401 ±  317.537  ops/ms
+benchmarkTests.TestAdd.addExisting               FASTUTILS_RTB_SET   10000  thrpt   40   2693.505 ±  287.136  ops/ms
+benchmarkTests.TestAdd.addNew                 FASTUTILS_ARRAY_LIST    1000  thrpt   40  16443.963 ± 4921.591  ops/ms
+benchmarkTests.TestAdd.addNew                 FASTUTILS_ARRAY_LIST   10000  thrpt   40   7273.786 ± 2426.826  ops/ms
+benchmarkTests.TestAdd.addNew                  FASTUTILS_ARRAY_SET    1000  thrpt   40    128.341 ±    8.973  ops/ms
+benchmarkTests.TestAdd.addNew                  FASTUTILS_ARRAY_SET   10000  thrpt   40     12.561 ±    0.827  ops/ms
+benchmarkTests.TestAdd.addNew                    FASTUTILS_AVL_SET    1000  thrpt   40   5149.337 ±  647.964  ops/ms
+benchmarkTests.TestAdd.addNew                    FASTUTILS_AVL_SET   10000  thrpt   40   3937.170 ±  358.148  ops/ms
+benchmarkTests.TestAdd.addNew                    FASTUTILS_RTB_SET    1000  thrpt   40   3219.763 ±  218.966  ops/ms
+benchmarkTests.TestAdd.addNew                    FASTUTILS_RTB_SET   10000  thrpt   40   2452.358 ±  118.091  ops/ms
+benchmarkTests.TestContains.containsExisting  FASTUTILS_ARRAY_LIST    1000  thrpt   40    236.702 ±   19.132  ops/ms
+benchmarkTests.TestContains.containsExisting  FASTUTILS_ARRAY_LIST   10000  thrpt   40     24.950 ±    1.205  ops/ms
+benchmarkTests.TestContains.containsExisting   FASTUTILS_ARRAY_SET    1000  thrpt   40    218.880 ±   20.375  ops/ms
+benchmarkTests.TestContains.containsExisting   FASTUTILS_ARRAY_SET   10000  thrpt   40     22.812 ±    1.448  ops/ms
+benchmarkTests.TestContains.containsExisting     FASTUTILS_AVL_SET    1000  thrpt   40   5442.113 ±  336.059  ops/ms
+benchmarkTests.TestContains.containsExisting     FASTUTILS_AVL_SET   10000  thrpt   40   3532.206 ±  328.057  ops/ms
+benchmarkTests.TestContains.containsExisting     FASTUTILS_RTB_SET    1000  thrpt   40   5321.119 ±  315.357  ops/ms
+benchmarkTests.TestContains.containsExisting     FASTUTILS_RTB_SET   10000  thrpt   40   3716.300 ±  187.240  ops/ms
+benchmarkTests.TestContains.containsNew       FASTUTILS_ARRAY_LIST    1000  thrpt   40    124.088 ±    9.812  ops/ms
+benchmarkTests.TestContains.containsNew       FASTUTILS_ARRAY_LIST   10000  thrpt   40     12.610 ±    0.841  ops/ms
+benchmarkTests.TestContains.containsNew        FASTUTILS_ARRAY_SET    1000  thrpt   40    124.817 ±    9.464  ops/ms
+benchmarkTests.TestContains.containsNew        FASTUTILS_ARRAY_SET   10000  thrpt   40     12.116 ±    0.992  ops/ms
+benchmarkTests.TestContains.containsNew          FASTUTILS_AVL_SET    1000  thrpt   40   7259.733 ±  528.429  ops/ms
+benchmarkTests.TestContains.containsNew          FASTUTILS_AVL_SET   10000  thrpt   40   5019.946 ±  511.779  ops/ms
+benchmarkTests.TestContains.containsNew          FASTUTILS_RTB_SET    1000  thrpt   40   4195.450 ±  356.486  ops/ms
+benchmarkTests.TestContains.containsNew          FASTUTILS_RTB_SET   10000  thrpt   40   3253.638 ±  258.426  ops/ms
+benchmarkTests.TestRemove.removeExisting      FASTUTILS_ARRAY_LIST    1000  thrpt   40    214.805 ±   17.930  ops/ms
+benchmarkTests.TestRemove.removeExisting      FASTUTILS_ARRAY_LIST   10000  thrpt   40     21.993 ±    1.580  ops/ms
+benchmarkTests.TestRemove.removeExisting       FASTUTILS_ARRAY_SET    1000  thrpt   40    160.417 ±   13.486  ops/ms
+benchmarkTests.TestRemove.removeExisting       FASTUTILS_ARRAY_SET   10000  thrpt   40     15.730 ±    1.311  ops/ms
+benchmarkTests.TestRemove.removeExisting         FASTUTILS_AVL_SET    1000  thrpt   40   3121.308 ±  278.840  ops/ms
+benchmarkTests.TestRemove.removeExisting         FASTUTILS_AVL_SET   10000  thrpt   40   1927.251 ±  168.535  ops/ms
+benchmarkTests.TestRemove.removeExisting         FASTUTILS_RTB_SET    1000  thrpt   40   3153.764 ±  228.283  ops/ms
+benchmarkTests.TestRemove.removeExisting         FASTUTILS_RTB_SET   10000  thrpt   40   1790.688 ±  223.875  ops/ms
+benchmarkTests.TestRemove.removeNew           FASTUTILS_ARRAY_LIST    1000  thrpt   40    127.737 ±    7.023  ops/ms
+benchmarkTests.TestRemove.removeNew           FASTUTILS_ARRAY_LIST   10000  thrpt   40     12.628 ±    0.825  ops/ms
+benchmarkTests.TestRemove.removeNew            FASTUTILS_ARRAY_SET    1000  thrpt   40    126.520 ±    5.576  ops/ms
+benchmarkTests.TestRemove.removeNew            FASTUTILS_ARRAY_SET   10000  thrpt   40     13.329 ±    0.482  ops/ms
+benchmarkTests.TestRemove.removeNew              FASTUTILS_AVL_SET    1000  thrpt   40   7253.145 ±  270.515  ops/ms
+benchmarkTests.TestRemove.removeNew              FASTUTILS_AVL_SET   10000  thrpt   40   4770.626 ±  330.590  ops/ms
+benchmarkTests.TestRemove.removeNew              FASTUTILS_RTB_SET    1000  thrpt   40   3219.248 ±  210.130  ops/ms
+benchmarkTests.TestRemove.removeNew              FASTUTILS_RTB_SET   10000  thrpt   40   2181.043 ±  221.902  ops/ms

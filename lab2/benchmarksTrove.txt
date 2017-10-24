@@ -1,0 +1,3255 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 1000)
+
+# Run progress: 0.00% complete, ETA 00:36:00
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13540.519 ops/ms
+# Warmup Iteration   2: 13961.642 ops/ms
+# Warmup Iteration   3: 12578.028 ops/ms
+# Warmup Iteration   4: 12181.107 ops/ms
+# Warmup Iteration   5: 11742.299 ops/ms
+# Warmup Iteration   6: 14800.033 ops/ms
+# Warmup Iteration   7: 14559.344 ops/ms
+# Warmup Iteration   8: 12452.291 ops/ms
+# Warmup Iteration   9: 14893.915 ops/ms
+# Warmup Iteration  10: 14531.689 ops/ms
+Iteration   1: 12439.622 ops/ms
+Iteration   2: 14269.672 ops/ms
+Iteration   3: 11704.543 ops/ms
+Iteration   4: 14786.793 ops/ms
+Iteration   5: 13754.656 ops/ms
+Iteration   6: 14938.803 ops/ms
+Iteration   7: 14844.485 ops/ms
+Iteration   8: 11303.505 ops/ms
+Iteration   9: 13870.964 ops/ms
+Iteration  10: 14030.170 ops/ms
+Iteration  11: 13533.292 ops/ms
+Iteration  12: 14650.456 ops/ms
+Iteration  13: 14737.399 ops/ms
+Iteration  14: 13424.487 ops/ms
+Iteration  15: 14276.737 ops/ms
+Iteration  16: 15049.753 ops/ms
+Iteration  17: 15225.335 ops/ms
+Iteration  18: 15111.457 ops/ms
+Iteration  19: 12149.493 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13971.491 ops/ms
+
+# Run progress: 1.39% complete, ETA 00:36:01
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13540.528 ops/ms
+# Warmup Iteration   2: 13809.821 ops/ms
+# Warmup Iteration   3: 15211.832 ops/ms
+# Warmup Iteration   4: 13286.453 ops/ms
+# Warmup Iteration   5: 14203.569 ops/ms
+# Warmup Iteration   6: 13813.770 ops/ms
+# Warmup Iteration   7: 15433.570 ops/ms
+# Warmup Iteration   8: 15139.986 ops/ms
+# Warmup Iteration   9: 12082.110 ops/ms
+# Warmup Iteration  10: 15269.380 ops/ms
+Iteration   1: 14283.675 ops/ms
+Iteration   2: 15217.852 ops/ms
+Iteration   3: 15255.636 ops/ms
+Iteration   4: 13263.027 ops/ms
+Iteration   5: 13633.845 ops/ms
+Iteration   6: 13635.689 ops/ms
+Iteration   7: 15168.842 ops/ms
+Iteration   8: 14801.608 ops/ms
+Iteration   9: 14609.298 ops/ms
+Iteration  10: 12594.103 ops/ms
+Iteration  11: 14722.538 ops/ms
+Iteration  12: 15376.842 ops/ms
+Iteration  13: 15340.919 ops/ms
+Iteration  14: 15221.124 ops/ms
+Iteration  15: 12570.014 ops/ms
+Iteration  16: 14140.492 ops/ms
+Iteration  17: 15083.845 ops/ms
+Iteration  18: 13944.426 ops/ms
+Iteration  19: 14301.282 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12822.762 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  14101.523 ±(99.9%) 601.057 ops/ms [Average]
+  (min, avg, max) = (11303.505, 14101.523, 15376.842), stdev = 1068.379
+  CI (99.9%): [13500.466, 14702.581] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 10000)
+
+# Run progress: 2.78% complete, ETA 00:35:28
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13165.430 ops/ms
+# Warmup Iteration   2: 13246.999 ops/ms
+# Warmup Iteration   3: 15268.516 ops/ms
+# Warmup Iteration   4: 15301.774 ops/ms
+# Warmup Iteration   5: 13305.672 ops/ms
+# Warmup Iteration   6: 14730.240 ops/ms
+# Warmup Iteration   7: 15221.093 ops/ms
+# Warmup Iteration   8: 15355.145 ops/ms
+# Warmup Iteration   9: 15392.459 ops/ms
+# Warmup Iteration  10: 13193.559 ops/ms
+Iteration   1: 15049.994 ops/ms
+Iteration   2: 14808.341 ops/ms
+Iteration   3: 15305.186 ops/ms
+Iteration   4: 15236.567 ops/ms
+Iteration   5: 14907.790 ops/ms
+Iteration   6: 13207.538 ops/ms
+Iteration   7: 14548.199 ops/ms
+Iteration   8: 15125.508 ops/ms
+Iteration   9: 15331.211 ops/ms
+Iteration  10: 15196.801 ops/ms
+Iteration  11: 12647.610 ops/ms
+Iteration  12: 14438.600 ops/ms
+Iteration  13: 15017.256 ops/ms
+Iteration  14: 15196.646 ops/ms
+Iteration  15: 15043.602 ops/ms
+Iteration  16: 12720.309 ops/ms
+Iteration  17: 13473.563 ops/ms
+Iteration  18: 14559.434 ops/ms
+Iteration  19: 13528.530 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15077.864 ops/ms
+
+# Run progress: 4.17% complete, ETA 00:34:58
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12064.479 ops/ms
+# Warmup Iteration   2: 13824.698 ops/ms
+# Warmup Iteration   3: 14875.991 ops/ms
+# Warmup Iteration   4: 13918.423 ops/ms
+# Warmup Iteration   5: 15395.374 ops/ms
+# Warmup Iteration   6: 11724.719 ops/ms
+# Warmup Iteration   7: 11699.436 ops/ms
+# Warmup Iteration   8: 12993.108 ops/ms
+# Warmup Iteration   9: 10767.363 ops/ms
+# Warmup Iteration  10: 14743.377 ops/ms
+Iteration   1: 14104.382 ops/ms
+Iteration   2: 13374.932 ops/ms
+Iteration   3: 15453.316 ops/ms
+Iteration   4: 14803.835 ops/ms
+Iteration   5: 14497.816 ops/ms
+Iteration   6: 14867.002 ops/ms
+Iteration   7: 12851.725 ops/ms
+Iteration   8: 12455.554 ops/ms
+Iteration   9: 15166.542 ops/ms
+Iteration  10: 10299.428 ops/ms
+Iteration  11: 11044.511 ops/ms
+Iteration  12: 8853.629 ops/ms
+Iteration  13: 13161.301 ops/ms
+Iteration  14: 13427.486 ops/ms
+Iteration  15: 12619.004 ops/ms
+Iteration  16: 14507.814 ops/ms
+Iteration  17: 11763.822 ops/ms
+Iteration  18: 10689.002 ops/ms
+Iteration  19: 13685.456 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+8616.963 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  13666.602 ±(99.9%) 996.375 ops/ms [Average]
+  (min, avg, max) = (8616.963, 13666.602, 15453.316), stdev = 1771.056
+  CI (99.9%): [12670.226, 14662.977] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 1000)
+
+# Run progress: 5.56% complete, ETA 00:34:27
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest.addExisting_Throughput(TestAdd_addExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 6.94% complete, ETA 00:27:15
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest.addExisting_Throughput(TestAdd_addExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 10000)
+
+# Run progress: 8.33% complete, ETA 00:22:26
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest.addExisting_Throughput(TestAdd_addExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 9.72% complete, ETA 00:18:59
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addExisting_jmhTest.addExisting_Throughput(TestAdd_addExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 1000)
+
+# Run progress: 11.11% complete, ETA 00:16:25
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+8192.595 ops/ms
+# Warmup Iteration   2: 11737.910 ops/ms
+# Warmup Iteration   3: 12445.519 ops/ms
+# Warmup Iteration   4: 13706.999 ops/ms
+# Warmup Iteration   5: 13332.517 ops/ms
+# Warmup Iteration   6: 10390.622 ops/ms
+# Warmup Iteration   7: 14344.362 ops/ms
+# Warmup Iteration   8: 12798.413 ops/ms
+# Warmup Iteration   9: 13016.665 ops/ms
+# Warmup Iteration  10: 14172.585 ops/ms
+Iteration   1: 8923.748 ops/ms
+Iteration   2: 10945.270 ops/ms
+Iteration   3: 10043.642 ops/ms
+Iteration   4: 14674.566 ops/ms
+Iteration   5: 13805.279 ops/ms
+Iteration   6: 12392.691 ops/ms
+Iteration   7: 12247.311 ops/ms
+Iteration   8: 12383.826 ops/ms
+Iteration   9: 9616.008 ops/ms
+Iteration  10: 12612.756 ops/ms
+Iteration  11: 2669.086 ops/ms
+Iteration  12: 7212.204 ops/ms
+Iteration  13: 14161.628 ops/ms
+Iteration  14: 13930.891 ops/ms
+Iteration  15: 14172.131 ops/ms
+Iteration  16: 11009.649 ops/ms
+Iteration  17: 10487.503 ops/ms
+Iteration  18: 7528.290 ops/ms
+Iteration  19: 14912.735 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14537.991 ops/ms
+
+# Run progress: 12.50% complete, ETA 00:17:56
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12850.887 ops/ms
+# Warmup Iteration   2: 8920.463 ops/ms
+# Warmup Iteration   3: 10172.957 ops/ms
+# Warmup Iteration   4: 12891.209 ops/ms
+# Warmup Iteration   5: 12668.585 ops/ms
+# Warmup Iteration   6: 14088.432 ops/ms
+# Warmup Iteration   7: 10810.979 ops/ms
+# Warmup Iteration   8: 8313.450 ops/ms
+# Warmup Iteration   9: 11860.628 ops/ms
+# Warmup Iteration  10: 9070.202 ops/ms
+Iteration   1: 13837.194 ops/ms
+Iteration   2: 14592.839 ops/ms
+Iteration   3: 5329.248 ops/ms
+Iteration   4: 9894.517 ops/ms
+Iteration   5: 12512.330 ops/ms
+Iteration   6: 10551.299 ops/ms
+Iteration   7: 13542.953 ops/ms
+Iteration   8: 12067.362 ops/ms
+Iteration   9: 8842.061 ops/ms
+Iteration  10: 11431.624 ops/ms
+Iteration  11: 7048.298 ops/ms
+Iteration  12: 3133.209 ops/ms
+Iteration  13: 4680.991 ops/ms
+Iteration  14: 7114.665 ops/ms
+Iteration  15: 7655.650 ops/ms
+Iteration  16: 9902.112 ops/ms
+Iteration  17: 14067.721 ops/ms
+Iteration  18: 12366.151 ops/ms
+Iteration  19: 11089.898 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14042.439 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  10799.244 ±(99.9%) 1851.030 ops/ms [Average]
+  (min, avg, max) = (2669.086, 10799.244, 14912.735), stdev = 3290.204
+  CI (99.9%): [8948.214, 12650.274] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addExisting
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 10000)
+
+# Run progress: 13.89% complete, ETA 00:19:02
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+10385.189 ops/ms
+# Warmup Iteration   2: 13678.362 ops/ms
+# Warmup Iteration   3: 14619.998 ops/ms
+# Warmup Iteration   4: 11916.174 ops/ms
+# Warmup Iteration   5: 15153.390 ops/ms
+# Warmup Iteration   6: 13312.420 ops/ms
+# Warmup Iteration   7: 13841.847 ops/ms
+# Warmup Iteration   8: 14771.009 ops/ms
+# Warmup Iteration   9: 12013.425 ops/ms
+# Warmup Iteration  10: 13451.917 ops/ms
+Iteration   1: 15143.766 ops/ms
+Iteration   2: 14359.284 ops/ms
+Iteration   3: 15277.411 ops/ms
+Iteration   4: 14990.451 ops/ms
+Iteration   5: 12548.083 ops/ms
+Iteration   6: 15647.222 ops/ms
+Iteration   7: 15273.337 ops/ms
+Iteration   8: 14800.848 ops/ms
+Iteration   9: 14639.662 ops/ms
+Iteration  10: 11836.673 ops/ms
+Iteration  11: 15308.470 ops/ms
+Iteration  12: 15392.117 ops/ms
+Iteration  13: 13753.247 ops/ms
+Iteration  14: 14876.921 ops/ms
+Iteration  15: 12247.802 ops/ms
+Iteration  16: 15465.041 ops/ms
+Iteration  17: 14796.641 ops/ms
+Iteration  18: 14343.848 ops/ms
+Iteration  19: 13356.597 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12283.611 ops/ms
+
+# Run progress: 15.28% complete, ETA 00:19:51
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13434.356 ops/ms
+# Warmup Iteration   2: 10081.875 ops/ms
+# Warmup Iteration   3: 13953.369 ops/ms
+# Warmup Iteration   4: 11275.818 ops/ms
+# Warmup Iteration   5: 10162.104 ops/ms
+# Warmup Iteration   6: 7064.098 ops/ms
+# Warmup Iteration   7: 6338.184 ops/ms
+# Warmup Iteration   8: 9777.297 ops/ms
+# Warmup Iteration   9: 12215.944 ops/ms
+# Warmup Iteration  10: 11309.578 ops/ms
+Iteration   1: 11659.999 ops/ms
+Iteration   2: 14954.407 ops/ms
+Iteration   3: 8808.130 ops/ms
+Iteration   4: 11061.273 ops/ms
+Iteration   5: 10908.250 ops/ms
+Iteration   6: 7179.650 ops/ms
+Iteration   7: 10497.154 ops/ms
+Iteration   8: 10821.059 ops/ms
+Iteration   9: 9626.833 ops/ms
+Iteration  10: 11318.893 ops/ms
+Iteration  11: 12900.238 ops/ms
+Iteration  12: 13593.916 ops/ms
+Iteration  13: 12771.156 ops/ms
+Iteration  14: 13502.056 ops/ms
+Iteration  15: 15702.265 ops/ms
+Iteration  16: 15829.463 ops/ms
+Iteration  17: 12640.491 ops/ms
+Iteration  18: 15454.577 ops/ms
+Iteration  19: 15068.149 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15678.645 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addExisting":
+  13407.941 ±(99.9%) 1208.814 ops/ms [Average]
+  (min, avg, max) = (7179.650, 13407.941, 15829.463), stdev = 2148.667
+  CI (99.9%): [12199.126, 14616.755] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 1000)
+
+# Run progress: 16.67% complete, ETA 00:20:26
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+10678.357 ops/ms
+# Warmup Iteration   2: 9411.769 ops/ms
+# Warmup Iteration   3: 11033.589 ops/ms
+# Warmup Iteration   4: 11545.529 ops/ms
+# Warmup Iteration   5: 11534.428 ops/ms
+# Warmup Iteration   6: 11087.095 ops/ms
+# Warmup Iteration   7: 9821.429 ops/ms
+# Warmup Iteration   8: 11350.642 ops/ms
+# Warmup Iteration   9: 11453.040 ops/ms
+# Warmup Iteration  10: 11284.572 ops/ms
+Iteration   1: 10189.105 ops/ms
+Iteration   2: 9086.156 ops/ms
+Iteration   3: 11407.716 ops/ms
+Iteration   4: 10477.943 ops/ms
+Iteration   5: 11206.860 ops/ms
+Iteration   6: 11940.673 ops/ms
+Iteration   7: 9465.998 ops/ms
+Iteration   8: 11317.860 ops/ms
+Iteration   9: 11855.539 ops/ms
+Iteration  10: 11037.367 ops/ms
+Iteration  11: 11864.204 ops/ms
+Iteration  12: 10661.737 ops/ms
+Iteration  13: 10007.126 ops/ms
+Iteration  14: 11810.302 ops/ms
+Iteration  15: 11301.281 ops/ms
+Iteration  16: 11290.193 ops/ms
+Iteration  17: 11820.375 ops/ms
+Iteration  18: 9293.862 ops/ms
+Iteration  19: 11279.321 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+11880.285 ops/ms
+
+# Run progress: 18.06% complete, ETA 00:20:53
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11006.066 ops/ms
+# Warmup Iteration   2: 10699.774 ops/ms
+# Warmup Iteration   3: 9476.296 ops/ms
+# Warmup Iteration   4: 11941.047 ops/ms
+# Warmup Iteration   5: 11217.027 ops/ms
+# Warmup Iteration   6: 11031.291 ops/ms
+# Warmup Iteration   7: 11264.951 ops/ms
+# Warmup Iteration   8: 8472.957 ops/ms
+# Warmup Iteration   9: 9583.534 ops/ms
+# Warmup Iteration  10: 10845.219 ops/ms
+Iteration   1: 11923.654 ops/ms
+Iteration   2: 10421.799 ops/ms
+Iteration   3: 9030.400 ops/ms
+Iteration   4: 10270.611 ops/ms
+Iteration   5: 10982.640 ops/ms
+Iteration   6: 10445.594 ops/ms
+Iteration   7: 11431.646 ops/ms
+Iteration   8: 9106.693 ops/ms
+Iteration   9: 10604.020 ops/ms
+Iteration  10: 11180.523 ops/ms
+Iteration  11: 11886.456 ops/ms
+Iteration  12: 11242.104 ops/ms
+Iteration  13: 11026.704 ops/ms
+Iteration  14: 8468.233 ops/ms
+Iteration  15: 10675.316 ops/ms
+Iteration  16: 9101.930 ops/ms
+Iteration  17: 9887.529 ops/ms
+Iteration  18: 11245.013 ops/ms
+Iteration  19: 9816.814 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+10387.451 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  10708.226 ±(99.9%) 544.162 ops/ms [Average]
+  (min, avg, max) = (8468.233, 10708.226, 11940.673), stdev = 967.247
+  CI (99.9%): [10164.064, 11252.388] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 10000)
+
+# Run progress: 19.44% complete, ETA 00:21:10
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12664.288 ops/ms
+# Warmup Iteration   2: 12753.122 ops/ms
+# Warmup Iteration   3: 13906.990 ops/ms
+# Warmup Iteration   4: 11110.797 ops/ms
+# Warmup Iteration   5: 12443.180 ops/ms
+# Warmup Iteration   6: 12796.092 ops/ms
+# Warmup Iteration   7: 13626.916 ops/ms
+# Warmup Iteration   8: 13926.693 ops/ms
+# Warmup Iteration   9: 11075.870 ops/ms
+# Warmup Iteration  10: 12250.390 ops/ms
+Iteration   1: 12458.537 ops/ms
+Iteration   2: 13971.212 ops/ms
+Iteration   3: 13984.134 ops/ms
+Iteration   4: 12737.118 ops/ms
+Iteration   5: 8509.402 ops/ms
+Iteration   6: 12271.784 ops/ms
+Iteration   7: 11861.331 ops/ms
+Iteration   8: 11645.327 ops/ms
+Iteration   9: 12031.924 ops/ms
+Iteration  10: 10140.293 ops/ms
+Iteration  11: 13638.517 ops/ms
+Iteration  12: 13305.513 ops/ms
+Iteration  13: 13201.912 ops/ms
+Iteration  14: 11372.214 ops/ms
+Iteration  15: 9666.913 ops/ms
+Iteration  16: 12460.515 ops/ms
+Iteration  17: 11201.929 ops/ms
+Iteration  18: 10745.261 ops/ms
+Iteration  19: 12085.682 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+11702.520 ops/ms
+
+# Run progress: 20.83% complete, ETA 00:21:21
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11989.572 ops/ms
+# Warmup Iteration   2: 12477.145 ops/ms
+# Warmup Iteration   3: 13379.875 ops/ms
+# Warmup Iteration   4: 10968.445 ops/ms
+# Warmup Iteration   5: 7543.479 ops/ms
+# Warmup Iteration   6: 10667.280 ops/ms
+# Warmup Iteration   7: 12854.688 ops/ms
+# Warmup Iteration   8: 7817.170 ops/ms
+# Warmup Iteration   9: 12482.259 ops/ms
+# Warmup Iteration  10: 10749.520 ops/ms
+Iteration   1: 7362.621 ops/ms
+Iteration   2: 12566.899 ops/ms
+Iteration   3: 13577.115 ops/ms
+Iteration   4: 12311.620 ops/ms
+Iteration   5: 11503.459 ops/ms
+Iteration   6: 7281.418 ops/ms
+Iteration   7: 11960.568 ops/ms
+Iteration   8: 13493.263 ops/ms
+Iteration   9: 11763.392 ops/ms
+Iteration  10: 12498.986 ops/ms
+Iteration  11: 10395.120 ops/ms
+Iteration  12: 10845.515 ops/ms
+Iteration  13: 13344.359 ops/ms
+Iteration  14: 13256.888 ops/ms
+Iteration  15: 13282.787 ops/ms
+Iteration  16: 13616.668 ops/ms
+Iteration  17: 11294.297 ops/ms
+Iteration  18: 13459.701 ops/ms
+Iteration  19: 13801.314 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14085.416 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  12017.336 ±(99.9%) 944.201 ops/ms [Average]
+  (min, avg, max) = (7281.418, 12017.336, 14085.416), stdev = 1678.317
+  CI (99.9%): [11073.135, 12961.537] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 1000)
+
+# Run progress: 22.22% complete, ETA 00:21:26
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addNew_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest.addNew_Throughput(TestAdd_addNew_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 23.61% complete, ETA 00:19:50
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addNew_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest.addNew_Throughput(TestAdd_addNew_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 10000)
+
+# Run progress: 25.00% complete, ETA 00:18:25
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addNew_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest.addNew_Throughput(TestAdd_addNew_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 26.39% complete, ETA 00:17:08
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestAdd_addNew_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestAdd_addNew_jmhTest.addNew_Throughput(TestAdd_addNew_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 1000)
+
+# Run progress: 27.78% complete, ETA 00:15:59
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+9600.814 ops/ms
+# Warmup Iteration   2: 8639.302 ops/ms
+# Warmup Iteration   3: 10550.786 ops/ms
+# Warmup Iteration   4: 10850.715 ops/ms
+# Warmup Iteration   5: 8355.877 ops/ms
+# Warmup Iteration   6: 9227.019 ops/ms
+# Warmup Iteration   7: 9519.370 ops/ms
+# Warmup Iteration   8: 10033.268 ops/ms
+# Warmup Iteration   9: 10154.543 ops/ms
+# Warmup Iteration  10: 7668.060 ops/ms
+Iteration   1: 8121.710 ops/ms
+Iteration   2: 10724.527 ops/ms
+Iteration   3: 9259.030 ops/ms
+Iteration   4: 10269.313 ops/ms
+Iteration   5: 8452.874 ops/ms
+Iteration   6: 5620.410 ops/ms
+Iteration   7: 10097.539 ops/ms
+Iteration   8: 6318.201 ops/ms
+Iteration   9: 6642.287 ops/ms
+Iteration  10: 8811.880 ops/ms
+Iteration  11: 7868.556 ops/ms
+Iteration  12: 7544.459 ops/ms
+Iteration  13: 10399.852 ops/ms
+Iteration  14: 6898.936 ops/ms
+Iteration  15: 7418.505 ops/ms
+Iteration  16: 6866.786 ops/ms
+Iteration  17: 2994.251 ops/ms
+Iteration  18: 6197.239 ops/ms
+Iteration  19: 5789.032 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+6585.963 ops/ms
+
+# Run progress: 29.17% complete, ETA 00:16:10
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+8771.369 ops/ms
+# Warmup Iteration   2: 7517.207 ops/ms
+# Warmup Iteration   3: 9582.515 ops/ms
+# Warmup Iteration   4: 7774.053 ops/ms
+# Warmup Iteration   5: 7301.464 ops/ms
+# Warmup Iteration   6: 5846.741 ops/ms
+# Warmup Iteration   7: 5341.617 ops/ms
+# Warmup Iteration   8: 9444.484 ops/ms
+# Warmup Iteration   9: 10731.301 ops/ms
+# Warmup Iteration  10: 4677.956 ops/ms
+Iteration   1: 8059.168 ops/ms
+Iteration   2: 9237.770 ops/ms
+Iteration   3: 10164.466 ops/ms
+Iteration   4: 10483.029 ops/ms
+Iteration   5: 11529.030 ops/ms
+Iteration   6: 9586.861 ops/ms
+Iteration   7: 10353.240 ops/ms
+Iteration   8: 9195.944 ops/ms
+Iteration   9: 10909.060 ops/ms
+Iteration  10: 10559.622 ops/ms
+Iteration  11: 10065.502 ops/ms
+Iteration  12: 12279.438 ops/ms
+Iteration  13: 7601.407 ops/ms
+Iteration  14: 11525.437 ops/ms
+Iteration  15: 10057.106 ops/ms
+Iteration  16: 10405.226 ops/ms
+Iteration  17: 10936.139 ops/ms
+Iteration  18: 7389.926 ops/ms
+Iteration  19: 11470.519 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+10044.413 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  8868.366 ±(99.9%) 1151.429 ops/ms [Average]
+  (min, avg, max) = (2994.251, 8868.366, 12279.438), stdev = 2046.664
+  CI (99.9%): [7716.937, 10019.796] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestAdd.addNew
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 10000)
+
+# Run progress: 30.56% complete, ETA 00:16:18
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+9070.950 ops/ms
+# Warmup Iteration   2: 10650.866 ops/ms
+# Warmup Iteration   3: 9676.263 ops/ms
+# Warmup Iteration   4: 11860.884 ops/ms
+# Warmup Iteration   5: 12853.785 ops/ms
+# Warmup Iteration   6: 11542.434 ops/ms
+# Warmup Iteration   7: 12214.981 ops/ms
+# Warmup Iteration   8: 9514.484 ops/ms
+# Warmup Iteration   9: 12090.755 ops/ms
+# Warmup Iteration  10: 12139.433 ops/ms
+Iteration   1: 12548.021 ops/ms
+Iteration   2: 11700.570 ops/ms
+Iteration   3: 8491.461 ops/ms
+Iteration   4: 10768.996 ops/ms
+Iteration   5: 11370.421 ops/ms
+Iteration   6: 8066.792 ops/ms
+Iteration   7: 9062.621 ops/ms
+Iteration   8: 8275.003 ops/ms
+Iteration   9: 11621.261 ops/ms
+Iteration  10: 9978.388 ops/ms
+Iteration  11: 12675.928 ops/ms
+Iteration  12: 10480.815 ops/ms
+Iteration  13: 8420.979 ops/ms
+Iteration  14: 8372.115 ops/ms
+Iteration  15: 10076.386 ops/ms
+Iteration  16: 10678.973 ops/ms
+Iteration  17: 10960.840 ops/ms
+Iteration  18: 12911.276 ops/ms
+Iteration  19: 8425.209 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+9390.417 ops/ms
+
+# Run progress: 31.94% complete, ETA 00:16:22
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+7697.602 ops/ms
+# Warmup Iteration   2: 10176.313 ops/ms
+# Warmup Iteration   3: 11935.452 ops/ms
+# Warmup Iteration   4: 8478.099 ops/ms
+# Warmup Iteration   5: 11455.575 ops/ms
+# Warmup Iteration   6: 10690.375 ops/ms
+# Warmup Iteration   7: 10971.740 ops/ms
+# Warmup Iteration   8: 10672.477 ops/ms
+# Warmup Iteration   9: 7702.396 ops/ms
+# Warmup Iteration  10: 7912.557 ops/ms
+Iteration   1: 9603.900 ops/ms
+Iteration   2: 12030.646 ops/ms
+Iteration   3: 11128.190 ops/ms
+Iteration   4: 8341.075 ops/ms
+Iteration   5: 3107.778 ops/ms
+Iteration   6: 8109.504 ops/ms
+Iteration   7: 10565.289 ops/ms
+Iteration   8: 11020.599 ops/ms
+Iteration   9: 7730.252 ops/ms
+Iteration  10: 11342.999 ops/ms
+Iteration  11: 10404.098 ops/ms
+Iteration  12: 10698.745 ops/ms
+Iteration  13: 9279.345 ops/ms
+Iteration  14: 9099.837 ops/ms
+Iteration  15: 7962.814 ops/ms
+Iteration  16: 7255.970 ops/ms
+Iteration  17: 9711.944 ops/ms
+Iteration  18: 9362.615 ops/ms
+Iteration  19: 9558.914 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+7046.171 ops/ms
+
+
+Result "lab2.benchmarkTests.TestAdd.addNew":
+  9690.929 ±(99.9%) 1052.698 ops/ms [Average]
+  (min, avg, max) = (3107.778, 9690.929, 12911.276), stdev = 1871.169
+  CI (99.9%): [8638.231, 10743.626] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 1000)
+
+# Run progress: 33.33% complete, ETA 00:16:23
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14331.684 ops/ms
+# Warmup Iteration   2: 12025.711 ops/ms
+# Warmup Iteration   3: 14538.554 ops/ms
+# Warmup Iteration   4: 11226.846 ops/ms
+# Warmup Iteration   5: 11341.596 ops/ms
+# Warmup Iteration   6: 14862.419 ops/ms
+# Warmup Iteration   7: 13352.408 ops/ms
+# Warmup Iteration   8: 13235.067 ops/ms
+# Warmup Iteration   9: 14905.468 ops/ms
+# Warmup Iteration  10: 11613.118 ops/ms
+Iteration   1: 13139.418 ops/ms
+Iteration   2: 11383.707 ops/ms
+Iteration   3: 12555.739 ops/ms
+Iteration   4: 13764.458 ops/ms
+Iteration   5: 11468.686 ops/ms
+Iteration   6: 14592.176 ops/ms
+Iteration   7: 15160.548 ops/ms
+Iteration   8: 15215.410 ops/ms
+Iteration   9: 15468.586 ops/ms
+Iteration  10: 14415.991 ops/ms
+Iteration  11: 11476.496 ops/ms
+Iteration  12: 14168.643 ops/ms
+Iteration  13: 13110.445 ops/ms
+Iteration  14: 13483.267 ops/ms
+Iteration  15: 12836.513 ops/ms
+Iteration  16: 9511.111 ops/ms
+Iteration  17: 12985.724 ops/ms
+Iteration  18: 12695.883 ops/ms
+Iteration  19: 11774.186 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+11775.779 ops/ms
+
+# Run progress: 34.72% complete, ETA 00:16:22
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+10588.250 ops/ms
+# Warmup Iteration   2: 13867.329 ops/ms
+# Warmup Iteration   3: 14863.745 ops/ms
+# Warmup Iteration   4: 15411.685 ops/ms
+# Warmup Iteration   5: 15462.896 ops/ms
+# Warmup Iteration   6: 10554.307 ops/ms
+# Warmup Iteration   7: 14863.297 ops/ms
+# Warmup Iteration   8: 15351.308 ops/ms
+# Warmup Iteration   9: 15580.716 ops/ms
+# Warmup Iteration  10: 15366.508 ops/ms
+Iteration   1: 14358.646 ops/ms
+Iteration   2: 12771.027 ops/ms
+Iteration   3: 13276.407 ops/ms
+Iteration   4: 12603.623 ops/ms
+Iteration   5: 10328.331 ops/ms
+Iteration   6: 12122.404 ops/ms
+Iteration   7: 11768.637 ops/ms
+Iteration   8: 14638.833 ops/ms
+Iteration   9: 15178.825 ops/ms
+Iteration  10: 15221.203 ops/ms
+Iteration  11: 15054.113 ops/ms
+Iteration  12: 11899.626 ops/ms
+Iteration  13: 8480.115 ops/ms
+Iteration  14: 14843.602 ops/ms
+Iteration  15: 14025.793 ops/ms
+Iteration  16: 15642.093 ops/ms
+Iteration  17: 12506.713 ops/ms
+Iteration  18: 15188.582 ops/ms
+Iteration  19: 15311.265 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14266.280 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  13261.722 ±(99.9%) 968.781 ops/ms [Average]
+  (min, avg, max) = (8480.115, 13261.722, 15642.093), stdev = 1722.007
+  CI (99.9%): [12292.941, 14230.503] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 10000)
+
+# Run progress: 36.11% complete, ETA 00:16:18
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13875.712 ops/ms
+# Warmup Iteration   2: 11296.881 ops/ms
+# Warmup Iteration   3: 12301.139 ops/ms
+# Warmup Iteration   4: 11482.493 ops/ms
+# Warmup Iteration   5: 12088.436 ops/ms
+# Warmup Iteration   6: 13095.166 ops/ms
+# Warmup Iteration   7: 10002.461 ops/ms
+# Warmup Iteration   8: 12776.299 ops/ms
+# Warmup Iteration   9: 13833.538 ops/ms
+# Warmup Iteration  10: 10360.070 ops/ms
+Iteration   1: 14181.958 ops/ms
+Iteration   2: 13774.585 ops/ms
+Iteration   3: 8411.295 ops/ms
+Iteration   4: 14234.643 ops/ms
+Iteration   5: 9319.251 ops/ms
+Iteration   6: 7344.698 ops/ms
+Iteration   7: 14304.635 ops/ms
+Iteration   8: 7539.639 ops/ms
+Iteration   9: 6807.645 ops/ms
+Iteration  10: 10910.251 ops/ms
+Iteration  11: 12032.746 ops/ms
+Iteration  12: 12464.120 ops/ms
+Iteration  13: 10528.922 ops/ms
+Iteration  14: 13760.759 ops/ms
+Iteration  15: 14208.558 ops/ms
+Iteration  16: 11630.493 ops/ms
+Iteration  17: 14842.850 ops/ms
+Iteration  18: 10396.078 ops/ms
+Iteration  19: 13280.479 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+10585.692 ops/ms
+
+# Run progress: 37.50% complete, ETA 00:16:12
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11011.792 ops/ms
+# Warmup Iteration   2: 12516.069 ops/ms
+# Warmup Iteration   3: 10391.807 ops/ms
+# Warmup Iteration   4: 11296.967 ops/ms
+# Warmup Iteration   5: 14459.814 ops/ms
+# Warmup Iteration   6: 14074.506 ops/ms
+# Warmup Iteration   7: 13947.365 ops/ms
+# Warmup Iteration   8: 9429.865 ops/ms
+# Warmup Iteration   9: 14531.165 ops/ms
+# Warmup Iteration  10: 15439.249 ops/ms
+Iteration   1: 15656.110 ops/ms
+Iteration   2: 14980.493 ops/ms
+Iteration   3: 14016.587 ops/ms
+Iteration   4: 12772.444 ops/ms
+Iteration   5: 15206.868 ops/ms
+Iteration   6: 15467.885 ops/ms
+Iteration   7: 15013.118 ops/ms
+Iteration   8: 15449.205 ops/ms
+Iteration   9: 11391.542 ops/ms
+Iteration  10: 12212.167 ops/ms
+Iteration  11: 14853.584 ops/ms
+Iteration  12: 15283.997 ops/ms
+Iteration  13: 10467.898 ops/ms
+Iteration  14: 5628.750 ops/ms
+Iteration  15: 12745.929 ops/ms
+Iteration  16: 15512.518 ops/ms
+Iteration  17: 15417.852 ops/ms
+Iteration  18: 15581.841 ops/ms
+Iteration  19: 11924.923 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15350.437 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  12637.336 ±(99.9%) 1554.231 ops/ms [Average]
+  (min, avg, max) = (5628.750, 12637.336, 15656.110), stdev = 2762.644
+  CI (99.9%): [11083.105, 14191.567] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 1000)
+
+# Run progress: 38.89% complete, ETA 00:16:05
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsExisting_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest.containsExisting_Throughput(TestContains_containsExisting_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 40.28% complete, ETA 00:15:11
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsExisting_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest.containsExisting_Throughput(TestContains_containsExisting_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 10000)
+
+# Run progress: 41.67% complete, ETA 00:14:21
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsExisting_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest.containsExisting_Throughput(TestContains_containsExisting_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 43.06% complete, ETA 00:13:33
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsExisting_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsExisting_jmhTest.containsExisting_Throughput(TestContains_containsExisting_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 1000)
+
+# Run progress: 44.44% complete, ETA 00:12:49
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+7994.465 ops/ms
+# Warmup Iteration   2: 10647.539 ops/ms
+# Warmup Iteration   3: 11006.400 ops/ms
+# Warmup Iteration   4: 13605.456 ops/ms
+# Warmup Iteration   5: 11443.424 ops/ms
+# Warmup Iteration   6: 11444.143 ops/ms
+# Warmup Iteration   7: 12413.774 ops/ms
+# Warmup Iteration   8: 9293.773 ops/ms
+# Warmup Iteration   9: 12162.052 ops/ms
+# Warmup Iteration  10: 14044.342 ops/ms
+Iteration   1: 14453.028 ops/ms
+Iteration   2: 14609.052 ops/ms
+Iteration   3: 10818.806 ops/ms
+Iteration   4: 10511.303 ops/ms
+Iteration   5: 14911.262 ops/ms
+Iteration   6: 10564.367 ops/ms
+Iteration   7: 9497.414 ops/ms
+Iteration   8: 14980.793 ops/ms
+Iteration   9: 12047.489 ops/ms
+Iteration  10: 15053.197 ops/ms
+Iteration  11: 14755.761 ops/ms
+Iteration  12: 14513.261 ops/ms
+Iteration  13: 14892.797 ops/ms
+Iteration  14: 11615.835 ops/ms
+Iteration  15: 11458.555 ops/ms
+Iteration  16: 10908.618 ops/ms
+Iteration  17: 12478.893 ops/ms
+Iteration  18: 15363.006 ops/ms
+Iteration  19: 12991.230 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14424.136 ops/ms
+
+# Run progress: 45.83% complete, ETA 00:12:43
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+8902.995 ops/ms
+# Warmup Iteration   2: 14509.130 ops/ms
+# Warmup Iteration   3: 14796.977 ops/ms
+# Warmup Iteration   4: 12065.139 ops/ms
+# Warmup Iteration   5: 12703.138 ops/ms
+# Warmup Iteration   6: 13766.554 ops/ms
+# Warmup Iteration   7: 14329.880 ops/ms
+# Warmup Iteration   8: 9131.786 ops/ms
+# Warmup Iteration   9: 7154.041 ops/ms
+# Warmup Iteration  10: 10162.604 ops/ms
+Iteration   1: 13762.544 ops/ms
+Iteration   2: 15153.322 ops/ms
+Iteration   3: 15423.020 ops/ms
+Iteration   4: 13739.122 ops/ms
+Iteration   5: 11808.100 ops/ms
+Iteration   6: 13993.185 ops/ms
+Iteration   7: 13504.254 ops/ms
+Iteration   8: 12156.151 ops/ms
+Iteration   9: 10102.357 ops/ms
+Iteration  10: 9557.423 ops/ms
+Iteration  11: 13678.564 ops/ms
+Iteration  12: 13884.103 ops/ms
+Iteration  13: 10521.279 ops/ms
+Iteration  14: 14970.159 ops/ms
+Iteration  15: 12376.963 ops/ms
+Iteration  16: 15350.843 ops/ms
+Iteration  17: 15168.280 ops/ms
+Iteration  18: 15487.079 ops/ms
+Iteration  19: 15081.859 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13774.697 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  13258.553 ±(99.9%) 1056.901 ops/ms [Average]
+  (min, avg, max) = (9497.414, 13258.553, 15487.079), stdev = 1878.641
+  CI (99.9%): [12201.652, 14315.454] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsExisting
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 10000)
+
+# Run progress: 47.22% complete, ETA 00:12:36
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14240.623 ops/ms
+# Warmup Iteration   2: 14771.750 ops/ms
+# Warmup Iteration   3: 15519.717 ops/ms
+# Warmup Iteration   4: 15666.611 ops/ms
+# Warmup Iteration   5: 11457.773 ops/ms
+# Warmup Iteration   6: 15290.902 ops/ms
+# Warmup Iteration   7: 15249.975 ops/ms
+# Warmup Iteration   8: 15269.551 ops/ms
+# Warmup Iteration   9: 15542.357 ops/ms
+# Warmup Iteration  10: 13239.422 ops/ms
+Iteration   1: 12038.639 ops/ms
+Iteration   2: 15100.689 ops/ms
+Iteration   3: 14787.738 ops/ms
+Iteration   4: 14943.081 ops/ms
+Iteration   5: 14377.939 ops/ms
+Iteration   6: 11105.817 ops/ms
+Iteration   7: 15422.438 ops/ms
+Iteration   8: 15303.219 ops/ms
+Iteration   9: 10864.057 ops/ms
+Iteration  10: 14311.724 ops/ms
+Iteration  11: 8334.483 ops/ms
+Iteration  12: 9710.567 ops/ms
+Iteration  13: 14903.040 ops/ms
+Iteration  14: 14944.073 ops/ms
+Iteration  15: 14892.511 ops/ms
+Iteration  16: 11003.797 ops/ms
+Iteration  17: 13195.260 ops/ms
+Iteration  18: 10664.517 ops/ms
+Iteration  19: 10357.173 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12499.065 ops/ms
+
+# Run progress: 48.61% complete, ETA 00:12:28
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+10288.619 ops/ms
+# Warmup Iteration   2: 14857.911 ops/ms
+# Warmup Iteration   3: 14727.494 ops/ms
+# Warmup Iteration   4: 11947.843 ops/ms
+# Warmup Iteration   5: 14484.260 ops/ms
+# Warmup Iteration   6: 13133.965 ops/ms
+# Warmup Iteration   7: 13431.106 ops/ms
+# Warmup Iteration   8: 15330.719 ops/ms
+# Warmup Iteration   9: 13254.399 ops/ms
+# Warmup Iteration  10: 14209.937 ops/ms
+Iteration   1: 13371.071 ops/ms
+Iteration   2: 10678.621 ops/ms
+Iteration   3: 14085.748 ops/ms
+Iteration   4: 15339.647 ops/ms
+Iteration   5: 15439.579 ops/ms
+Iteration   6: 15219.641 ops/ms
+Iteration   7: 11421.657 ops/ms
+Iteration   8: 15525.538 ops/ms
+Iteration   9: 15758.150 ops/ms
+Iteration  10: 14979.801 ops/ms
+Iteration  11: 15257.183 ops/ms
+Iteration  12: 11359.527 ops/ms
+Iteration  13: 15356.569 ops/ms
+Iteration  14: 15024.017 ops/ms
+Iteration  15: 14956.037 ops/ms
+Iteration  16: 14292.581 ops/ms
+Iteration  17: 10848.653 ops/ms
+Iteration  18: 14529.306 ops/ms
+Iteration  19: 8936.037 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+14156.557 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsExisting":
+  13382.394 ±(99.9%) 1211.627 ops/ms [Average]
+  (min, avg, max) = (8334.483, 13382.394, 15758.150), stdev = 2153.665
+  CI (99.9%): [12170.767, 14594.020] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 1000)
+
+# Run progress: 50.00% complete, ETA 00:12:18
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13373.683 ops/ms
+# Warmup Iteration   2: 10437.308 ops/ms
+# Warmup Iteration   3: 11893.849 ops/ms
+# Warmup Iteration   4: 12737.956 ops/ms
+# Warmup Iteration   5: 14283.452 ops/ms
+# Warmup Iteration   6: 15742.098 ops/ms
+# Warmup Iteration   7: 13369.585 ops/ms
+# Warmup Iteration   8: 13985.262 ops/ms
+# Warmup Iteration   9: 14324.547 ops/ms
+# Warmup Iteration  10: 14290.730 ops/ms
+Iteration   1: 15857.920 ops/ms
+Iteration   2: 14237.812 ops/ms
+Iteration   3: 12993.876 ops/ms
+Iteration   4: 15728.784 ops/ms
+Iteration   5: 15834.018 ops/ms
+Iteration   6: 15699.591 ops/ms
+Iteration   7: 14554.252 ops/ms
+Iteration   8: 12892.531 ops/ms
+Iteration   9: 14024.916 ops/ms
+Iteration  10: 14365.641 ops/ms
+Iteration  11: 15535.625 ops/ms
+Iteration  12: 15455.909 ops/ms
+Iteration  13: 11931.583 ops/ms
+Iteration  14: 14995.274 ops/ms
+Iteration  15: 13875.247 ops/ms
+Iteration  16: 14038.380 ops/ms
+Iteration  17: 12972.567 ops/ms
+Iteration  18: 11326.713 ops/ms
+Iteration  19: 11131.785 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13726.716 ops/ms
+
+# Run progress: 51.39% complete, ETA 00:12:07
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12255.145 ops/ms
+# Warmup Iteration   2: 11953.142 ops/ms
+# Warmup Iteration   3: 12176.077 ops/ms
+# Warmup Iteration   4: 12619.268 ops/ms
+# Warmup Iteration   5: 10749.223 ops/ms
+# Warmup Iteration   6: 8672.883 ops/ms
+# Warmup Iteration   7: 14391.980 ops/ms
+# Warmup Iteration   8: 13883.347 ops/ms
+# Warmup Iteration   9: 8528.429 ops/ms
+# Warmup Iteration  10: 11421.572 ops/ms
+Iteration   1: 10970.163 ops/ms
+Iteration   2: 11510.681 ops/ms
+Iteration   3: 14631.932 ops/ms
+Iteration   4: 9729.896 ops/ms
+Iteration   5: 13713.199 ops/ms
+Iteration   6: 13880.996 ops/ms
+Iteration   7: 12875.938 ops/ms
+Iteration   8: 12048.581 ops/ms
+Iteration   9: 12930.722 ops/ms
+Iteration  10: 8399.426 ops/ms
+Iteration  11: 12134.202 ops/ms
+Iteration  12: 13913.694 ops/ms
+Iteration  13: 13561.468 ops/ms
+Iteration  14: 14945.877 ops/ms
+Iteration  15: 11919.750 ops/ms
+Iteration  16: 11696.633 ops/ms
+Iteration  17: 14104.263 ops/ms
+Iteration  18: 15170.403 ops/ms
+Iteration  19: 15124.135 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+11570.495 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  13400.290 ±(99.9%) 994.030 ops/ms [Average]
+  (min, avg, max) = (8399.426, 13400.290, 15857.920), stdev = 1766.887
+  CI (99.9%): [12406.260, 14394.320] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 10000)
+
+# Run progress: 52.78% complete, ETA 00:11:55
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14059.218 ops/ms
+# Warmup Iteration   2: 13905.168 ops/ms
+# Warmup Iteration   3: 15345.352 ops/ms
+# Warmup Iteration   4: 14185.047 ops/ms
+# Warmup Iteration   5: 11584.028 ops/ms
+# Warmup Iteration   6: 12783.054 ops/ms
+# Warmup Iteration   7: 12864.892 ops/ms
+# Warmup Iteration   8: 9327.603 ops/ms
+# Warmup Iteration   9: 11442.728 ops/ms
+# Warmup Iteration  10: 12456.943 ops/ms
+Iteration   1: 16151.972 ops/ms
+Iteration   2: 15083.757 ops/ms
+Iteration   3: 12886.085 ops/ms
+Iteration   4: 12816.595 ops/ms
+Iteration   5: 11998.496 ops/ms
+Iteration   6: 13263.683 ops/ms
+Iteration   7: 13637.889 ops/ms
+Iteration   8: 16120.193 ops/ms
+Iteration   9: 14922.695 ops/ms
+Iteration  10: 13879.708 ops/ms
+Iteration  11: 11932.865 ops/ms
+Iteration  12: 13147.311 ops/ms
+Iteration  13: 16261.288 ops/ms
+Iteration  14: 15433.787 ops/ms
+Iteration  15: 16635.368 ops/ms
+Iteration  16: 13514.654 ops/ms
+Iteration  17: 16576.066 ops/ms
+Iteration  18: 16390.855 ops/ms
+Iteration  19: 15836.867 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+16729.492 ops/ms
+
+# Run progress: 54.17% complete, ETA 00:11:42
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12115.342 ops/ms
+# Warmup Iteration   2: 14316.564 ops/ms
+# Warmup Iteration   3: 15069.775 ops/ms
+# Warmup Iteration   4: 15159.673 ops/ms
+# Warmup Iteration   5: 16768.211 ops/ms
+# Warmup Iteration   6: 12683.766 ops/ms
+# Warmup Iteration   7: 15248.084 ops/ms
+# Warmup Iteration   8: 15244.964 ops/ms
+# Warmup Iteration   9: 15291.318 ops/ms
+# Warmup Iteration  10: 15350.219 ops/ms
+Iteration   1: 12707.879 ops/ms
+Iteration   2: 15233.995 ops/ms
+Iteration   3: 15300.089 ops/ms
+Iteration   4: 16846.267 ops/ms
+Iteration   5: 16594.444 ops/ms
+Iteration   6: 15703.499 ops/ms
+Iteration   7: 14136.464 ops/ms
+Iteration   8: 14966.385 ops/ms
+Iteration   9: 15283.277 ops/ms
+Iteration  10: 15825.328 ops/ms
+Iteration  11: 16080.310 ops/ms
+Iteration  12: 12186.754 ops/ms
+Iteration  13: 15144.957 ops/ms
+Iteration  14: 16771.235 ops/ms
+Iteration  15: 16658.228 ops/ms
+Iteration  16: 16827.439 ops/ms
+Iteration  17: 13422.479 ops/ms
+Iteration  18: 16822.002 ops/ms
+Iteration  19: 16954.756 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+16756.214 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  15086.041 ±(99.9%) 894.868 ops/ms [Average]
+  (min, avg, max) = (11932.865, 15086.041, 16954.756), stdev = 1590.626
+  CI (99.9%): [14191.173, 15980.908] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 1000)
+
+# Run progress: 55.56% complete, ETA 00:11:28
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest.containsNew_Throughput(TestContains_containsNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 56.94% complete, ETA 00:10:51
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest.containsNew_Throughput(TestContains_containsNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 10000)
+
+# Run progress: 58.33% complete, ETA 00:10:15
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest.containsNew_Throughput(TestContains_containsNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 59.72% complete, ETA 00:09:41
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestContains_containsNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestContains_containsNew_jmhTest.containsNew_Throughput(TestContains_containsNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 1000)
+
+# Run progress: 61.11% complete, ETA 00:09:08
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+11697.998 ops/ms
+# Warmup Iteration   2: 13894.436 ops/ms
+# Warmup Iteration   3: 13924.179 ops/ms
+# Warmup Iteration   4: 13262.419 ops/ms
+# Warmup Iteration   5: 13310.642 ops/ms
+# Warmup Iteration   6: 11410.521 ops/ms
+# Warmup Iteration   7: 15456.283 ops/ms
+# Warmup Iteration   8: 15100.697 ops/ms
+# Warmup Iteration   9: 13820.183 ops/ms
+# Warmup Iteration  10: 12937.335 ops/ms
+Iteration   1: 11022.808 ops/ms
+Iteration   2: 12627.449 ops/ms
+Iteration   3: 13108.329 ops/ms
+Iteration   4: 14861.220 ops/ms
+Iteration   5: 15225.261 ops/ms
+Iteration   6: 14880.865 ops/ms
+Iteration   7: 11545.598 ops/ms
+Iteration   8: 14942.210 ops/ms
+Iteration   9: 13894.074 ops/ms
+Iteration  10: 15424.044 ops/ms
+Iteration  11: 15500.012 ops/ms
+Iteration  12: 12701.352 ops/ms
+Iteration  13: 14355.125 ops/ms
+Iteration  14: 14919.055 ops/ms
+Iteration  15: 15337.823 ops/ms
+Iteration  16: 15138.339 ops/ms
+Iteration  17: 10638.959 ops/ms
+Iteration  18: 15291.320 ops/ms
+Iteration  19: 15802.133 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15883.460 ops/ms
+
+# Run progress: 62.50% complete, ETA 00:08:55
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14044.983 ops/ms
+# Warmup Iteration   2: 11462.817 ops/ms
+# Warmup Iteration   3: 13981.596 ops/ms
+# Warmup Iteration   4: 14119.960 ops/ms
+# Warmup Iteration   5: 15265.870 ops/ms
+# Warmup Iteration   6: 15532.979 ops/ms
+# Warmup Iteration   7: 12726.489 ops/ms
+# Warmup Iteration   8: 15950.265 ops/ms
+# Warmup Iteration   9: 14421.232 ops/ms
+# Warmup Iteration  10: 14347.461 ops/ms
+Iteration   1: 14251.912 ops/ms
+Iteration   2: 12476.423 ops/ms
+Iteration   3: 13949.870 ops/ms
+Iteration   4: 15373.140 ops/ms
+Iteration   5: 15173.916 ops/ms
+Iteration   6: 15439.077 ops/ms
+Iteration   7: 14119.008 ops/ms
+Iteration   8: 12147.121 ops/ms
+Iteration   9: 15043.778 ops/ms
+Iteration  10: 14438.279 ops/ms
+Iteration  11: 13805.497 ops/ms
+Iteration  12: 13841.818 ops/ms
+Iteration  13: 9151.052 ops/ms
+Iteration  14: 14004.919 ops/ms
+Iteration  15: 15036.400 ops/ms
+Iteration  16: 14332.997 ops/ms
+Iteration  17: 13161.374 ops/ms
+Iteration  18: 11731.201 ops/ms
+Iteration  19: 15225.514 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15350.648 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  14028.835 ±(99.9%) 890.073 ops/ms [Average]
+  (min, avg, max) = (9151.052, 14028.835, 15883.460), stdev = 1582.104
+  CI (99.9%): [13138.761, 14918.908] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestContains.containsNew
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 10000)
+
+# Run progress: 63.89% complete, ETA 00:08:42
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14123.574 ops/ms
+# Warmup Iteration   2: 14845.376 ops/ms
+# Warmup Iteration   3: 12441.331 ops/ms
+# Warmup Iteration   4: 13689.453 ops/ms
+# Warmup Iteration   5: 16571.966 ops/ms
+# Warmup Iteration   6: 15381.851 ops/ms
+# Warmup Iteration   7: 14892.479 ops/ms
+# Warmup Iteration   8: 12169.441 ops/ms
+# Warmup Iteration   9: 15211.446 ops/ms
+# Warmup Iteration  10: 15278.684 ops/ms
+Iteration   1: 14755.778 ops/ms
+Iteration   2: 15047.664 ops/ms
+Iteration   3: 13805.692 ops/ms
+Iteration   4: 14764.379 ops/ms
+Iteration   5: 15983.742 ops/ms
+Iteration   6: 16059.076 ops/ms
+Iteration   7: 14107.300 ops/ms
+Iteration   8: 16566.223 ops/ms
+Iteration   9: 12993.881 ops/ms
+Iteration  10: 16826.982 ops/ms
+Iteration  11: 16775.314 ops/ms
+Iteration  12: 15319.336 ops/ms
+Iteration  13: 15090.372 ops/ms
+Iteration  14: 13658.291 ops/ms
+Iteration  15: 16826.679 ops/ms
+Iteration  16: 16871.673 ops/ms
+Iteration  17: 16901.484 ops/ms
+Iteration  18: 16762.305 ops/ms
+Iteration  19: 13618.330 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+16377.222 ops/ms
+
+# Run progress: 65.28% complete, ETA 00:08:27
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14561.602 ops/ms
+# Warmup Iteration   2: 14179.624 ops/ms
+# Warmup Iteration   3: 15182.564 ops/ms
+# Warmup Iteration   4: 12817.177 ops/ms
+# Warmup Iteration   5: 14704.489 ops/ms
+# Warmup Iteration   6: 15795.976 ops/ms
+# Warmup Iteration   7: 14644.455 ops/ms
+# Warmup Iteration   8: 15080.843 ops/ms
+# Warmup Iteration   9: 12221.048 ops/ms
+# Warmup Iteration  10: 15266.202 ops/ms
+Iteration   1: 16163.773 ops/ms
+Iteration   2: 12738.545 ops/ms
+Iteration   3: 15975.406 ops/ms
+Iteration   4: 13568.159 ops/ms
+Iteration   5: 16028.692 ops/ms
+Iteration   6: 17076.025 ops/ms
+Iteration   7: 16664.630 ops/ms
+Iteration   8: 15897.296 ops/ms
+Iteration   9: 15442.435 ops/ms
+Iteration  10: 11092.604 ops/ms
+Iteration  11: 14497.801 ops/ms
+Iteration  12: 12748.304 ops/ms
+Iteration  13: 13372.068 ops/ms
+Iteration  14: 14512.387 ops/ms
+Iteration  15: 13162.521 ops/ms
+Iteration  16: 13970.765 ops/ms
+Iteration  17: 14173.188 ops/ms
+Iteration  18: 15357.404 ops/ms
+Iteration  19: 11215.762 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+9796.233 ops/ms
+
+
+Result "lab2.benchmarkTests.TestContains.containsNew":
+  14814.143 ±(99.9%) 1003.270 ops/ms [Average]
+  (min, avg, max) = (9796.233, 14814.143, 17076.025), stdev = 1783.311
+  CI (99.9%): [13810.873, 15817.413] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 1000)
+
+# Run progress: 66.67% complete, ETA 00:08:12
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+3808.063 ops/ms
+# Warmup Iteration   2: 4673.994 ops/ms
+# Warmup Iteration   3: 4874.093 ops/ms
+# Warmup Iteration   4: 4887.865 ops/ms
+# Warmup Iteration   5: 3748.449 ops/ms
+# Warmup Iteration   6: 4179.236 ops/ms
+# Warmup Iteration   7: 5104.563 ops/ms
+# Warmup Iteration   8: 6114.259 ops/ms
+# Warmup Iteration   9: 5490.282 ops/ms
+# Warmup Iteration  10: 5497.328 ops/ms
+Iteration   1: 5020.062 ops/ms
+Iteration   2: 6107.445 ops/ms
+Iteration   3: 6030.806 ops/ms
+Iteration   4: 5855.398 ops/ms
+Iteration   5: 6300.423 ops/ms
+Iteration   6: 5303.758 ops/ms
+Iteration   7: 6545.791 ops/ms
+Iteration   8: 6118.509 ops/ms
+Iteration   9: 6273.270 ops/ms
+Iteration  10: 6219.835 ops/ms
+Iteration  11: 4206.293 ops/ms
+Iteration  12: 5544.493 ops/ms
+Iteration  13: 5756.224 ops/ms
+Iteration  14: 5704.011 ops/ms
+Iteration  15: 6667.396 ops/ms
+Iteration  16: 6709.071 ops/ms
+Iteration  17: 3956.725 ops/ms
+Iteration  18: 6522.518 ops/ms
+Iteration  19: 5945.337 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+6563.620 ops/ms
+
+# Run progress: 68.06% complete, ETA 00:07:56
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+6369.400 ops/ms
+# Warmup Iteration   2: 4784.450 ops/ms
+# Warmup Iteration   3: 5457.896 ops/ms
+# Warmup Iteration   4: 5624.703 ops/ms
+# Warmup Iteration   5: 5919.312 ops/ms
+# Warmup Iteration   6: 6022.707 ops/ms
+# Warmup Iteration   7: 4663.044 ops/ms
+# Warmup Iteration   8: 5821.483 ops/ms
+# Warmup Iteration   9: 5739.051 ops/ms
+# Warmup Iteration  10: 5378.559 ops/ms
+Iteration   1: 6042.776 ops/ms
+Iteration   2: 5306.380 ops/ms
+Iteration   3: 6492.325 ops/ms
+Iteration   4: 5670.812 ops/ms
+Iteration   5: 5972.882 ops/ms
+Iteration   6: 6320.267 ops/ms
+Iteration   7: 5407.197 ops/ms
+Iteration   8: 2836.064 ops/ms
+Iteration   9: 3151.451 ops/ms
+Iteration  10: 4397.669 ops/ms
+Iteration  11: 3556.760 ops/ms
+Iteration  12: 4786.894 ops/ms
+Iteration  13: 3977.638 ops/ms
+Iteration  14: 2725.886 ops/ms
+Iteration  15: 5745.350 ops/ms
+Iteration  16: 5340.725 ops/ms
+Iteration  17: 3639.380 ops/ms
+Iteration  18: 3816.924 ops/ms
+Iteration  19: 6037.693 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+5906.654 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  5362.068 ±(99.9%) 637.601 ops/ms [Average]
+  (min, avg, max) = (2725.886, 5362.068, 6709.071), stdev = 1133.335
+  CI (99.9%): [4724.467, 5999.669] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 10000)
+
+# Run progress: 69.44% complete, ETA 00:07:40
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4503.464 ops/ms
+# Warmup Iteration   2: 4322.895 ops/ms
+# Warmup Iteration   3: 2652.910 ops/ms
+# Warmup Iteration   4: 4237.304 ops/ms
+# Warmup Iteration   5: 2320.052 ops/ms
+# Warmup Iteration   6: 2414.291 ops/ms
+# Warmup Iteration   7: 3101.121 ops/ms
+# Warmup Iteration   8: 4130.488 ops/ms
+# Warmup Iteration   9: 4882.291 ops/ms
+# Warmup Iteration  10: 4481.838 ops/ms
+Iteration   1: 5142.984 ops/ms
+Iteration   2: 5245.974 ops/ms
+Iteration   3: 4110.892 ops/ms
+Iteration   4: 3844.361 ops/ms
+Iteration   5: 5542.377 ops/ms
+Iteration   6: 5077.328 ops/ms
+Iteration   7: 5635.389 ops/ms
+Iteration   8: 4164.093 ops/ms
+Iteration   9: 3586.089 ops/ms
+Iteration  10: 5188.765 ops/ms
+Iteration  11: 5402.311 ops/ms
+Iteration  12: 4632.548 ops/ms
+Iteration  13: 2498.036 ops/ms
+Iteration  14: 2651.491 ops/ms
+Iteration  15: 4040.454 ops/ms
+Iteration  16: 2471.967 ops/ms
+Iteration  17: 3906.182 ops/ms
+Iteration  18: 4897.826 ops/ms
+Iteration  19: 5397.138 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+4105.591 ops/ms
+
+# Run progress: 70.83% complete, ETA 00:07:23
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+4141.516 ops/ms
+# Warmup Iteration   2: 5228.264 ops/ms
+# Warmup Iteration   3: 5141.402 ops/ms
+# Warmup Iteration   4: 4898.388 ops/ms
+# Warmup Iteration   5: 4369.974 ops/ms
+# Warmup Iteration   6: 5375.372 ops/ms
+# Warmup Iteration   7: 5170.603 ops/ms
+# Warmup Iteration   8: 3785.344 ops/ms
+# Warmup Iteration   9: 4614.904 ops/ms
+# Warmup Iteration  10: 3249.232 ops/ms
+Iteration   1: 4070.091 ops/ms
+Iteration   2: 4269.592 ops/ms
+Iteration   3: 4931.860 ops/ms
+Iteration   4: 4525.076 ops/ms
+Iteration   5: 3418.637 ops/ms
+Iteration   6: 4752.925 ops/ms
+Iteration   7: 4606.480 ops/ms
+Iteration   8: 3373.811 ops/ms
+Iteration   9: 4570.088 ops/ms
+Iteration  10: 3836.905 ops/ms
+Iteration  11: 4755.699 ops/ms
+Iteration  12: 4845.532 ops/ms
+Iteration  13: 4872.170 ops/ms
+Iteration  14: 4629.102 ops/ms
+Iteration  15: 4150.279 ops/ms
+Iteration  16: 2457.955 ops/ms
+Iteration  17: 3051.445 ops/ms
+Iteration  18: 4660.598 ops/ms
+Iteration  19: 3067.769 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+2077.837 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  4211.641 ±(99.9%) 528.873 ops/ms [Average]
+  (min, avg, max) = (2077.837, 4211.641, 5635.389), stdev = 940.071
+  CI (99.9%): [3682.768, 4740.514] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 1000)
+
+# Run progress: 72.22% complete, ETA 00:07:05
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest.removeExisting_Throughput(TestRemove_removeExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 73.61% complete, ETA 00:06:37
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest.removeExisting_Throughput(TestRemove_removeExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 10000)
+
+# Run progress: 75.00% complete, ETA 00:06:09
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest.removeExisting_Throughput(TestRemove_removeExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 76.39% complete, ETA 00:05:42
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeExisting_jmhTest.java:898)
+	at lab2.benchmarkTests.generated.TestRemove_removeExisting_jmhTest.removeExisting_Throughput(TestRemove_removeExisting_jmhTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 1000)
+
+# Run progress: 77.78% complete, ETA 00:05:16
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1471.938 ops/ms
+# Warmup Iteration   2: 1516.607 ops/ms
+# Warmup Iteration   3: 1383.296 ops/ms
+# Warmup Iteration   4: 1080.759 ops/ms
+# Warmup Iteration   5: 996.949 ops/ms
+# Warmup Iteration   6: 744.634 ops/ms
+# Warmup Iteration   7: 816.607 ops/ms
+# Warmup Iteration   8: 792.306 ops/ms
+# Warmup Iteration   9: 909.541 ops/ms
+# Warmup Iteration  10: 1115.368 ops/ms
+Iteration   1: 1411.677 ops/ms
+Iteration   2: 1262.820 ops/ms
+Iteration   3: 1199.433 ops/ms
+Iteration   4: 1379.210 ops/ms
+Iteration   5: 1215.504 ops/ms
+Iteration   6: 928.168 ops/ms
+Iteration   7: 975.525 ops/ms
+Iteration   8: 932.001 ops/ms
+Iteration   9: 998.979 ops/ms
+Iteration  10: 1220.782 ops/ms
+Iteration  11: 1437.278 ops/ms
+Iteration  12: 1511.426 ops/ms
+Iteration  13: 1523.135 ops/ms
+Iteration  14: 1326.048 ops/ms
+Iteration  15: 1334.165 ops/ms
+Iteration  16: 1508.968 ops/ms
+Iteration  17: 1510.685 ops/ms
+Iteration  18: 1213.711 ops/ms
+Iteration  19: 1457.697 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+1385.494 ops/ms
+
+# Run progress: 79.17% complete, ETA 00:04:59
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+1422.301 ops/ms
+# Warmup Iteration   2: 1511.341 ops/ms
+# Warmup Iteration   3: 1469.913 ops/ms
+# Warmup Iteration   4: 1456.012 ops/ms
+# Warmup Iteration   5: 1230.601 ops/ms
+# Warmup Iteration   6: 1434.514 ops/ms
+# Warmup Iteration   7: 1508.608 ops/ms
+# Warmup Iteration   8: 1302.294 ops/ms
+# Warmup Iteration   9: 1521.076 ops/ms
+# Warmup Iteration  10: 1454.538 ops/ms
+Iteration   1: 1145.026 ops/ms
+Iteration   2: 1493.174 ops/ms
+Iteration   3: 1378.539 ops/ms
+Iteration   4: 1376.655 ops/ms
+Iteration   5: 1534.998 ops/ms
+Iteration   6: 1294.130 ops/ms
+Iteration   7: 1541.563 ops/ms
+Iteration   8: 1552.743 ops/ms
+Iteration   9: 1550.267 ops/ms
+Iteration  10: 1489.603 ops/ms
+Iteration  11: 1211.235 ops/ms
+Iteration  12: 1535.700 ops/ms
+Iteration  13: 1498.555 ops/ms
+Iteration  14: 1531.965 ops/ms
+Iteration  15: 1534.272 ops/ms
+Iteration  16: 1444.508 ops/ms
+Iteration  17: 1416.923 ops/ms
+Iteration  18: 1522.781 ops/ms
+Iteration  19: 1551.249 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+1542.687 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  1371.982 ±(99.9%) 103.346 ops/ms [Average]
+  (min, avg, max) = (928.168, 1371.982, 1552.743), stdev = 183.698
+  CI (99.9%): [1268.636, 1475.328] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeExisting
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 10000)
+
+# Run progress: 80.56% complete, ETA 00:04:42
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+194.750 ops/ms
+# Warmup Iteration   2: 230.571 ops/ms
+# Warmup Iteration   3: 227.751 ops/ms
+# Warmup Iteration   4: 229.562 ops/ms
+# Warmup Iteration   5: 228.597 ops/ms
+# Warmup Iteration   6: 220.473 ops/ms
+# Warmup Iteration   7: 184.337 ops/ms
+# Warmup Iteration   8: 202.429 ops/ms
+# Warmup Iteration   9: 220.037 ops/ms
+# Warmup Iteration  10: 200.113 ops/ms
+Iteration   1: 217.130 ops/ms
+Iteration   2: 192.131 ops/ms
+Iteration   3: 216.745 ops/ms
+Iteration   4: 224.973 ops/ms
+Iteration   5: 231.248 ops/ms
+Iteration   6: 225.065 ops/ms
+Iteration   7: 193.657 ops/ms
+Iteration   8: 231.993 ops/ms
+Iteration   9: 221.029 ops/ms
+Iteration  10: 220.128 ops/ms
+Iteration  11: 229.624 ops/ms
+Iteration  12: 203.264 ops/ms
+Iteration  13: 223.755 ops/ms
+Iteration  14: 227.135 ops/ms
+Iteration  15: 230.774 ops/ms
+Iteration  16: 224.557 ops/ms
+Iteration  17: 232.986 ops/ms
+Iteration  18: 198.139 ops/ms
+Iteration  19: 228.749 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+227.724 ops/ms
+
+# Run progress: 81.94% complete, ETA 00:04:24
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+221.923 ops/ms
+# Warmup Iteration   2: 213.325 ops/ms
+# Warmup Iteration   3: 202.770 ops/ms
+# Warmup Iteration   4: 220.615 ops/ms
+# Warmup Iteration   5: 231.222 ops/ms
+# Warmup Iteration   6: 224.835 ops/ms
+# Warmup Iteration   7: 223.838 ops/ms
+# Warmup Iteration   8: 194.022 ops/ms
+# Warmup Iteration   9: 228.743 ops/ms
+# Warmup Iteration  10: 225.729 ops/ms
+Iteration   1: 227.026 ops/ms
+Iteration   2: 221.016 ops/ms
+Iteration   3: 192.593 ops/ms
+Iteration   4: 225.025 ops/ms
+Iteration   5: 227.176 ops/ms
+Iteration   6: 228.056 ops/ms
+Iteration   7: 223.981 ops/ms
+Iteration   8: 195.538 ops/ms
+Iteration   9: 224.936 ops/ms
+Iteration  10: 223.479 ops/ms
+Iteration  11: 229.133 ops/ms
+Iteration  12: 228.573 ops/ms
+Iteration  13: 216.539 ops/ms
+Iteration  14: 205.588 ops/ms
+Iteration  15: 226.965 ops/ms
+Iteration  16: 217.785 ops/ms
+Iteration  17: 225.181 ops/ms
+Iteration  18: 222.814 ops/ms
+Iteration  19: 142.966 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+229.555 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeExisting":
+  218.368 ±(99.9%) 9.511 ops/ms [Average]
+  (min, avg, max) = (142.966, 218.368, 232.986), stdev = 16.906
+  CI (99.9%): [208.857, 227.879] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 1000)
+
+# Run progress: 83.33% complete, ETA 00:04:06
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13438.577 ops/ms
+# Warmup Iteration   2: 13263.684 ops/ms
+# Warmup Iteration   3: 14793.089 ops/ms
+# Warmup Iteration   4: 13465.404 ops/ms
+# Warmup Iteration   5: 16219.460 ops/ms
+# Warmup Iteration   6: 15760.810 ops/ms
+# Warmup Iteration   7: 15244.666 ops/ms
+# Warmup Iteration   8: 15564.924 ops/ms
+# Warmup Iteration   9: 12108.818 ops/ms
+# Warmup Iteration  10: 14998.971 ops/ms
+Iteration   1: 16568.154 ops/ms
+Iteration   2: 13401.720 ops/ms
+Iteration   3: 15458.488 ops/ms
+Iteration   4: 13130.536 ops/ms
+Iteration   5: 13946.897 ops/ms
+Iteration   6: 10869.863 ops/ms
+Iteration   7: 14599.556 ops/ms
+Iteration   8: 15301.395 ops/ms
+Iteration   9: 13696.904 ops/ms
+Iteration  10: 10428.153 ops/ms
+Iteration  11: 14719.336 ops/ms
+Iteration  12: 14351.927 ops/ms
+Iteration  13: 13233.355 ops/ms
+Iteration  14: 14290.496 ops/ms
+Iteration  15: 9043.185 ops/ms
+Iteration  16: 13587.651 ops/ms
+Iteration  17: 15954.273 ops/ms
+Iteration  18: 14604.925 ops/ms
+Iteration  19: 15662.417 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13455.046 ops/ms
+
+# Run progress: 84.72% complete, ETA 00:03:47
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13384.133 ops/ms
+# Warmup Iteration   2: 12680.720 ops/ms
+# Warmup Iteration   3: 13586.365 ops/ms
+# Warmup Iteration   4: 14489.339 ops/ms
+# Warmup Iteration   5: 10882.419 ops/ms
+# Warmup Iteration   6: 14335.544 ops/ms
+# Warmup Iteration   7: 14714.456 ops/ms
+# Warmup Iteration   8: 15103.761 ops/ms
+# Warmup Iteration   9: 14194.496 ops/ms
+# Warmup Iteration  10: 14419.583 ops/ms
+Iteration   1: 12971.522 ops/ms
+Iteration   2: 14136.704 ops/ms
+Iteration   3: 16327.269 ops/ms
+Iteration   4: 15933.347 ops/ms
+Iteration   5: 15618.092 ops/ms
+Iteration   6: 11158.746 ops/ms
+Iteration   7: 10218.712 ops/ms
+Iteration   8: 15155.804 ops/ms
+Iteration   9: 12355.830 ops/ms
+Iteration  10: 11505.403 ops/ms
+Iteration  11: 7827.902 ops/ms
+Iteration  12: 7659.015 ops/ms
+Iteration  13: 8129.001 ops/ms
+Iteration  14: 11156.385 ops/ms
+Iteration  15: 12512.698 ops/ms
+Iteration  16: 12149.438 ops/ms
+Iteration  17: 9625.037 ops/ms
+Iteration  18: 12472.240 ops/ms
+Iteration  19: 16150.065 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+13625.583 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  13074.827 ±(99.9%) 1371.605 ops/ms [Average]
+  (min, avg, max) = (7659.015, 13074.827, 16568.154), stdev = 2438.026
+  CI (99.9%): [11703.222, 14446.431] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = TROVE_HASH_SET, size = 10000)
+
+# Run progress: 86.11% complete, ETA 00:03:28
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12974.457 ops/ms
+# Warmup Iteration   2: 10809.373 ops/ms
+# Warmup Iteration   3: 15322.777 ops/ms
+# Warmup Iteration   4: 13250.798 ops/ms
+# Warmup Iteration   5: 14874.518 ops/ms
+# Warmup Iteration   6: 17333.231 ops/ms
+# Warmup Iteration   7: 9994.641 ops/ms
+# Warmup Iteration   8: 15299.420 ops/ms
+# Warmup Iteration   9: 12459.142 ops/ms
+# Warmup Iteration  10: 13810.222 ops/ms
+Iteration   1: 17422.204 ops/ms
+Iteration   2: 13533.496 ops/ms
+Iteration   3: 12974.191 ops/ms
+Iteration   4: 16264.710 ops/ms
+Iteration   5: 17316.547 ops/ms
+Iteration   6: 14990.952 ops/ms
+Iteration   7: 12180.973 ops/ms
+Iteration   8: 9014.215 ops/ms
+Iteration   9: 14159.681 ops/ms
+Iteration  10: 16650.075 ops/ms
+Iteration  11: 13696.308 ops/ms
+Iteration  12: 15235.820 ops/ms
+Iteration  13: 10985.062 ops/ms
+Iteration  14: 13364.171 ops/ms
+Iteration  15: 13813.411 ops/ms
+Iteration  16: 13940.072 ops/ms
+Iteration  17: 13346.234 ops/ms
+Iteration  18: 12281.926 ops/ms
+Iteration  19: 10930.981 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15819.217 ops/ms
+
+# Run progress: 87.50% complete, ETA 00:03:08
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14239.329 ops/ms
+# Warmup Iteration   2: 14031.038 ops/ms
+# Warmup Iteration   3: 14507.745 ops/ms
+# Warmup Iteration   4: 13637.303 ops/ms
+# Warmup Iteration   5: 14221.210 ops/ms
+# Warmup Iteration   6: 14501.485 ops/ms
+# Warmup Iteration   7: 15848.751 ops/ms
+# Warmup Iteration   8: 17142.481 ops/ms
+# Warmup Iteration   9: 9459.076 ops/ms
+# Warmup Iteration  10: 13311.268 ops/ms
+Iteration   1: 17273.659 ops/ms
+Iteration   2: 15728.947 ops/ms
+Iteration   3: 15783.144 ops/ms
+Iteration   4: 14561.493 ops/ms
+Iteration   5: 15063.771 ops/ms
+Iteration   6: 14422.989 ops/ms
+Iteration   7: 13034.388 ops/ms
+Iteration   8: 17127.508 ops/ms
+Iteration   9: 16505.140 ops/ms
+Iteration  10: 13208.763 ops/ms
+Iteration  11: 17291.367 ops/ms
+Iteration  12: 16634.774 ops/ms
+Iteration  13: 16678.727 ops/ms
+Iteration  14: 17236.692 ops/ms
+Iteration  15: 13934.089 ops/ms
+Iteration  16: 17424.964 ops/ms
+Iteration  17: 17361.306 ops/ms
+Iteration  18: 17497.463 ops/ms
+Iteration  19: 14036.242 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+8095.149 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  14670.520 ±(99.9%) 1324.821 ops/ms [Average]
+  (min, avg, max) = (8095.149, 14670.520, 17497.463), stdev = 2354.867
+  CI (99.9%): [13345.700, 15995.341] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 1000)
+
+# Run progress: 88.89% complete, ETA 00:02:49
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest.removeNew_Throughput(TestRemove_removeNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 90.28% complete, ETA 00:02:25
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest.removeNew_Throughput(TestRemove_removeNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = TROVE_HASH_MAP, size = 10000)
+
+# Run progress: 91.67% complete, ETA 00:02:03
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest.removeNew_Throughput(TestRemove_removeNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+# Run progress: 93.06% complete, ETA 00:01:41
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+<failure>
+
+java.lang.NullPointerException
+	at gnu.trove.impl.hash.TCustomObjectHash.hash(TCustomObjectHash.java:94)
+	at gnu.trove.impl.hash.TObjectHash.insertKey(TObjectHash.java:280)
+	at gnu.trove.map.hash.TCustomHashMap.put(TCustomHashMap.java:147)
+	at java.util.Collections$SetFromMap.add(Unknown Source)
+	at lab2.CollectionRepository.add(CollectionRepository.java:19)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.IntPipeline$4$1.accept(Unknown Source)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterator$OfInt.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at lab2.states.RepositoryState.setUp(RepositoryState.java:29)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest._jmh_tryInit_f_repositorystate1_G(TestRemove_removeNew_jmhTest.java:888)
+	at lab2.benchmarkTests.generated.TestRemove_removeNew_jmhTest.removeNew_Throughput(TestRemove_removeNew_jmhTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 1000)
+
+# Run progress: 94.44% complete, ETA 00:01:19
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12438.581 ops/ms
+# Warmup Iteration   2: 13616.449 ops/ms
+# Warmup Iteration   3: 14759.002 ops/ms
+# Warmup Iteration   4: 13588.146 ops/ms
+# Warmup Iteration   5: 14390.508 ops/ms
+# Warmup Iteration   6: 13053.642 ops/ms
+# Warmup Iteration   7: 14841.758 ops/ms
+# Warmup Iteration   8: 14836.521 ops/ms
+# Warmup Iteration   9: 13076.247 ops/ms
+# Warmup Iteration  10: 16043.101 ops/ms
+Iteration   1: 15831.416 ops/ms
+Iteration   2: 14389.182 ops/ms
+Iteration   3: 15660.818 ops/ms
+Iteration   4: 13627.973 ops/ms
+Iteration   5: 15732.184 ops/ms
+Iteration   6: 15447.260 ops/ms
+Iteration   7: 13614.177 ops/ms
+Iteration   8: 15877.884 ops/ms
+Iteration   9: 12809.182 ops/ms
+Iteration  10: 13809.746 ops/ms
+Iteration  11: 14602.897 ops/ms
+Iteration  12: 14878.961 ops/ms
+Iteration  13: 13886.435 ops/ms
+Iteration  14: 10939.160 ops/ms
+Iteration  15: 12950.427 ops/ms
+Iteration  16: 13219.051 ops/ms
+Iteration  17: 12619.889 ops/ms
+Iteration  18: 14311.515 ops/ms
+Iteration  19: 14500.530 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+12001.186 ops/ms
+
+# Run progress: 95.83% complete, ETA 00:01:00
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+13666.384 ops/ms
+# Warmup Iteration   2: 13789.761 ops/ms
+# Warmup Iteration   3: 15182.629 ops/ms
+# Warmup Iteration   4: 15500.644 ops/ms
+# Warmup Iteration   5: 10390.142 ops/ms
+# Warmup Iteration   6: 12741.726 ops/ms
+# Warmup Iteration   7: 16033.799 ops/ms
+# Warmup Iteration   8: 14592.254 ops/ms
+# Warmup Iteration   9: 13031.668 ops/ms
+# Warmup Iteration  10: 9312.103 ops/ms
+Iteration   1: 15066.829 ops/ms
+Iteration   2: 13785.959 ops/ms
+Iteration   3: 13135.868 ops/ms
+Iteration   4: 15826.926 ops/ms
+Iteration   5: 13524.482 ops/ms
+Iteration   6: 16651.913 ops/ms
+Iteration   7: 16152.395 ops/ms
+Iteration   8: 16234.235 ops/ms
+Iteration   9: 16397.826 ops/ms
+Iteration  10: 13808.529 ops/ms
+Iteration  11: 16339.655 ops/ms
+Iteration  12: 14962.969 ops/ms
+Iteration  13: 14953.743 ops/ms
+Iteration  14: 16312.513 ops/ms
+Iteration  15: 15278.381 ops/ms
+Iteration  16: 14612.790 ops/ms
+Iteration  17: 16184.686 ops/ms
+Iteration  18: 16657.036 ops/ms
+Iteration  19: 16584.026 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+16414.748 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  14739.885 ±(99.9%) 806.529 ops/ms [Average]
+  (min, avg, max) = (10939.160, 14739.885, 16657.036), stdev = 1433.604
+  CI (99.9%): [13933.356, 15546.413] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_121, VM 25.121-b13
+# VM invoker: C:\Program Files (x86)\Java\jre1.8.0_121\bin\java.exe
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: lab2.benchmarkTests.TestRemove.removeNew
+# Parameters: (repositorySupplier = TROVE_LINKED_HASH_SET, size = 10000)
+
+# Run progress: 97.22% complete, ETA 00:00:40
+# Fork: 1 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+14344.535 ops/ms
+# Warmup Iteration   2: 14637.500 ops/ms
+# Warmup Iteration   3: 17579.099 ops/ms
+# Warmup Iteration   4: 17468.265 ops/ms
+# Warmup Iteration   5: 14202.521 ops/ms
+# Warmup Iteration   6: 16182.629 ops/ms
+# Warmup Iteration   7: 17279.163 ops/ms
+# Warmup Iteration   8: 16451.648 ops/ms
+# Warmup Iteration   9: 15453.368 ops/ms
+# Warmup Iteration  10: 15312.156 ops/ms
+Iteration   1: 12845.122 ops/ms
+Iteration   2: 16022.022 ops/ms
+Iteration   3: 15884.910 ops/ms
+Iteration   4: 17555.069 ops/ms
+Iteration   5: 17507.535 ops/ms
+Iteration   6: 14210.415 ops/ms
+Iteration   7: 17508.055 ops/ms
+Iteration   8: 17593.327 ops/ms
+Iteration   9: 17785.597 ops/ms
+Iteration  10: 17602.243 ops/ms
+Iteration  11: 14014.436 ops/ms
+Iteration  12: 15895.495 ops/ms
+Iteration  13: 15451.009 ops/ms
+Iteration  14: 14858.344 ops/ms
+Iteration  15: 16355.680 ops/ms
+Iteration  16: 13285.834 ops/ms
+Iteration  17: 16481.782 ops/ms
+Iteration  18: 16118.433 ops/ms
+Iteration  19: 17541.732 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+17583.682 ops/ms
+
+# Run progress: 98.61% complete, ETA 00:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: RepositoryState_jmhType setup - populate
+12304.436 ops/ms
+# Warmup Iteration   2: 14658.618 ops/ms
+# Warmup Iteration   3: 15914.210 ops/ms
+# Warmup Iteration   4: 15866.115 ops/ms
+# Warmup Iteration   5: 15983.380 ops/ms
+# Warmup Iteration   6: 15055.968 ops/ms
+# Warmup Iteration   7: 17110.758 ops/ms
+# Warmup Iteration   8: 17691.835 ops/ms
+# Warmup Iteration   9: 15136.201 ops/ms
+# Warmup Iteration  10: 15571.597 ops/ms
+Iteration   1: 17333.888 ops/ms
+Iteration   2: 13302.188 ops/ms
+Iteration   3: 17587.499 ops/ms
+Iteration   4: 17549.970 ops/ms
+Iteration   5: 17275.820 ops/ms
+Iteration   6: 17464.268 ops/ms
+Iteration   7: 13187.012 ops/ms
+Iteration   8: 17397.966 ops/ms
+Iteration   9: 17427.510 ops/ms
+Iteration  10: 17608.210 ops/ms
+Iteration  11: 17641.125 ops/ms
+Iteration  12: 14286.976 ops/ms
+Iteration  13: 17561.109 ops/ms
+Iteration  14: 17487.061 ops/ms
+Iteration  15: 17551.194 ops/ms
+Iteration  16: 15821.049 ops/ms
+Iteration  17: 12986.770 ops/ms
+Iteration  18: 15878.337 ops/ms
+Iteration  19: 15910.503 ops/ms
+Iteration  20: RepositoryState_jmhTypeteardown - clear
+15839.739 ops/ms
+
+
+Result "lab2.benchmarkTests.TestRemove.removeNew":
+  16229.973 ±(99.9%) 894.450 ops/ms [Average]
+  (min, avg, max) = (12845.122, 16229.973, 17785.597), stdev = 1589.884
+  CI (99.9%): [15335.523, 17124.423] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:24:38
+
+Benchmark                                      (repositorySupplier)  (size)   Mode  Cnt      Score      Error   Units
+benchmarkTests.TestAdd.addExisting                   TROVE_HASH_SET    1000  thrpt   40  14101.523 ±  601.057  ops/ms
+benchmarkTests.TestAdd.addExisting                   TROVE_HASH_SET   10000  thrpt   40  13666.602 ±  996.375  ops/ms
+benchmarkTests.TestAdd.addExisting            TROVE_LINKED_HASH_SET    1000  thrpt   40  10799.244 ± 1851.030  ops/ms
+benchmarkTests.TestAdd.addExisting            TROVE_LINKED_HASH_SET   10000  thrpt   40  13407.941 ± 1208.814  ops/ms
+benchmarkTests.TestAdd.addNew                        TROVE_HASH_SET    1000  thrpt   40  10708.226 ±  544.162  ops/ms
+benchmarkTests.TestAdd.addNew                        TROVE_HASH_SET   10000  thrpt   40  12017.336 ±  944.201  ops/ms
+benchmarkTests.TestAdd.addNew                 TROVE_LINKED_HASH_SET    1000  thrpt   40   8868.366 ± 1151.429  ops/ms
+benchmarkTests.TestAdd.addNew                 TROVE_LINKED_HASH_SET   10000  thrpt   40   9690.929 ± 1052.698  ops/ms
+benchmarkTests.TestContains.containsExisting         TROVE_HASH_SET    1000  thrpt   40  13261.722 ±  968.781  ops/ms
+benchmarkTests.TestContains.containsExisting         TROVE_HASH_SET   10000  thrpt   40  12637.336 ± 1554.231  ops/ms
+benchmarkTests.TestContains.containsExisting  TROVE_LINKED_HASH_SET    1000  thrpt   40  13258.553 ± 1056.901  ops/ms
+benchmarkTests.TestContains.containsExisting  TROVE_LINKED_HASH_SET   10000  thrpt   40  13382.394 ± 1211.627  ops/ms
+benchmarkTests.TestContains.containsNew              TROVE_HASH_SET    1000  thrpt   40  13400.290 ±  994.030  ops/ms
+benchmarkTests.TestContains.containsNew              TROVE_HASH_SET   10000  thrpt   40  15086.041 ±  894.868  ops/ms
+benchmarkTests.TestContains.containsNew       TROVE_LINKED_HASH_SET    1000  thrpt   40  14028.835 ±  890.073  ops/ms
+benchmarkTests.TestContains.containsNew       TROVE_LINKED_HASH_SET   10000  thrpt   40  14814.143 ± 1003.270  ops/ms
+benchmarkTests.TestRemove.removeExisting             TROVE_HASH_SET    1000  thrpt   40   5362.068 ±  637.601  ops/ms
+benchmarkTests.TestRemove.removeExisting             TROVE_HASH_SET   10000  thrpt   40   4211.641 ±  528.873  ops/ms
+benchmarkTests.TestRemove.removeExisting      TROVE_LINKED_HASH_SET    1000  thrpt   40   1371.982 ±  103.346  ops/ms
+benchmarkTests.TestRemove.removeExisting      TROVE_LINKED_HASH_SET   10000  thrpt   40    218.368 ±    9.511  ops/ms
+benchmarkTests.TestRemove.removeNew                  TROVE_HASH_SET    1000  thrpt   40  13074.827 ± 1371.605  ops/ms
+benchmarkTests.TestRemove.removeNew                  TROVE_HASH_SET   10000  thrpt   40  14670.520 ± 1324.821  ops/ms
+benchmarkTests.TestRemove.removeNew           TROVE_LINKED_HASH_SET    1000  thrpt   40  14739.885 ±  806.529  ops/ms
+benchmarkTests.TestRemove.removeNew           TROVE_LINKED_HASH_SET   10000  thrpt   40  16229.973 ±  894.450  ops/ms
