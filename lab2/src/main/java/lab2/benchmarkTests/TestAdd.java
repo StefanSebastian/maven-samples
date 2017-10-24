@@ -5,6 +5,8 @@ import lab2.states.RepositoryState;
 import lab2.states.SizeState;
 import org.openjdk.jmh.annotations.*;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -44,15 +46,17 @@ public class TestAdd {
     @State(Scope.Benchmark)
     public static class ExistingStateAdd {
         Order order;
+        int repoSize;
 
         @Setup(Level.Invocation)
         public void generateOrder(SizeState sizeState) {
             order = sizeState.existingOrderSupplier.get();
+            repoSize = sizeState.size;
         }
 
         @TearDown(Level.Invocation)
         public void removeOrder(RepositoryState repoState) {
-            if (repoState.repository instanceof List){
+            if (repoState.repository.size() > repoSize){
                 repoState.repository.remove(order);
             }
         }

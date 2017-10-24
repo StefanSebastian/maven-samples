@@ -1,5 +1,9 @@
 package lab2;
 
+import org.eclipse.collections.impl.factory.Lists;
+import org.eclipse.collections.impl.factory.Maps;
+import org.eclipse.collections.impl.factory.Sets;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
@@ -44,5 +48,30 @@ public enum RepositorySupplier implements Supplier<InMemoryRepository<Order>> {
                     () -> Collections.newSetFromMap(
                             new ConcurrentHashMap<Order, Boolean>()));
         }
+    },
+
+    /*
+    // eclipse collections
+    ECLIPSE_MUTABLE_LIST(){
+        @Override
+        public InMemoryRepository<Order> get() {
+            return new CollectionRepository<>(Lists.mutable::empty);
+        }
+    },
+
+    ECLISPE_MUTABLE_SET(){
+        @Override
+        public InMemoryRepository<Order> get() {
+            return new CollectionRepository<>(Sets.mutable::empty);
+        }
+    },
+
+    ECLIPSE_MUTABLE_MAP(){
+        @Override
+        public InMemoryRepository<Order> get() {
+            return new CollectionRepository<>(() -> Collections.newSetFromMap(Maps.mutable.empty()));
+        }
     }
+*/
+    // Koloboke
 }
