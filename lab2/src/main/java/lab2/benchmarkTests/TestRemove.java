@@ -4,11 +4,6 @@ import lab2.Order;
 import lab2.states.RepositoryState;
 import lab2.states.SizeState;
 import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.infra.Blackhole;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +16,9 @@ import java.util.concurrent.TimeUnit;
 @Measurement(iterations = 20, time = 1)
 @Fork(2)
 public class TestRemove {
+    /*
+    Generates new orders
+     */
     @State(Scope.Benchmark)
     public static class NewStateRemove {
         Order order;
@@ -31,6 +29,10 @@ public class TestRemove {
         }
     }
 
+    /*
+    Generates random orders that are in repo
+    reinserts them afterwards
+     */
     @State(Scope.Benchmark)
     public static class ExistingStateRemove {
         Order order;
@@ -56,16 +58,5 @@ public class TestRemove {
     public void removeNew(RepositoryState repositoryState,
                             TestContains.NewStateContains newState){
         repositoryState.repository.remove(newState.order);
-    }
-
-    public static void main(String[] args) throws RunnerException {
-        Options opt = new OptionsBuilder()
-                .include(TestRemove.class.getSimpleName()+".*")
-//                .jvmArgs("-Xms3048m", "-Xmx3048m", "-XX:+UseG1GC")
-//                .addProfiler(HotspotMemoryProfiler.class)
-//                .forks(1)
-                .build();
-
-        new Runner(opt).run();
     }
 }

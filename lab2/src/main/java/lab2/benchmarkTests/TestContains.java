@@ -5,10 +5,6 @@ import lab2.states.RepositoryState;
 import lab2.states.SizeState;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,6 +18,9 @@ import java.util.concurrent.TimeUnit;
 @Fork(2)
 public class TestContains {
 
+    /*
+    Generates new orders
+     */
     @State(Scope.Benchmark)
     public static class NewStateContains {
         Order order;
@@ -32,6 +31,9 @@ public class TestContains {
         }
     }
 
+    /*
+    Generates random order that are in repo
+     */
     @State(Scope.Benchmark)
     public static class ExistingStateContains {
         Order order;
@@ -54,16 +56,5 @@ public class TestContains {
                                  NewStateContains newState,
                                  Blackhole blackhole){
         blackhole.consume(repositoryState.repository.contains(newState.order));
-    }
-
-    public static void main(String[] args) throws RunnerException {
-        Options opt = new OptionsBuilder()
-                .include(TestContains.class.getSimpleName()+".*")
-//                .jvmArgs("-Xms3048m", "-Xmx3048m", "-XX:+UseG1GC")
-//                .addProfiler(HotspotMemoryProfiler.class)
-//                .forks(1)
-                .build();
-
-        new Runner(opt).run();
     }
 }

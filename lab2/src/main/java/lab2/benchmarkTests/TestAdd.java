@@ -4,10 +4,6 @@ import lab2.Order;
 import lab2.states.RepositoryState;
 import lab2.states.SizeState;
 import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -43,6 +39,7 @@ public class TestAdd {
 
     /*
     generates existing orders to add
+    if the current repo is a list then we delete the orders
      */
     @State(Scope.Benchmark)
     public static class ExistingStateAdd {
@@ -69,18 +66,6 @@ public class TestAdd {
     @Benchmark
     public void addNew(RepositoryState repositoryState, NewStateAdd newState) {
         repositoryState.repository.add(newState.order);
-    }
-
-
-    public static void main(String[] args) throws RunnerException {
-        Options opt = new OptionsBuilder()
-                .include(TestAdd.class.getSimpleName()+".*")
-//                .jvmArgs("-Xms3048m", "-Xmx3048m", "-XX:+UseG1GC")
-//                .addProfiler(HotspotMemoryProfiler.class)
-//                .forks(1)
-                .build();
-
-        new Runner(opt).run();
     }
 
 }
