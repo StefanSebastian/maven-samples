@@ -1,5 +1,7 @@
 package lab2;
 
+import java.util.Objects;
+
 /**
  * Created by Sebi on 17-Oct-17.
  */
@@ -12,6 +14,12 @@ public class Order implements Comparable<Order> {
         this.id = id;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public Order(int value){
+        this.id = value;
+        this.price = value;
+        this.quantity = value;
     }
 
     public int getId() {
@@ -45,18 +53,12 @@ public class Order implements Comparable<Order> {
 
         Order order = (Order) o;
 
-        if (id != order.id) return false;
-        if (price != order.price) return false;
-        return quantity == order.quantity;
-
+        return id == order.id;
     }
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + price;
-        result = 31 * result + quantity;
-        return result;
+        return Objects.hash(id);
     }
 
     @Override
@@ -70,9 +72,6 @@ public class Order implements Comparable<Order> {
 
     @Override
     public int compareTo(Order o) {
-        if (id < o.getId()){
-            return -1;
-        }
-        return id == o.getId() ? 0 : 1;
+        return Long.compare(id, o.id);
     }
 }
