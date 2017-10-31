@@ -56,7 +56,7 @@ public class TestRemove {
 
     @Benchmark
     public void removeNew(RepositoryState repositoryState,
-                            TestContains.NewStateContains newState){
+                            NewStateRemove newState){
         repositoryState.repository.remove(newState.order);
     }
 }

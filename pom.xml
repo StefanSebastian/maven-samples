@@ -90,7 +90,10 @@
 		<module>report</module>
         <module>calculator</module>
         <module>lab2</module>
-        <!-- add here any other modules -->
+        <module>lab3</module>
+        <module>lab3</module>
+		<module>lab3</module>
+		<!-- add here any other modules -->
 	</modules>
 
 	<profiles>

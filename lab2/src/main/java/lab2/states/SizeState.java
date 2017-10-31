@@ -7,6 +7,7 @@ import org.openjdk.jmh.annotations.State;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Supplier;
 
 /**
@@ -33,6 +34,24 @@ public class SizeState {
         @Override
         public Order get() {
             return new Order(currentSize.incrementAndGet());
+        }
+    };
+
+    public Supplier<Long> existingLongSupplier = new Supplier<Long>() {
+        private final Random random = new Random();
+
+        @Override
+        public Long get() {
+            return random.nextLong() % size;
+        }
+    };
+
+    public Supplier<Long> newLongSupplier = new Supplier<Long>() {
+        private final AtomicLong currentSize = new AtomicLong(10000);
+
+        @Override
+        public Long get() {
+            return currentSize.incrementAndGet();
         }
     };
 }
