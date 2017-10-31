@@ -21,7 +21,7 @@ for benchmark, df_benchmark in df.groupby('Benchmark'):
         i += 1
 
         # rotate labels
-        plt.gcf().subplots_adjust(bottom=0.35)
+        plt.gcf().subplots_adjust(bottom=0.5)
         plt.xticks(rotation=90)
         plt.savefig(str(i))
         #plt.show()
