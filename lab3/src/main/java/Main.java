@@ -12,14 +12,14 @@ public class Main {
         String path = "E:\\Info\\anu3\\princip\\git\\maven-samples\\lab3\\src\\main\\java\\serializeResult.txt";
         System.out.println(path);
 
-        List<BigDecimal> bigDecimals = BigDecimalGenerator.getBigDecimalList(10);
+        List<BigDecimal> bigDecimals = BigDecimalGenerator.getBigDecimalList(100000);
 
         BigDecimalsSerializer.serializeBigDecimals(bigDecimals, path);
 
         List<BigDecimal> deserialized = BigDecimalsSerializer.deserializeBigDecimals(path);
 
-        System.out.println(bigDecimals);
-        System.out.println(deserialized);
+       // System.out.println(bigDecimals);
+       // System.out.println(deserialized);
 
     }
 }

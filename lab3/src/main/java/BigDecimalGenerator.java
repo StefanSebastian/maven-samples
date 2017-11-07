@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class BigDecimalGenerator {
     public static List<BigDecimal> getBigDecimalList(int size){
-        List<BigDecimal> list = new ArrayList<>();
+        List<BigDecimal> list = new LinkedList<>();
 
         Random random = new Random();
 

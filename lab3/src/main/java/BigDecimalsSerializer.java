@@ -1,6 +1,7 @@
 import java.io.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -11,8 +12,12 @@ public class BigDecimalsSerializer {
 
         try(FileOutputStream fileOutputStream = new FileOutputStream(path);
             ObjectOutputStream outputStream = new ObjectOutputStream(fileOutputStream)){
+
+            int progress = 1;
             for (BigDecimal bigDecimal : bigDecimals){
                 outputStream.writeObject(bigDecimal);
+                System.out.println("Serialized " + progress);
+                progress += 1;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -20,13 +25,17 @@ public class BigDecimalsSerializer {
     }
 
     public static List<BigDecimal> deserializeBigDecimals(String path){
-        List<BigDecimal> bigDecimals = new ArrayList<>();
+        List<BigDecimal> bigDecimals = new LinkedList<>();
 
         try(FileInputStream fileInputStream = new FileInputStream(path);
             ObjectInputStream inputStream = new ObjectInputStream(fileInputStream)){
-                while(true){
-                    bigDecimals.add((BigDecimal) inputStream.readObject());
-                }
+
+            int progress = 1;
+            while(true){
+                bigDecimals.add((BigDecimal) inputStream.readObject());
+                System.out.println("Deserialized " + progress);
+                progress += 1;
+            }
         } catch (EOFException e){
 
         }
