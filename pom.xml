@@ -91,6 +91,7 @@
         <module>calculator</module>
         <module>lab2</module>
         <module>lab3</module>
+		<module>lab4</module>
 		<!-- add here any other modules -->
 	</modules>
 
