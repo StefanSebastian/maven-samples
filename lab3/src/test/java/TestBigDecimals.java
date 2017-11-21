@@ -76,11 +76,12 @@ public class TestBigDecimals {
     public void getFirstTenPercent() throws Exception {
         System.out.println("Get first ten percent");
         List<BigDecimal> bigDecimals = generateBigDecimals();
+        List<BigDecimal> result = new ArrayList<>();
         bigDecimals
                 .stream()
                 .sorted(Comparator.reverseOrder())
                 .limit((long)(0.1 * bigDecimals.size()))
-                .forEach(System.out::println);
+                .forEach(result::add);
 
     }
 }
