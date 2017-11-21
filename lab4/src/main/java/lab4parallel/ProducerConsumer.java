@@ -1,6 +1,5 @@
 package lab4parallel;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import common.Person;
 
 import java.io.BufferedWriter;
@@ -10,7 +9,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 /**
