@@ -16,7 +16,7 @@ public class BigDecimalsSerializer {
             int progress = 1;
             for (BigDecimal bigDecimal : bigDecimals){
                 outputStream.writeObject(bigDecimal);
-                System.out.println("Serialized " + progress);
+               // System.out.println("Serialized " + progress);
                 progress += 1;
             }
         } catch (IOException e) {
@@ -33,7 +33,7 @@ public class BigDecimalsSerializer {
             int progress = 1;
             while(true){
                 bigDecimals.add((BigDecimal) inputStream.readObject());
-                System.out.println("Deserialized " + progress);
+               // System.out.println("Deserialized " + progress);
                 progress += 1;
             }
         } catch (EOFException e){

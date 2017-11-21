@@ -42,6 +42,7 @@ public class ProducerConsumer {
 
                 // get person
                 Person person = Utils.parsePerson(personText);
+                System.out.println(Thread.currentThread().getName() + " produced " + (person != null ? person.toString() : "invalid person"));
                 persons.add(person);
 
                 // notify consumer
@@ -67,6 +68,7 @@ public class ProducerConsumer {
                     if (person != null) {
                         bufferedWriter.write(person.toString());
                     }
+                    System.out.println(Thread.currentThread().getName() + " consumed " + (person != null ? person.toString() : "invalid person"));
 
                     // notify producer
                     notify();
