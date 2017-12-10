@@ -46,6 +46,15 @@ public class MessageWriter implements Runnable {
             out.println(message.getText());
             out.flush();
 
+            if (message.getText().equals("!bye")){
+                try {
+                    connections.get(message.getName()).getSocket().close();
+                } catch (IOException e) {
+                    throw new P2PException(e.getMessage());
+                }
+                connections.remove(message.getName());
+            }
+
         } catch (InterruptedException | P2PException e) {
             System.out.println(e.getMessage());
         }

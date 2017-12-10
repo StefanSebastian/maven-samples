@@ -46,7 +46,12 @@ public class MessageReader implements Runnable {
                     while (connection.getInputStream().available() != 0){
                         line = in.readLine();
                         System.out.println(line + " from " + key);
-                        messages.add(new Message(key, line));
+                        if (line.equals("!bye")){
+                            connections.get(key).getSocket().close();
+                            connections.remove(key);
+                        } else {
+                            messages.add(new Message(key, line));
+                        }
                     }
                 } catch (IOException ignored){
                 }
