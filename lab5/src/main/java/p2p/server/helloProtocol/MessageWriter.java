@@ -14,11 +14,14 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MessageWriter implements Runnable {
 
     private ConcurrentHashMap<String, Socket> connections;
+    private ConcurrentHashMap<String, PrintWriter> writers;
     private BlockingQueue<Message> messages;
 
     public MessageWriter(ConcurrentHashMap<String, Socket> connections,
+                         ConcurrentHashMap<String, PrintWriter> writers,
                          BlockingQueue<Message> messages) {
         this.connections = connections;
+        this.writers = writers;
         this.messages = messages;
     }
 
@@ -42,13 +45,9 @@ public class MessageWriter implements Runnable {
                 throw new P2PException("Connection closed for " + message);
             }
 
-            try {
-                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                out.println(message.getText());
-                out.flush();
-            } catch (IOException e){
-                throw new P2PException("Could not open socket for writing " + message + " ; " + e.getMessage());
-            }
+            PrintWriter out = writers.get(message.getName());
+            out.println(message.getText());
+            out.flush();
 
         } catch (InterruptedException | P2PException e) {
             System.out.println(e.getMessage());

@@ -30,7 +30,12 @@ public class UI {
                 seeAllConnections();
             } else if (opt.equals("3")){
                 sendMessage();
-            } else {
+            } else if (opt.equals("4")){
+                closeConnection();
+            } else if (opt.equals("5")){
+                closeAllConnections();
+            } else if (opt.equals("6")){
+                closeAllConnections();
                 break;
             }
         }
@@ -40,6 +45,9 @@ public class UI {
         System.out.println("1.Initialize connection");
         System.out.println("2.See all connections");
         System.out.println("3.Send message");
+        System.out.println("4.Close connection");
+        System.out.println("5.Close all connections");
+        System.out.println("6.Exit");
     }
 
     private void initializeConnection(){
@@ -79,6 +87,25 @@ public class UI {
 
         try {
             server.sendMessage(new Message(dest, text));
+        } catch (P2PException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    private void closeConnection(){
+        System.out.println("Peer name: ");
+        String peer = reader.nextLine();
+
+        try {
+            server.closeConnection(peer);
+        } catch (P2PException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    private void closeAllConnections(){
+        try {
+            server.closeAllConnections();
         } catch (P2PException e) {
             System.out.println(e.getMessage());
         }

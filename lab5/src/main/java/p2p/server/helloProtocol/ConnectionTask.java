@@ -3,14 +3,11 @@ package p2p.server.helloProtocol;
 import p2p.server.ConnectionInfo;
 import p2p.server.P2PException;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ExecutorService;
 
 /**
  * Created by Sebi on 10-Dec-17.
@@ -19,12 +16,22 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class ConnectionTask implements Runnable{
     private ConcurrentHashMap<String, Socket> connections;
+    private ConcurrentHashMap<String, MessageReader> readers;
+    private BlockingQueue<Message> receivedMessages;
+    private ConcurrentHashMap<String, PrintWriter> writers;
     private ConnectionInfo connectionInfo;
+    private ExecutorService executorService;
 
     public ConnectionTask(ConcurrentHashMap<String, Socket> connections,
-                          ConnectionInfo connectionInfo) {
+                          ConcurrentHashMap<String, MessageReader> readers,
+                          BlockingQueue<Message> receivedMessages, ConcurrentHashMap<String, PrintWriter> writers,
+                          ConnectionInfo connectionInfo, ExecutorService executorService) {
         this.connections = connections;
+        this.readers = readers;
+        this.receivedMessages = receivedMessages;
+        this.writers = writers;
         this.connectionInfo = connectionInfo;
+        this.executorService = executorService;
     }
 
     @Override
@@ -50,8 +57,9 @@ public class ConnectionTask implements Runnable{
         // get input / output streams
         try {
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            InputStream readereeee = socket.getInputStream();
+            readereeee.available();
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
             String destination = socket.getInetAddress().getCanonicalHostName() + " " + socket.getPort();
             System.out.println("Writing hello message to " + destination);
 
@@ -77,6 +85,12 @@ public class ConnectionTask implements Runnable{
             System.out.println("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " accepted");
 
             connections.put(replyArr[1], socket);
+            writers.put(replyArr[1], out);
+
+            MessageReader messageReader = new MessageReader(replyArr[1], connections, in, receivedMessages);
+            readers.put(replyArr[1], messageReader);
+
+            executorService.submit(messageReader);
         } catch (IOException | P2PException e){
             throw new P2PException(e.getMessage());
         }

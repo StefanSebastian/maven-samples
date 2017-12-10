@@ -27,4 +27,14 @@ public interface IP2PServer {
     Send a message to a peer
      */
     void sendMessage(Message message) throws P2PException;
+
+    /*
+    Close connection with a peer
+     */
+    void closeConnection(String name) throws P2PException;
+
+    /*
+    Close all connections
+     */
+    void closeAllConnections() throws P2PException;
 }
