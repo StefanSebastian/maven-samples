@@ -8,9 +8,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
 
 /**
  * Created by Sebi on 10-Dec-17.
@@ -19,24 +17,20 @@ public class IncomingConnectionHandler implements Runnable{
     private ServerSocket serverSocket;
     private String name;
     private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, MessageReader> readers;
-    private BlockingQueue<Message> receivedMessages;
+    private ConcurrentHashMap<String, BufferedReader> readers;
     private ConcurrentHashMap<String, PrintWriter> writers;
-    private ExecutorService executorService;
 
 
     public IncomingConnectionHandler(ServerSocket serverSocket,
                                      String name,
                                      ConcurrentHashMap<String, Socket> connections,
-                                     ConcurrentHashMap<String, MessageReader> readers,
-                                     BlockingQueue<Message> receivedMessages, ConcurrentHashMap<String, PrintWriter> writers, ExecutorService executorService) {
+                                     ConcurrentHashMap<String, BufferedReader> readers,
+                                     ConcurrentHashMap<String, PrintWriter> writers) {
         this.serverSocket = serverSocket;
         this.name = name;
         this.connections = connections;
         this.readers = readers;
-        this.receivedMessages = receivedMessages;
         this.writers = writers;
-        this.executorService = executorService;
     }
 
     @Override
@@ -74,15 +68,13 @@ public class IncomingConnectionHandler implements Runnable{
             }
 
             if (connections.containsKey(msgArr[1])){
+                out.write("dup " + name);
                 throw new P2PException("Connection already set for " + sender);
             }
 
             connections.put(msgArr[1], socket);
             writers.put(msgArr[1], out);
-
-            MessageReader reader = new MessageReader(msgArr[1], connections, in, receivedMessages);
-            readers.put(msgArr[1], reader);
-            executorService.submit(reader);
+            readers.put(msgArr[1], in);
 
             System.out.println("Writing accept message");
             out.println("!ack " + name);

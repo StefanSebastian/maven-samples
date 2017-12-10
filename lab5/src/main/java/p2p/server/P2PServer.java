@@ -2,6 +2,7 @@ package p2p.server;
 
 import p2p.server.helloProtocol.*;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -20,10 +21,10 @@ public class P2PServer implements IP2PServer {
     // all connections
     private ConcurrentHashMap<String, Socket> connections;
 
-    // reader threads = 1 per connection
-    private ConcurrentHashMap<String, MessageReader> readers;
+    // reader streams one for each connection
+    private ConcurrentHashMap<String, BufferedReader> readers;
 
-    // writer streams for each connection ; only one thread that writes to them
+    // writer streams for each connection
     private ConcurrentHashMap<String, PrintWriter> writers;
 
     // messages received from peers
@@ -53,15 +54,16 @@ public class P2PServer implements IP2PServer {
         } catch (IOException e) {
             throw new P2PException(e.getMessage());
         }
-        executorService.submit(new IncomingConnectionHandler(serverSocket, name, connections, readers, receivedMessages, writers, executorService));
+        executorService.submit(new IncomingConnectionHandler(serverSocket, name, connections, readers, writers));
         executorService.submit(new MessageWriter(connections, writers, toSendMessages));
+        executorService.submit(new MessageReader(connections, receivedMessages));
     }
 
 
     @Override
     public void connectTo(ConnectionInfo info) throws P2PException {
         info.setName(name);
-        executorService.submit(new ConnectionTask(connections, readers, receivedMessages, writers, info, executorService));
+        executorService.submit(new ConnectionTask(connections, readers, writers, info));
     }
 
     @Override

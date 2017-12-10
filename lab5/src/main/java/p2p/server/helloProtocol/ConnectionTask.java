@@ -16,22 +16,18 @@ import java.util.concurrent.ExecutorService;
  */
 public class ConnectionTask implements Runnable{
     private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, MessageReader> readers;
-    private BlockingQueue<Message> receivedMessages;
+    private ConcurrentHashMap<String, BufferedReader> readers;
     private ConcurrentHashMap<String, PrintWriter> writers;
     private ConnectionInfo connectionInfo;
-    private ExecutorService executorService;
 
     public ConnectionTask(ConcurrentHashMap<String, Socket> connections,
-                          ConcurrentHashMap<String, MessageReader> readers,
-                          BlockingQueue<Message> receivedMessages, ConcurrentHashMap<String, PrintWriter> writers,
-                          ConnectionInfo connectionInfo, ExecutorService executorService) {
+                          ConcurrentHashMap<String, BufferedReader> readers,
+                          ConcurrentHashMap<String, PrintWriter> writers,
+                          ConnectionInfo connectionInfo) {
         this.connections = connections;
         this.readers = readers;
-        this.receivedMessages = receivedMessages;
         this.writers = writers;
         this.connectionInfo = connectionInfo;
-        this.executorService = executorService;
     }
 
     @Override
@@ -57,8 +53,6 @@ public class ConnectionTask implements Runnable{
         // get input / output streams
         try {
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-            InputStream readereeee = socket.getInputStream();
-            readereeee.available();
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String destination = socket.getInetAddress().getCanonicalHostName() + " " + socket.getPort();
             System.out.println("Writing hello message to " + destination);
@@ -86,11 +80,7 @@ public class ConnectionTask implements Runnable{
 
             connections.put(replyArr[1], socket);
             writers.put(replyArr[1], out);
-
-            MessageReader messageReader = new MessageReader(replyArr[1], connections, in, receivedMessages);
-            readers.put(replyArr[1], messageReader);
-
-            executorService.submit(messageReader);
+            readers.put(replyArr[1], in);
         } catch (IOException | P2PException e){
             throw new P2PException(e.getMessage());
         }

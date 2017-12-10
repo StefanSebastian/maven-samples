@@ -2,6 +2,7 @@ package p2p.server.helloProtocol;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,36 +11,47 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by Sebi on 10-Dec-17.
  */
 public class MessageReader implements Runnable {
-    private String name;
     private ConcurrentHashMap<String, Socket> connections;
-    private BufferedReader reader;
     private BlockingQueue<Message> messages;
 
-    public MessageReader(String name,
-                         ConcurrentHashMap<String, Socket> connections,
-                         BufferedReader reader,
+    public MessageReader(ConcurrentHashMap<String, Socket> connections,
                          BlockingQueue<Message> messages) {
-        this.name = name;
         this.connections = connections;
-        this.reader = reader;
         this.messages = messages;
     }
 
     @Override
     public void run() {
-        try {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line + " from " + name);
-                if (line.equals("!bye")) {
-                    connections.get(name).close();
-                    connections.remove(name);
-                } else {
-                    messages.add(new Message(name, line));
+        // polls sockets for messages
+        while (true){
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            getCurrentMessages();
+        }
+    }
+
+    private void getCurrentMessages(){
+        // iterate all connections ; in case new ones appear
+        for (String key : connections.keySet()){
+            // if connection is opened
+            Socket connection = connections.get(key);
+            if (!connection.isClosed()){
+                // read all messages on socket
+                try{
+                    BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+
+                    String line;
+                    while (connection.getInputStream().available() != 0){
+                        line = in.readLine();
+                        System.out.println(line + " from " + key);
+                        messages.add(new Message(key, line));
+                    }
+                } catch (IOException ignored){
                 }
             }
-        } catch (IOException e){
-            System.out.println(e.getMessage());
         }
     }
 }
