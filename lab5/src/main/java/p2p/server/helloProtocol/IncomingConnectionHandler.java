@@ -1,4 +1,6 @@
-package p2p.server;
+package p2p.server.helloProtocol;
+
+import p2p.server.P2PException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +17,6 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class IncomingConnectionHandler implements Runnable{
     private ServerSocket serverSocket;
-    private Socket socket;
     private String name;
     private ConcurrentHashMap<String, Socket> connections;
     private ConcurrentHashMap<String, BlockingQueue<String>> messages;
@@ -34,41 +35,48 @@ public class IncomingConnectionHandler implements Runnable{
     @Override
     public void run() {
         while(true){
+            Socket socket = null;
             try {
                 socket = serverSocket.accept();
-                System.out.println("Received connection request");
-                helloProtocol();
-            } catch (IOException e) {
-                e.printStackTrace();
+                receiveHelloProtocol(socket);
+            } catch (IOException | P2PException e) {
+                System.out.println(e.getMessage());
+                if (socket != null){
+                    try {
+                        socket.close();
+                    } catch (IOException ignored) {
+                    }
+                }
             }
         }
     }
 
-    private void helloProtocol(){
+    private void receiveHelloProtocol(Socket socket) throws P2PException{
         try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))){
 
-            System.out.println("Reading from socket");
             String msg = in.readLine();
-            System.out.println("Read " + msg);
+
+            String sender = socket.getInetAddress().getCanonicalHostName() + " " + socket.getPort();
+            System.out.println("Received connection from " + sender);
 
             String[] msgArr = msg.split(" ");
             if (msgArr.length != 2 || !msgArr[0].equals("!hello")){
-                System.out.println("Invalid protocol " + socket.getInetAddress().getCanonicalHostName() + " " + socket.getPort());
-                return;
+                throw new P2PException("Invalid protocol " + sender);
             }
 
-            System.out.println("Received connection from " + socket.getInetAddress().getCanonicalHostName() + " " + socket.getPort());
-            System.out.println("Writing accept message");
+            if (connections.containsKey(msgArr[1])){
+                throw new P2PException("Connection already set for " + sender);
+            }
 
             connections.put(msgArr[1], socket);
             messages.put(msgArr[1], new LinkedBlockingQueue<>());
 
+            System.out.println("Writing accept message");
             out.println("!ack " + name);
             out.flush();
-
-        } catch (IOException e){
-            e.printStackTrace();
+        } catch (IOException | P2PException e){
+            throw new P2PException(e.getMessage());
         }
     }
 }

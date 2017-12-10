@@ -1,6 +1,7 @@
-package p2p.server.tasks;
+package p2p.server.helloProtocol;
 
 import p2p.server.ConnectionInfo;
+import p2p.server.P2PException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,12 +14,13 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Created by Sebi on 10-Dec-17.
+ *
+ * Sends a connection request to a given ip+port
  */
 public class ConnectionTask implements Runnable{
     private ConcurrentHashMap<String, Socket> connections;
     private ConcurrentHashMap<String, BlockingQueue<String>> messages;
     private ConnectionInfo connectionInfo;
-    private Socket socket;
 
     public ConnectionTask(ConcurrentHashMap<String, Socket> connections,
                           ConcurrentHashMap<String, BlockingQueue<String>> messages,
@@ -30,16 +32,24 @@ public class ConnectionTask implements Runnable{
 
     @Override
     public void run() {
+        Socket socket = null;
         try {
             // open socket
             socket = new Socket(connectionInfo.getIp(), connectionInfo.getPort());
-            helloProtocol();
-        } catch (IOException e) {
-            e.printStackTrace();
+            sendHelloProtocol(socket);
+        } catch (IOException | P2PException e) {
+            // if any exceptions occur, close the socket
+            System.out.println(e.getMessage());
+            if (socket != null){
+                try {
+                    socket.close();
+                } catch (IOException ignored) {
+                }
+            }
         }
     }
 
-    private void helloProtocol(){
+    private void sendHelloProtocol(Socket socket) throws P2PException{
         // get input / output streams
         try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))){
@@ -56,20 +66,22 @@ public class ConnectionTask implements Runnable{
 
             String[] replyArr = reply.split(" ");
             if (replyArr.length != 2){
-                System.out.println("Invalid reply from " + destination);
-                return;
+                throw new P2PException("Invalid reply from " + destination);
             }
             if (!replyArr[0].equals("!ack")){
-                System.out.println("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " refused");
-                return;
+                throw new P2PException("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " refused");
+            }
+
+            if (connections.containsKey(replyArr[1])){
+                throw new P2PException("Connection already set");
             }
 
             System.out.println("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " accepted");
 
             connections.put(replyArr[1], socket);
             messages.put(replyArr[1], new LinkedBlockingQueue<>());
-        } catch (IOException e){
-            e.printStackTrace();
+        } catch (IOException | P2PException e){
+            throw new P2PException(e.getMessage());
         }
     }
 }

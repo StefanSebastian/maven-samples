@@ -1,6 +1,7 @@
 package p2p.server;
 
-import p2p.server.tasks.ConnectionTask;
+import p2p.server.helloProtocol.ConnectionTask;
+import p2p.server.helloProtocol.IncomingConnectionHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;
