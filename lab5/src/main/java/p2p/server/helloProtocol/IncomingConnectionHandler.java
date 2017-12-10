@@ -16,21 +16,14 @@ import java.util.concurrent.ConcurrentHashMap;
 public class IncomingConnectionHandler implements Runnable{
     private ServerSocket serverSocket;
     private String name;
-    private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, BufferedReader> readers;
-    private ConcurrentHashMap<String, PrintWriter> writers;
-
+    private ConcurrentHashMap<String, ConnectionData> connections;
 
     public IncomingConnectionHandler(ServerSocket serverSocket,
                                      String name,
-                                     ConcurrentHashMap<String, Socket> connections,
-                                     ConcurrentHashMap<String, BufferedReader> readers,
-                                     ConcurrentHashMap<String, PrintWriter> writers) {
+                                     ConcurrentHashMap<String, ConnectionData> connections) {
         this.serverSocket = serverSocket;
         this.name = name;
         this.connections = connections;
-        this.readers = readers;
-        this.writers = writers;
     }
 
     @Override
@@ -72,9 +65,7 @@ public class IncomingConnectionHandler implements Runnable{
                 throw new P2PException("Connection already set for " + sender);
             }
 
-            connections.put(msgArr[1], socket);
-            writers.put(msgArr[1], out);
-            readers.put(msgArr[1], in);
+            connections.put(msgArr[1], new ConnectionData(socket, in, out));
 
             System.out.println("Writing accept message");
             out.println("!ack " + name);

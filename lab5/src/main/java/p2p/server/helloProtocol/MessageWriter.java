@@ -13,15 +13,12 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class MessageWriter implements Runnable {
 
-    private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, PrintWriter> writers;
+    private ConcurrentHashMap<String, ConnectionData> connections;
     private BlockingQueue<Message> messages;
 
-    public MessageWriter(ConcurrentHashMap<String, Socket> connections,
-                         ConcurrentHashMap<String, PrintWriter> writers,
+    public MessageWriter(ConcurrentHashMap<String, ConnectionData> connections,
                          BlockingQueue<Message> messages) {
         this.connections = connections;
-        this.writers = writers;
         this.messages = messages;
     }
 
@@ -35,7 +32,7 @@ public class MessageWriter implements Runnable {
     private void writeMessages(){
         try {
             Message message = messages.take();
-            Socket socket = connections.get(message.getName());
+            Socket socket = connections.get(message.getName()).getSocket();
 
             if (socket == null){
                 throw new P2PException("Invalid destination for " + message);
@@ -45,7 +42,7 @@ public class MessageWriter implements Runnable {
                 throw new P2PException("Connection closed for " + message);
             }
 
-            PrintWriter out = writers.get(message.getName());
+            PrintWriter out = connections.get(message.getName()).getWriter();
             out.println(message.getText());
             out.flush();
 

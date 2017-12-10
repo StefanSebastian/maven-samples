@@ -3,11 +3,12 @@ package p2p.server.helloProtocol;
 import p2p.server.ConnectionInfo;
 import p2p.server.P2PException;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
 
 /**
  * Created by Sebi on 10-Dec-17.
@@ -15,18 +16,12 @@ import java.util.concurrent.ExecutorService;
  * Sends a connection request to a given ip+port
  */
 public class ConnectionTask implements Runnable{
-    private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, BufferedReader> readers;
-    private ConcurrentHashMap<String, PrintWriter> writers;
+    private ConcurrentHashMap<String, ConnectionData> connections;
     private ConnectionInfo connectionInfo;
 
-    public ConnectionTask(ConcurrentHashMap<String, Socket> connections,
-                          ConcurrentHashMap<String, BufferedReader> readers,
-                          ConcurrentHashMap<String, PrintWriter> writers,
+    public ConnectionTask(ConcurrentHashMap<String, ConnectionData> connections,
                           ConnectionInfo connectionInfo) {
         this.connections = connections;
-        this.readers = readers;
-        this.writers = writers;
         this.connectionInfo = connectionInfo;
     }
 
@@ -78,9 +73,8 @@ public class ConnectionTask implements Runnable{
 
             System.out.println("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " accepted");
 
-            connections.put(replyArr[1], socket);
-            writers.put(replyArr[1], out);
-            readers.put(replyArr[1], in);
+
+            connections.put(replyArr[1], new ConnectionData(socket, in, out));
         } catch (IOException | P2PException e){
             throw new P2PException(e.getMessage());
         }

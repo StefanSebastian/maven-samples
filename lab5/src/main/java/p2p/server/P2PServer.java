@@ -18,14 +18,10 @@ public class P2PServer implements IP2PServer {
     private Integer port;
     private String name;
 
-    // all connections
-    private ConcurrentHashMap<String, Socket> connections;
-
-    // reader streams one for each connection
-    private ConcurrentHashMap<String, BufferedReader> readers;
-
-    // writer streams for each connection
-    private ConcurrentHashMap<String, PrintWriter> writers;
+    /*
+    Information about each connections ; socket, input and output streams
+     */
+    private ConcurrentHashMap<String, ConnectionData> connections;
 
     // messages received from peers
     private BlockingQueue<Message> receivedMessages;
@@ -43,8 +39,6 @@ public class P2PServer implements IP2PServer {
         receivedMessages = new LinkedBlockingQueue<>();
         toSendMessages = new LinkedBlockingQueue<>();
         executorService = Executors.newFixedThreadPool(20);
-        readers = new ConcurrentHashMap<>();
-        writers = new ConcurrentHashMap<>();
     }
 
     public void run() throws P2PException{
@@ -54,8 +48,8 @@ public class P2PServer implements IP2PServer {
         } catch (IOException e) {
             throw new P2PException(e.getMessage());
         }
-        executorService.submit(new IncomingConnectionHandler(serverSocket, name, connections, readers, writers));
-        executorService.submit(new MessageWriter(connections, writers, toSendMessages));
+        executorService.submit(new IncomingConnectionHandler(serverSocket, name, connections));
+        executorService.submit(new MessageWriter(connections, toSendMessages));
         executorService.submit(new MessageReader(connections, receivedMessages));
     }
 
@@ -63,14 +57,14 @@ public class P2PServer implements IP2PServer {
     @Override
     public void connectTo(ConnectionInfo info) throws P2PException {
         info.setName(name);
-        executorService.submit(new ConnectionTask(connections, readers, writers, info));
+        executorService.submit(new ConnectionTask(connections, info));
     }
 
     @Override
     public List<ConnectionInfo> getOpenConnections() throws P2PException {
         List<ConnectionInfo> connectionInfos = new ArrayList<>();
         for (String key : connections.keySet()){
-            Socket socket = connections.get(key);
+            Socket socket = connections.get(key).getSocket();
             connectionInfos.add(new ConnectionInfo(socket.getInetAddress().getCanonicalHostName(), socket.getPort(), key));
         }
         return connectionInfos;
