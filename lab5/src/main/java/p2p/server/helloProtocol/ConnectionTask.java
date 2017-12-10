@@ -59,6 +59,10 @@ public class ConnectionTask implements Runnable{
 
             System.out.println("Received " + reply + " from " + destination);
 
+            if (reply.equals("duplicate")){
+                throw new P2PException("Conneciton already set");
+            }
+
             String[] replyArr = reply.split(" ");
             if (replyArr.length != 2){
                 throw new P2PException("Invalid reply from " + destination);

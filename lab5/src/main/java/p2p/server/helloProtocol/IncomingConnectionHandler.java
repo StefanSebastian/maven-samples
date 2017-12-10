@@ -61,7 +61,7 @@ public class IncomingConnectionHandler implements Runnable{
             }
 
             if (connections.containsKey(msgArr[1])){
-                out.write("dup " + name);
+                out.write("duplicate");
                 throw new P2PException("Connection already set for " + sender);
             }
 

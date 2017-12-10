@@ -57,6 +57,8 @@ public class MessageWriter implements Runnable {
 
         } catch (InterruptedException | P2PException e) {
             System.out.println(e.getMessage());
+        } catch (NullPointerException e){
+            System.out.println("Invalid destination");
         }
     }
 }
