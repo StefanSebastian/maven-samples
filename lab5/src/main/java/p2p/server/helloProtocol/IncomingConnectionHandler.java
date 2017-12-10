@@ -19,17 +19,14 @@ public class IncomingConnectionHandler implements Runnable{
     private ServerSocket serverSocket;
     private String name;
     private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, BlockingQueue<String>> messages;
 
 
     public IncomingConnectionHandler(ServerSocket serverSocket,
                                      String name,
-                                     ConcurrentHashMap<String, Socket> connections,
-                                     ConcurrentHashMap<String, BlockingQueue<String>> messages) {
+                                     ConcurrentHashMap<String, Socket> connections) {
         this.serverSocket = serverSocket;
         this.name = name;
         this.connections = connections;
-        this.messages = messages;
     }
 
     @Override
@@ -52,8 +49,9 @@ public class IncomingConnectionHandler implements Runnable{
     }
 
     private void receiveHelloProtocol(Socket socket) throws P2PException{
-        try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))){
+        try {
+            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             String msg = in.readLine();
 
@@ -70,7 +68,6 @@ public class IncomingConnectionHandler implements Runnable{
             }
 
             connections.put(msgArr[1], socket);
-            messages.put(msgArr[1], new LinkedBlockingQueue<>());
 
             System.out.println("Writing accept message");
             out.println("!ack " + name);

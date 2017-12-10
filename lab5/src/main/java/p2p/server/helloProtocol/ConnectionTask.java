@@ -19,14 +19,11 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class ConnectionTask implements Runnable{
     private ConcurrentHashMap<String, Socket> connections;
-    private ConcurrentHashMap<String, BlockingQueue<String>> messages;
     private ConnectionInfo connectionInfo;
 
     public ConnectionTask(ConcurrentHashMap<String, Socket> connections,
-                          ConcurrentHashMap<String, BlockingQueue<String>> messages,
                           ConnectionInfo connectionInfo) {
         this.connections = connections;
-        this.messages = messages;
         this.connectionInfo = connectionInfo;
     }
 
@@ -51,8 +48,9 @@ public class ConnectionTask implements Runnable{
 
     private void sendHelloProtocol(Socket socket) throws P2PException{
         // get input / output streams
-        try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))){
+        try {
+            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             String destination = socket.getInetAddress().getCanonicalHostName() + " " + socket.getPort();
             System.out.println("Writing hello message to " + destination);
@@ -79,7 +77,6 @@ public class ConnectionTask implements Runnable{
             System.out.println("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " accepted");
 
             connections.put(replyArr[1], socket);
-            messages.put(replyArr[1], new LinkedBlockingQueue<>());
         } catch (IOException | P2PException e){
             throw new P2PException(e.getMessage());
         }

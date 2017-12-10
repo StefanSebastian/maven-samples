@@ -3,6 +3,7 @@ package p2p.ui;
 import p2p.server.ConnectionInfo;
 import p2p.server.IP2PServer;
 import p2p.server.P2PException;
+import p2p.server.helloProtocol.Message;
 
 import java.util.List;
 import java.util.Scanner;
@@ -27,6 +28,8 @@ public class UI {
                 initializeConnection();
             } else if (opt.equals("2")){
                 seeAllConnections();
+            } else if (opt.equals("3")){
+                sendMessage();
             } else {
                 break;
             }
@@ -36,6 +39,7 @@ public class UI {
     private void printMenu(){
         System.out.println("1.Initialize connection");
         System.out.println("2.See all connections");
+        System.out.println("3.Send message");
     }
 
     private void initializeConnection(){
@@ -62,6 +66,19 @@ public class UI {
             for (ConnectionInfo connectionInfo : connectionInfoList){
                 System.out.println(connectionInfo);
             }
+        } catch (P2PException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    private void sendMessage(){
+        System.out.println("Destination: ");
+        String dest = reader.nextLine();
+        System.out.println("Text: ");
+        String text = reader.nextLine();
+
+        try {
+            server.sendMessage(new Message(dest, text));
         } catch (P2PException e) {
             System.out.println(e.getMessage());
         }
