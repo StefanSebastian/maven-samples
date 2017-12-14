@@ -42,18 +42,12 @@ public class MessageWriter implements Runnable {
                 throw new P2PException("Connection closed for " + message);
             }
 
+            if (!message.getText().equals("!heartbeat")) {
+                System.out.println("Message writer: writing " + message.getText());
+            }
             PrintWriter out = connections.get(message.getName()).getWriter();
             out.println(message.getText());
             out.flush();
-
-            if (message.getText().equals("!bye")){
-                try {
-                    connections.get(message.getName()).getSocket().close();
-                } catch (IOException e) {
-                    throw new P2PException(e.getMessage());
-                }
-                connections.remove(message.getName());
-            }
 
         } catch (InterruptedException | P2PException e) {
             System.out.println(e.getMessage());

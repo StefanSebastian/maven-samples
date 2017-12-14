@@ -56,14 +56,15 @@ public class UI {
         System.out.println("Port: ");
         String port = reader.nextLine();
 
-        ConnectionInfo connectionInfo = new ConnectionInfo();
-        connectionInfo.setIp(ip);
-        connectionInfo.setPort(Integer.parseInt(port));
-
         try {
+            ConnectionInfo connectionInfo = new ConnectionInfo();
+            connectionInfo.setIp(ip);
+            connectionInfo.setPort(Integer.parseInt(port));
             server.connectTo(connectionInfo);
         } catch (P2PException e) {
             System.out.println(e.getMessage());
+        } catch (NumberFormatException e){
+            System.out.println("Invalid input");
         }
     }
 
