@@ -31,6 +31,7 @@ public class ConnectionTask implements Runnable{
         Socket socket = null;
         try {
             // open socket
+            checkExisting(connectionInfo.getIp(), connectionInfo.getPort());
             socket = new Socket(connectionInfo.getIp(), connectionInfo.getPort());
             sendHelloProtocol(socket);
         } catch (IOException | P2PException e) {
@@ -41,6 +42,24 @@ public class ConnectionTask implements Runnable{
                     socket.close();
                 } catch (IOException ignored) {
                 }
+            }
+        }
+    }
+
+    /*
+    Checks if the socket is already created
+    Obs. if the connection already exists but on the other peer, it will be validated by name
+
+    throws exception if connection already set
+     */
+    private void checkExisting(String ip, int port) throws P2PException{
+        for (ConnectionData connectionData : connections.values()){
+
+            String convIp = ip.equals("localhost") ? "127.0.0.1" : ip;
+
+            if (connectionData.getSocket().getPort() == port &&
+                    connectionData.getSocket().getInetAddress().getHostAddress().equals(convIp)){
+                throw new P2PException("Connection already exists");
             }
         }
     }
