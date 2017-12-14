@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -65,7 +66,7 @@ public class IncomingConnectionHandler implements Runnable{
                 throw new P2PException("Connection already set for " + sender);
             }
 
-            connections.put(msgArr[1], new ConnectionData(socket, in, out));
+            connections.put(msgArr[1], new ConnectionData(socket, in, out, new Date()));
 
             System.out.println("Writing accept message");
             out.println("!ack " + name);

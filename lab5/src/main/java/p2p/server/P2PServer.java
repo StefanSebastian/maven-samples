@@ -1,5 +1,7 @@
 package p2p.server;
 
+import p2p.server.heartbeatProtocol.ConnectionsChecker;
+import p2p.server.heartbeatProtocol.HeartbeatSender;
 import p2p.server.helloProtocol.*;
 
 import java.io.BufferedReader;
@@ -18,6 +20,10 @@ public class P2PServer implements IP2PServer {
     private Integer port;
     private String name;
 
+    // used by the heartbeat protocol
+    private Long pulse;
+    private Long timeout;
+
     /*
     Information about each connections ; socket, input and output streams
      */
@@ -32,9 +38,11 @@ public class P2PServer implements IP2PServer {
     // executor service
     private ExecutorService executorService;
 
-    public P2PServer(Integer port, String name){
+    public P2PServer(Integer port, String name, Long pulse, Long timeout){
         this.port = port;
         this.name = name;
+        this.pulse = pulse;
+        this.timeout = timeout;
         connections = new ConcurrentHashMap<>();
         receivedMessages = new LinkedBlockingQueue<>();
         toSendMessages = new LinkedBlockingQueue<>();
@@ -51,6 +59,8 @@ public class P2PServer implements IP2PServer {
         executorService.submit(new IncomingConnectionHandler(serverSocket, name, connections));
         executorService.submit(new MessageWriter(connections, toSendMessages));
         executorService.submit(new MessageReader(connections, receivedMessages));
+        executorService.submit(new HeartbeatSender(connections, toSendMessages, pulse));
+        executorService.submit(new ConnectionsChecker(connections, timeout));
     }
 
 

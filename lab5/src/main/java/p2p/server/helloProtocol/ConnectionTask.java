@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -78,7 +79,7 @@ public class ConnectionTask implements Runnable{
             System.out.println("Connection to " + connectionInfo.getIp() + " " + connectionInfo.getPort() + " accepted");
 
 
-            connections.put(replyArr[1], new ConnectionData(socket, in, out));
+            connections.put(replyArr[1], new ConnectionData(socket, in, out, new Date()));
         } catch (IOException | P2PException e){
             throw new P2PException(e.getMessage());
         }

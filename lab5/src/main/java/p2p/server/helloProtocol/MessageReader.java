@@ -3,6 +3,7 @@ package p2p.server.helloProtocol;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Date;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -45,11 +46,14 @@ public class MessageReader implements Runnable {
                     String line;
                     while (connection.getInputStream().available() != 0){
                         line = in.readLine();
-                        System.out.println(line + " from " + key);
                         if (line.equals("!bye")){
                             connections.get(key).getSocket().close();
                             connections.remove(key);
+                        } else if (line.equals("!heartbeat")){
+                            ConnectionData connectionData = connections.get(key);
+                            connectionData.setHeartbeat(new Date());
                         } else {
+                            System.out.println(line + " from " + key);
                             messages.add(new Message(key, line));
                         }
                     }

@@ -20,9 +20,11 @@ public class Main {
             properties.load(inputStream);
             Integer port = Integer.parseInt(properties.getProperty("port"));
             String name = properties.getProperty("name");
+            Long pulse = Long.parseLong(properties.getProperty("pulse"));
+            Long timeout = Long.parseLong(properties.getProperty("timeout"));
 
             System.out.println("Starting server at " + port + " " + name);
-            IP2PServer server = new P2PServer(port, name);
+            IP2PServer server = new P2PServer(port, name, pulse, timeout);
             server.run();
 
             UI ui = new UI(server);
